@@ -24,8 +24,8 @@
     --color-two:                      #00405a;
     --color-two-rgb:                    0, 64, 90;
     
-    --color-accent:                   #e7cc0d;
-    --color-accent-rgb:                231, 204, 13;
+    --color-accent:                   #ffb473;
+    --color-accent-rgb:                 255, 180, 115;
 
     /* Dark Color */
     --color-dark-one:                  #010101;  
@@ -442,8 +442,20 @@ select:disabled {
     border-color: var(--color-accent);
 }
 
+.btn.two {
+    color: var(--color-white);
+    background-color: var(--color-two);
+    border: 1px solid var(--color-two);
+}
+
+.btn.two:hover {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
 .btn.accent {
-    color: var(--color-dark-one);
+    color: var(--color-white);
     background-color: var(--color-accent);
     border: 1px solid var(--color-accent);
 }
@@ -470,7 +482,6 @@ select:disabled {
 .stat-card {
     position: relative;
     text-align: center;
-    color: #333;
     background: rgba(var(--color-white-rgb), 0.9);
     border-top: 5px solid var(--color-accent);
     padding: 20px 20px;
@@ -497,11 +508,202 @@ select:disabled {
     margin: 15px 0px 5px 0px; 
 }
 .stat-card p { 
-    font-size: 20px; 
-    font-weight: var(--fw-semibold); 
+    font-size: 18px; 
+    font-weight: var(--fw-medium); 
     letter-spacing: 0px;
     margin: 0; 
 }
+
+/* Faculties */
+.faculty-card {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.faculty-card:hover { 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+}
+
+.faculty-image { 
+    position: relative;
+    height: 230px; 
+    width: 100%; 
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.faculty-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--color-dark-one-rgb), 0.7);
+}
+
+.faculty-image img {  
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.faculty-image h5 {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 8px;
+    margin: 0;
+    background: var(--color-white);
+    border-radius: 5px;
+    font-size: 17px;
+    transition: var(--transition-base);
+}
+
+.faculty-card:hover .faculty-image h5 {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.faculty-body {
+    position: absolute;
+    opacity: 0;
+    padding: 20px 20px; 
+    text-align: left;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    transform: translateY(20px);
+    transition: var(--transition-base);
+    display: flex;
+    align-items: center;
+}
+
+.faculty-card:hover .faculty-body {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.faculty-title {
+    margin-bottom: 12px;
+}
+
+.faculty-desc {
+    color: rgba(var(--color-white-rgb), 0.75);
+    margin-bottom: 15px;
+}
+
+.faculty-desc {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.faculty-title a:not(:hover) {
+    color: var(--color-white);
+}
+
+.faculty-btn a {
+    color: var(--color-accent);
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.faculty-btn a:hover {
+    letter-spacing: 0.5px;
+}
+
+/* Parent Faculty Card */
+        .faculty-card {
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        .faculty-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .faculty-img-block {
+            height: 220px;
+            overflow: hidden;
+        }
+        .faculty-img-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .faculty-card:hover .faculty-img-block img {
+            transform: scale(1.05);
+        }
+        .faculty-content {
+            padding: 25px;
+            border-top: 4px solid var(--bmu-green);
+        }
+        .faculty-badge {
+            background: var(--bmu-green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Child Department Card */
+        .dept-grid-card {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.2s ease;
+            height: 100%;
+            text-decoration: none !important;
+            color: inherit;
+        }
+        .dept-grid-card:hover {
+            background: #fff;
+            border-color: var(--bmu-accent);
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .dept-img-block {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+        .dept-img-block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .dept-info h6 {
+            margin: 0;
+            font-weight: 700;
+            color: var(--bmu-dark);
+            font-size: 0.95rem;
+        }
+        .dept-info span {
+            font-size: 0.75rem;
+            color: #888;
+        }
 
 /* NEWS */
 .news-card {
@@ -524,6 +726,7 @@ select:disabled {
 
 .news-image img {  
     width: 100%; 
+    height: 100%;
     object-fit: cover; 
 }
 
@@ -547,6 +750,10 @@ select:disabled {
     margin-bottom: 12px;
 }
 
+.news-desc {
+    margin-bottom: 15px;
+}
+
 .news-title a,
 .news-desc {
     display: -webkit-box;
@@ -561,12 +768,6 @@ select:disabled {
 
 .news-btn a {
     font-size: 15px;
-    font-weight: var(--fw-medium);
-    background: var(--color-accent);
-    color: var(--color-dark-one);
-    padding: 10px 25px;
-    border-radius: 4px;
-    display: inline-block;
 }
 
 .news-btn a:hover {
@@ -654,7 +855,7 @@ select:disabled {
 
 /* --- Course Tabs --- */
 .course-nav .nav-link {
-    color: #333;
+    color: var(--color-dark-one);
     border-radius: 0;
     text-align: left;
     border-left: 4px solid transparent;
@@ -662,7 +863,7 @@ select:disabled {
     font-weight: 500;
 }
 .course-nav .nav-link.active {
-    background: rgba(var(--color-one-rgb), 0.05);
+    background: rgba(var(--color-one-rgb), 0.12);
     border-left-color: var(--color-accent);
     color: var(--color-one);
 }
