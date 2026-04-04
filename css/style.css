@@ -519,7 +519,6 @@ select:disabled {
     position: relative;
     text-align: center;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .faculty-card:hover { 
@@ -528,10 +527,10 @@ select:disabled {
 
 .faculty-image { 
     position: relative;
-    height: 230px; 
+    height: 260px; 
     width: 100%; 
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .faculty-image::before {
@@ -541,7 +540,7 @@ select:disabled {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(var(--color-dark-one-rgb), 0.7);
+    background-color: rgba(var(--color-dark-one-rgb), 0.3);
 }
 
 .faculty-image img {  
@@ -552,10 +551,10 @@ select:disabled {
 
 .faculty-image h5 {
     position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    padding: 8px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
     margin: 0;
     background: var(--color-white);
     border-radius: 5px;
@@ -570,13 +569,15 @@ select:disabled {
 
 .faculty-body {
     position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
     opacity: 0;
-    padding: 20px 20px; 
+    padding: 30px 30px; 
+    background-color: var(--color-two);
+    border-radius: 8px;
     text-align: left;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
     z-index: 1;
     transform: translateY(20px);
     transition: var(--transition-base);
@@ -621,7 +622,7 @@ select:disabled {
 }
 
 /* Parent Faculty Card */
-        .faculty-card {
+        .faculty-card-two {
             position: relative;
             background: white;
             border-radius: 15px;
@@ -629,7 +630,7 @@ select:disabled {
             border: 1px solid #e0e0e0;
             transition: all 0.3s ease;
         }
-        .faculty-card:hover {
+        .faculty-card-two:hover {
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .faculty-img-block {
@@ -642,7 +643,7 @@ select:disabled {
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        .faculty-card:hover .faculty-img-block img {
+        .faculty-card-two:hover .faculty-img-block img {
             transform: scale(1.05);
         }
         .faculty-content {
