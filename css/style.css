@@ -706,6 +706,116 @@ select:disabled {
             color: #888;
         }
 
+        /* --- Academic Tabs Section --- */
+        .faculty-tabs-container {
+            border-bottom: 2px solid #eee;
+            margin-bottom: 40px;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 5px;
+        }
+        .faculty-tabs-container::-webkit-scrollbar { height: 4px; }
+        .faculty-tabs-container::-webkit-scrollbar-thumb { background: var(--bmu-green); border-radius: 10px; }
+
+        .nav-faculty {
+            display: inline-flex;
+            gap: 10px;
+            padding: 0 10px;
+        }
+        .btn-faculty-tab {
+            padding: 12px 25px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            color: #555;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn-faculty-tab.active {
+            background: var(--bmu-green);
+            color: white;
+            border-color: var(--bmu-green);
+            box-shadow: 0 4px 12px rgba(0, 106, 78, 0.2);
+        }
+        .btn-faculty-tab:hover:not(.active) {
+            border-color: var(--bmu-green);
+            color: var(--bmu-green);
+        }
+
+        /* --- Sliding Tab Content --- */
+        .tab-pane-custom {
+            display: none;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .tab-pane-custom.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+            animation: slideUp 0.6s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Dean Profile Card */
+        .dean-profile-card {
+            background: white;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .dean-img-wrapper {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 3px solid var(--bmu-green);
+            overflow: hidden;
+        }
+        .dean-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .dean-info h4 { color: var(--bmu-dark); margin-bottom: 5px; font-weight: 700; }
+        .dean-info p { color: var(--bmu-accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; }
+        .dean-contact { font-size: 0.85rem; color: #666; text-align: left; background: #f9f9f9; padding: 15px; border-radius: 10px; }
+
+        /* Dept Cards */
+        .dept-grid-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: 0.3s;
+            text-decoration: none !important;
+            color: inherit;
+        }
+        .dept-grid-card:hover {
+            border-color: var(--bmu-green);
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .dept-icon-box {
+            width: 50px; height: 50px; background: #e6f0ed; 
+            color: var(--bmu-green); display: flex; align-items: center; 
+            justify-content: center; border-radius: 10px; font-size: 1.2rem;
+        }
+        
 /* NEWS */
 .news-card {
     background-color: rgba(var(--color-one-rgb), 0.1);
