@@ -391,7 +391,7 @@ iframe {
 .control-group label {
     display: block;
     margin-bottom: 5px;
-    font-weight: 600;
+    font-weight: var(--fw-semibold);
     font-size: 13px;
     color: #4a5568;
 }
@@ -622,199 +622,229 @@ select:disabled {
 }
 
 /* Parent Faculty Card */
-        .faculty-card-two {
-            position: relative;
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            border: 1px solid #e0e0e0;
-            transition: all 0.3s ease;
-        }
-        .faculty-card-two:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .faculty-img-block {
-            height: 220px;
-            overflow: hidden;
-        }
-        .faculty-img-block img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        .faculty-card-two:hover .faculty-img-block img {
-            transform: scale(1.05);
-        }
-        .faculty-content {
-            padding: 25px;
-            border-top: 4px solid var(--bmu-green);
-        }
-        .faculty-badge {
-            background: var(--bmu-green);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
+.faculty-card-two {
+    position: relative;
+    background: var(--color-white);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(var(--color-one-rgb), 0.5);
+    transition: var(--transition-base);
+}
+.faculty-card-two:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.faculty-img-block {
+    height: 220px;
+    overflow: hidden;
+}
+.faculty-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.faculty-card-two:hover .faculty-img-block img {
+    transform: scale(1.05);
+}
+.faculty-content {
+    padding: 25px;
+    border-top: 4px solid var(--color-one);
+}
+.faculty-badge {
+    background: var(--color-one);
+    color: var(--color-white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
 
-        /* Child Department Card */
-        .dept-grid-card {
-            background: #fdfdfd;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.2s ease;
-            height: 100%;
-            text-decoration: none !important;
-            color: inherit;
-        }
-        .dept-grid-card:hover {
-            background: #fff;
-            border-color: var(--bmu-accent);
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .dept-img-block {
-            width: 100px;
-            height: 100px;
-            flex-shrink: 0;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #f0f0f0;
-        }
-        .dept-img-block img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .dept-info h6 {
-            margin: 0;
-            font-weight: 700;
-            color: var(--bmu-dark);
-            font-size: 0.95rem;
-        }
-        .dept-info span {
-            font-size: 0.75rem;
-            color: #888;
-        }
+/* Child Department Card */
+.dept-grid-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.2s ease;
+    height: 100%;
+    text-decoration: none !important;
+    color: inherit;
+}
+.dept-grid-card:hover {
+    background: #fff;
+    border-color: var(--bmu-accent);
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.dept-img-block {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+.dept-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dept-info h6 {
+    margin: 0;
+    font-weight: var(--fw-bold);
+    color: var(--color-dark-one);
+    font-size: 15px;
+}
+.dept-info small {
+    font-size: 13px;
+    color: rgba(var(--color-dark-one-rgb), 0.75);
+}
 
-        /* --- Academic Tabs Section --- */
-        .faculty-tabs-container {
-            border-bottom: 2px solid #eee;
-            margin-bottom: 40px;
-            overflow-x: auto;
-            white-space: nowrap;
-            padding-bottom: 5px;
-        }
-        .faculty-tabs-container::-webkit-scrollbar { height: 4px; }
-        .faculty-tabs-container::-webkit-scrollbar-thumb { background: var(--bmu-green); border-radius: 10px; }
+/* --- Academic Tabs Section --- */
+.faculty-tabs-container {
+    border-bottom: 1px solid rgba(var(--color-one-rgb), 0.5);
+    margin-bottom: 40px;
+    /* overflow-x: auto; */
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+.faculty-tabs-container::-webkit-scrollbar { 
+    height: 2px; 
+}
 
-        .nav-faculty {
-            display: inline-flex;
-            gap: 10px;
-            padding: 0 10px;
-        }
-        .btn-faculty-tab {
-            padding: 12px 25px;
-            border: 2px solid #e0e0e0;
-            background: white;
-            color: #555;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .btn-faculty-tab.active {
-            background: var(--bmu-green);
-            color: white;
-            border-color: var(--bmu-green);
-            box-shadow: 0 4px 12px rgba(0, 106, 78, 0.2);
-        }
-        .btn-faculty-tab:hover:not(.active) {
-            border-color: var(--bmu-green);
-            color: var(--bmu-green);
-        }
+.faculty-tabs-container::-webkit-scrollbar-thumb { 
+    background: var(--color-one); 
+    border-radius: 10px; 
+}
 
-        /* --- Sliding Tab Content --- */
-        .tab-pane-custom {
-            display: none;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .tab-pane-custom.active {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-            animation: slideUp 0.6s ease-out forwards;
-        }
+.nav-faculty {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+}
 
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(100px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.btn-faculty-tab {
+    padding: 7px 20px;
+    color: var(--color-dark-one);
+    background: rgba(var(--color-black-rgb), 0.08); 
+    border: 1px solid rgba(var(--color-black-rgb), 0.08);
+    border-radius: 30px;
+    font-weight: var(--fw-medium);
+    font-size: 14px;
+    line-height: 20px;
+    transition: var(--transition-base);
+    cursor: pointer;
+}
 
-        /* Dean Profile Card */
-        .dean-profile-card {
-            background: white;
-            border-radius: 15px;
-            border: 1px solid #eee;
-            padding: 30px;
-            text-align: center;
-            height: 100%;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
-        .dean-img-wrapper {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            padding: 5px;
-            border: 3px solid var(--bmu-green);
-            overflow: hidden;
-        }
-        .dean-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .dean-info h4 { color: var(--bmu-dark); margin-bottom: 5px; font-weight: 700; }
-        .dean-info p { color: var(--bmu-accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; }
-        .dean-contact { font-size: 0.85rem; color: #666; text-align: left; background: #f9f9f9; padding: 15px; border-radius: 10px; }
+.btn-faculty-tab.active {
+    background: var(--color-one);
+    color: var(--color-white);
+    border-color: var(--color-one);
+    box-shadow: 0 4px 12px rgba(var(--color-one-rgb), 0.2);
+}
 
-        /* Dept Cards */
-        .dept-grid-card {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 12px;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: 0.3s;
-            text-decoration: none !important;
-            color: inherit;
-        }
-        .dept-grid-card:hover {
-            border-color: var(--bmu-green);
-            transform: translateX(5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        .dept-icon-box {
-            width: 50px; height: 50px; background: #e6f0ed; 
-            color: var(--bmu-green); display: flex; align-items: center; 
-            justify-content: center; border-radius: 10px; font-size: 1.2rem;
-        }
+.btn-faculty-tab:hover:not(.active) {
+    border-color: var(--color-one);
+    color: var(--color-one);
+}
+
+/* --- Sliding Tab Content --- */
+.tab-pane-custom {
+    display: none;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tab-pane-custom.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dean Profile Card */
+.dean-profile-card {
+    background: rgba(var(--color-black-rgb), 0.08); 
+    border-radius: 15px;
+    border: 1px solid #eee;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.dean-img-wrapper {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid var(--color-one);
+    overflow: hidden;
+}
+.dean-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.dean-info h4 { color: var(--color-dark-one); margin-bottom: 5px; font-weight: var(--fw-bold); }
+.dean-info p { color: var(--bmu-accent); font-weight: var(--fw-semibold); font-size: 0.9rem; margin-bottom: 15px; }
+.dean-contact { 
+    color: rgba(var(--color-dark-one-rgb), 0.75); 
+    background: var(--color-white); 
+    font-size: 14px; 
+    text-align: left; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+.dean-contact i {
+    color: var(--color-one);
+}
+
+/* Dept Cards */
+.dept-grid-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+    text-decoration: none !important;
+    color: inherit;
+}
+.dept-grid-card:hover {
+    border-color: var(--color-one);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.dept-icon-box {
+    width: 50px;
+    height: 50px;
+    background: #008ac32b;
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
         
 /* NEWS */
 .news-card {
@@ -936,7 +966,7 @@ select:disabled {
 
 .notice-date .day { 
     font-size: 24px; 
-    font-weight: 700; 
+    font-weight: var(--fw-bold); 
     display: block; 
     line-height: 1; 
 }
@@ -971,7 +1001,7 @@ select:disabled {
     text-align: left;
     border-left: 4px solid transparent;
     padding: 12px 20px;
-    font-weight: 500;
+    font-weight: var(--fw-medium);
 }
 .course-nav .nav-link.active {
     background: rgba(var(--color-one-rgb), 0.12);
@@ -990,14 +1020,14 @@ select:disabled {
 /* --- Footer --- */
 footer {
     background: var(--color-two);
-    color: rgba(255,255,255,0.7);
+    color: rgba(var(--color-white-rgb), 0.7);
     padding: 60px 0 20px;
 }
-footer h5 { color: white; margin-bottom: 25px; font-weight: 600; text-transform: uppercase; font-size: 1rem; }
+footer h5 { color: var(--color-white); margin-bottom: 25px; font-weight: var(--fw-semibold); text-transform: uppercase; font-size: 1rem; }
 footer ul { list-style: none; padding: 0; }
 footer ul li { margin-bottom: 12px; }
-footer a { color: rgba(255,255,255,0.7); text-decoration: none; transition: 0.2s; }
-footer a:hover { color: white; padding-left: 5px; }
+footer a { color: rgba(var(--color-white-rgb), 0.7); text-decoration: none; transition: 0.2s; }
+footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 /*** 
 
@@ -1046,16 +1076,18 @@ footer a:hover { color: white; padding-left: 5px; }
 
 .about-section .content-column .title-box .title{
 	position:relative;
-	font-weight: 500;
+	font-weight: var(--fw-medium);
 	display:inline-block;
 	color:var(--color-two);
 	font-size:var(--font-16);
 	text-transform: uppercase;
 }
+
 .about-section .content-column .title-box h1 {
 	margin-bottom: 20px;
 }
-.about-section .content-column .title-box  p {
+
+.about-section .content-column .title-box p {
     position: relative;
     font-size: var(--font-16);
     line-height: 26px;
@@ -1080,14 +1112,16 @@ footer a:hover { color: white; padding-left: 5px; }
 	padding: 0px;
     list-style-type: none;
 }
+
 .about-section .work-list ul li {
 	position: relative;
 	font-family: var(--font-family-heading);
     font-size: var(--font-16);
-	font-weight: 700;
+	font-weight: var(--fw-bold);
     line-height: 32px;
     color: #1C2539;
 }
+
 .about-section .work-list ul li img {
 	margin-right: 9px;
 }
@@ -1101,6 +1135,7 @@ footer a:hover { color: white; padding-left: 5px; }
 	transition: all 0.5s ease-in-out;
     /* animation: rotate1 1.5s linear infinite alternate-reverse; */
 }
+
 .about-section:hover .experience-counter {
     transform: translateY(0%) perspective(600px) rotate3d(1, 0, 0, 0deg);
 }
@@ -1111,7 +1146,7 @@ footer a:hover { color: white; padding-left: 5px; }
     width: 120px;
     height: 120px;
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -1124,7 +1159,7 @@ footer a:hover { color: white; padding-left: 5px; }
     line-height: 16px;
     color: var(--color-white);
     margin: 0px;
-    font-weight: 500;
+    font-weight: var(--fw-medium);
 }
 
 .about-section .experience-counter::after {
@@ -1135,6 +1170,7 @@ footer a:hover { color: white; padding-left: 5px; }
 	z-index: -1;
 	transition: all 0.5s ease-in-out;
 }
+
 .about-section:hover .experience-counter::after {
     right: 96%;
 }
