@@ -57,7 +57,7 @@ body {
     font-weight: var(--fw-normal);
     line-height: 1.5em;
     margin: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	-webkit-transition: var(--transition-base);
@@ -1220,3 +1220,22 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 	margin-bottom: 0px;
 }
 
+/* --- Hospital Services --- */
+.service-card {
+    background: var(--bmu-light);
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+    border-left: 5px solid var(--color-one);
+}
+.service-card:hover { 
+    background: var(--color-white); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    transform: scale(1.02); 
+}
+.service-card i { 
+    font-size: 2.5rem; 
+    color: var(--color-accent); 
+    margin-bottom: 20px; 
+}

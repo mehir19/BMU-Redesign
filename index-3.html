@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Medical University - Official Portal</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            /* New Professional Medical Palette */
+            --bmu-primary: #004a7c; /* Deep Navy - Authority */
+            --bmu-secondary: #00818a; /* Professional Teal - Clinical */
+            --bmu-accent: #e63946; /* Soft Red - Emergency/Urgency */
+            --bmu-light: #f8fbff;
+            --bmu-dark: #002d4b;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+            background-color: var(--white);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* --- Top Bar & Header --- */
+        .top-bar {
+            background: var(--bmu-dark);
+            color: white;
+            padding: 8px 0;
+            font-size: 0.85rem;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0, 74, 124, 0.85), rgba(0, 45, 75, 0.9)), 
+                        url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1920&auto=format&fit=crop') center/cover;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .logo-circle {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            color: var(--bmu-primary);
+        }
+
+        .title-bn { font-size: 2.2rem; font-weight: 700; margin-bottom: 5px; }
+        .title-en { font-size: 1.4rem; font-weight: 300; letter-spacing: 1px; opacity: 0.9; }
+
+        /* --- Navigation --- */
+        .navbar-bmu { background-color: var(--bmu-primary); padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar-bmu .nav-link { 
+            color: white !important; 
+            padding: 18px 20px !important; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .navbar-bmu .nav-link:hover { background: var(--bmu-secondary); }
+
+        /* --- Stats Card --- */
+        .stat-card {
+            background: white;
+            border-bottom: 4px solid var(--bmu-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .stat-card:hover { transform: translateY(-5px); }
+        .stat-card i { font-size: 2rem; color: var(--bmu-secondary); margin-bottom: 10px; }
+        .stat-card h4 { color: var(--bmu-primary); font-weight: 700; margin: 0; }
+        .stat-card p { font-size: 0.7rem; text-transform: uppercase; margin: 0; color: #777; font-weight: 700; }
+
+        /* --- Section Titles --- */
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { 
+            color: var(--bmu-primary); 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            position: relative;
+            padding-bottom: 15px;
+            display: inline-block;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--bmu-accent);
+        }
+
+        /* --- Academic Tabs & Sliding Panel --- */
+        .faculty-tabs-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0;
+            background: #eee;
+            border-radius: 50px;
+            margin-bottom: 30px;
+        }
+        .nav-faculty { display: flex; justify-content: center; gap: 10px; }
+        .btn-faculty-tab {
+            padding: 10px 25px;
+            border: none;
+            background: transparent;
+            color: #555;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-faculty-tab.active { background: var(--bmu-primary); color: white; }
+
+        .tab-pane-custom {
+            display: none;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        .tab-pane-custom.active {
+            display: block;
+            animation: slideInUp 0.6s ease forwards;
+        }
+        @keyframes slideInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Dean Card --- */
+        .dean-profile-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #eef2f6;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+        .dean-img-wrapper {
+            width: 150px; height: 150px; margin: 0 auto 20px;
+            border-radius: 50%; border: 4px solid var(--bmu-secondary);
+            overflow: hidden;
+        }
+        .dean-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* --- Hospital Services --- */
+        .service-card {
+            background: var(--bmu-light);
+            border-radius: 12px;
+            padding: 30px;
+            height: 100%;
+            transition: 0.3s;
+            border-left: 5px solid var(--bmu-primary);
+        }
+        .service-card:hover { background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transform: scale(1.02); }
+        .service-card i { font-size: 2.5rem; color: var(--bmu-secondary); margin-bottom: 20px; }
+
+        /* --- Research Block --- */
+        .research-strip { background: var(--bmu-dark); color: white; padding: 40px 0; }
+        .journal-box { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 20px; border: 1px border rgba(255,255,255,0.2); }
+
+        footer { background: var(--bmu-dark); color: #99abb4; padding: 60px 0 20px; }
+        footer h5 { color: white; font-weight: 700; margin-bottom: 20px; border-left: 3px solid var(--bmu-secondary); padding-left: 15px; }
+        footer a { color: #99abb4; text-decoration: none; }
+        footer a:hover { color: var(--white); }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="me-3"><i class="fas fa-phone-alt me-1"></i> +880 2 123456</span>
+                <span><i class="fas fa-envelope me-1"></i> info@bmu.edu.bd</span>
+            </div>
+            <div class="d-none d-md-block">
+                <a href="#" class="text-white text-decoration-none me-3">Webmail</a>
+                <a href="#" class="text-white text-decoration-none">E-Learning</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-banner">
+        <div class="container">
+            <div class="logo-circle">
+                <i class="fas fa-hand-holding-medical fa-3x"></i>
+            </div>
+            <h1 class="title-bn">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়</h1>
+            <h2 class="title-en">Bangladesh Medical University</h2>
+            
+            <div class="row g-3 mt-5 justify-content-center">
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <i class="fas fa-hospital-user"></i>
+                        <h4>1500+</h4>
+                        <p>Bedded Hosp.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <i class="fas fa-user-md"></i>
+                        <h4>850</h4>
+                        <p>Specialists</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="stat-card">
+                        <i class="fas fa-flask"></i>
+                        <h4>120+</h4>
+                        <p>Active Res.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-bmu sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bmuNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="bmuNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Administration</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">VC's Office</a></li>
+                            <li><a class="dropdown-item" href="#">Registrar</a></li>
+                            <li><a class="dropdown-item" href="#">Academic Council</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hospital Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notice</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hospital Services Quick Access -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hospital Services</h2>
+                <p class="text-muted">High-tech clinical care for all citizens</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Outdoor Appointment</h4>
+                        <p>Book a consultation with our world-class specialists online.</p>
+                        <button class="btn btn-outline-primary btn-sm">Get Appointment</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-microscope"></i>
+                        <h4>Diagnostic Center</h4>
+                        <p>Modern lab facilities including MRI, CT-Scan, and Genomic testing.</p>
+                        <button class="btn btn-outline-primary btn-sm">Report Delivery</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-ambulance"></i>
+                        <h4>Emergency (24/7)</h4>
+                        <p>Specialized trauma and cardiac emergency care units.</p>
+                        <button class="btn btn-danger btn-sm">Emergency Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Structure Section (Tabs) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Academic Faculties</h2>
+                <p class="text-muted">Specialized centers of medical excellence</p>
+            </div>
+
+            <div class="faculty-tabs-container">
+                <div class="nav-faculty">
+                    <button class="btn-faculty-tab active" data-target="medicine">Medicine</button>
+                    <button class="btn-faculty-tab" data-target="surgery">Surgery</button>
+                    <button class="btn-faculty-tab" data-target="nursing">Nursing</button>
+                    <button class="btn-faculty-tab" data-target="dentistry">Dentistry</button>
+                    <button class="btn-faculty-tab" data-target="paediatrics">Paediatrics</button>
+                    <button class="btn-faculty-tab" data-target="public-health">Public Health</button>
+                </div>
+            </div>
+
+            <div id="facultyContent">
+                <!-- Medicine Content -->
+                <div class="tab-pane-custom active" id="medicine">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="dean-profile-card text-center">
+                                <div class="dean-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop" alt="Dean">
+                                </div>
+                                <h4>Prof. Dr. Ahmed Khan</h4>
+                                <p class="text-secondary fw-bold">Dean, Faculty of Medicine</p>
+                                <div class="mt-3 small text-start p-3 bg-light rounded">
+                                    <p class="mb-1"><i class="fas fa-envelope me-2"></i> dean.med@bmu.edu.bd</p>
+                                    <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i> Block B, Room 302</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h5 class="mb-4 text-primary"><i class="fas fa-list-ul me-2"></i>Departments</h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-white border rounded d-flex align-items-center">
+                                        <div class="me-3 text-secondary"><i class="fas fa-lungs fa-2x"></i></div>
+                                        <div><h6 class="mb-0">Internal Medicine</h6><small>15 Faculty Members</small></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-white border rounded d-flex align-items-center">
+                                        <div class="me-3 text-secondary"><i class="fas fa-biohazard fa-2x"></i></div>
+                                        <div><h6 class="mb-0">Hepatology</h6><small>8 Faculty Members</small></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-white border rounded d-flex align-items-center">
+                                        <div class="me-3 text-secondary"><i class="fas fa-heartbeat fa-2x"></i></div>
+                                        <div><h6 class="mb-0">Cardiology</h6><small>22 Faculty Members</small></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-3 bg-white border rounded d-flex align-items-center">
+                                        <div class="me-3 text-secondary"><i class="fas fa-brain fa-2x"></i></div>
+                                        <div><h6 class="mb-0">Neurology</h6><small>12 Faculty Members</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-link text-primary mt-3 fw-bold">View all 18 Departments <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Strip -->
+    <section class="research-strip">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3>University Research & Publications</h3>
+                    <p class="opacity-75">BMU is committed to leading clinical trials and pioneering medical breakthroughs in Southeast Asia.</p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-4">
+                            <div class="journal-box">
+                                <h6 class="mb-1">BMU Journal</h6>
+                                <small class="opacity-50">Latest Issue: March 2025</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="journal-box">
+                                <h6 class="mb-1">IRB Guidelines</h6>
+                                <small class="opacity-50">Ethical Clearance</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-microscope fa-5x opacity-25"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-hand-holding-medical fa-2x me-2 text-secondary"></i>
+                        <h4 class="mb-0 text-white">BMU</h4>
+                    </div>
+                    <p class="small">Bangladesh Medical University is the premier medical university dedicated to education, research, and healthcare.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Academics</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Residency Program</a></li>
+                        <li><a href="#">MD/MS Programs</a></li>
+                        <li><a href="#">PhD & Fellowships</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Hospital</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Doctor Directory</a></li>
+                        <li><a href="#">Diagnostic Rates</a></li>
+                        <li><a href="#">Patient Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Contact</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> Shahbag, Dhaka-1000, Bangladesh</p>
+                    <p class="small mb-1"><i class="fas fa-phone me-2"></i> PABX: +880-2-556677</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center small">
+                <p>&copy; 2025 Bangladesh Medical University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.btn-faculty-tab').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.btn-faculty-tab').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Animation logic (Simplified for demo)
+                const panel = document.getElementById('medicine');
+                panel.classList.remove('active');
+                setTimeout(() => panel.classList.add('active'), 50);
+            });
+        });
+    </script>
+</body>
+</html>
