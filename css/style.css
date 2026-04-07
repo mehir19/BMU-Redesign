@@ -27,6 +27,16 @@
     --color-accent:                   #ffb473;
     --color-accent-rgb:                 255, 180, 115;
 
+    --color-red:                   #a80000;
+    --color-red-rgb:               168, 0, 0;
+
+    --color-green:                   #208700;
+    --color-green-rgb:               32, 135, 0;
+
+    /* Dark Color */
+    --color-light-one:                  #f5f5f5;  
+    --color-light-one-rgb:               245, 245, 245;
+
     /* Dark Color */
     --color-dark-one:                  #010101;  
     --color-dark-one-rgb:               1, 1, 1;
@@ -435,6 +445,8 @@ select:disabled {
     color: var(--color-white);
     background-color: var(--color-black);
     border: 1px solid var(--color-black);
+    padding: 8px 20px;
+    border-radius: 30px;
     flex: 1;
     transition: var(--transition-base);
 }
@@ -516,9 +528,9 @@ select:disabled {
     padding: 9px;
 }
 
-.stat-card h4 { 
+.stat-card .stat-value { 
     color: var(--color-one);
-    font-size: 30px; 
+    font-size: 40px; 
     font-weight: var(--fw-bold); 
     margin: 15px 0px 5px 0px; 
 }
@@ -714,7 +726,6 @@ select:disabled {
     margin: 0;
     font-weight: var(--fw-bold);
     color: var(--color-dark-one);
-    font-size: 15px;
 }
 .dept-info small {
     font-size: 13px;
@@ -864,7 +875,7 @@ select:disabled {
         
 /* NEWS */
 .news-card {
-    background-color: rgba(var(--color-one-rgb), 0.1);
+    background-color: rgba(var(--color-one-rgb), 0.05);
     border: 1px solid rgba(var(--color-one-rgb), 0.2);
     padding: 15px 15px 30px;
     text-align: center;
@@ -993,6 +1004,7 @@ select:disabled {
 }
 
 .notice-content { 
+    position: relative;
     padding: 15px;
     font-weight: var(--fw-semibold);
 }
@@ -1008,6 +1020,31 @@ select:disabled {
 
 .notice-content a:hover { 
     color: var(--color-accent); 
+}
+
+.notice-category.academic {
+    color: var(--color-one);
+}
+
+.notice-category.admin {
+    color: var(--color-accent);
+}
+
+.notice-category.research {
+    color: var(--color-green);
+}
+
+.new-notice {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 /* --- Course Tabs --- */
@@ -1221,21 +1258,106 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 /* --- Hospital Services --- */
-.service-card {
-    background: var(--bmu-light);
-    border-radius: 12px;
-    padding: 30px;
-    height: 100%;
-    transition: 0.3s;
-    border-left: 5px solid var(--color-one);
+.hospital-services {
+    background-color: rgba(var(--color-accent-rgb), 0.05);
 }
+.service-card {
+    border-radius: 10px;
+    padding: 50px 40px;
+    height: 100%;
+    transition: var(--transition-base);
+    border-bottom: 5px solid var(--color-one);
+}
+
 .service-card:hover { 
     background: var(--color-white); 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
-    transform: scale(1.02); 
+    box-shadow: 0 10px 30px rgba(var(--color-black-rgb), 0.1); 
 }
-.service-card i { 
-    font-size: 2.5rem; 
-    color: var(--color-accent); 
-    margin-bottom: 20px; 
+
+.service-card .icon { 
+    color: var(--color-white);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 28px;
+    margin-bottom: 25px; 
 }
+
+.service-card .title {
+    margin-bottom: 15px;
+}
+
+.service-one {
+    background-color: rgba(var(--color-one-rgb), 0.1);
+    border-bottom-color: var(--color-one);
+}
+
+.service-two {
+    background-color: rgba(var(--color-green-rgb), 0.1);
+    border-bottom-color: var(--color-green);
+}
+
+.service-three {
+    background-color: rgba(var(--color-red-rgb), 0.1);
+    border-bottom-color: var(--color-red);
+}
+
+.service-one .icon {
+    background-color: var(--color-one);
+}
+
+.service-two .icon {
+    background-color: var(--color-green);
+}
+
+.service-three .icon {
+    background-color: var(--color-red);
+}
+
+.service-card .btn {
+    margin-top: 15px;
+}
+
+.service-card .btn:not(:hover) {
+    background-color: transparent;
+}
+
+.service-one .btn {
+    color: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.service-two .btn {
+    color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.service-three .btn {
+    color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+/* --- Thesis Section Design --- */
+.thesis-card {
+    background: white; border: 1px solid #e9ecef; border-radius: 12px;
+    padding: 20px; transition: 0.3s; height: 100%; position: relative;
+}
+.thesis-card:hover { border-color: var(--color-accent); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.thesis-card h6 a:not(:hover) {
+    color: var(--color-two);
+}
+.status-badge {
+    font-size: 10px;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.status-ongoing { background: #fff3cd; color: #856404; }
+.status-final { background: #d1ecf1; color: #0c5460; }
+.thesis-icon { color: var(--color-accent); margin-bottom: 15px; display: block; }
