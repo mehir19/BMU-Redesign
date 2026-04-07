@@ -296,16 +296,19 @@ tr:hover {
     width: 100%;
 }
 
-/* .hero [class^="title-"] {
+.hero [class^="title-"] {
     color: var(--color-white);
-} */
-
-.hero .title-en {
-    color: var(--color-accent);
+    font-size: 54px;
 }
 
 .hero .title-bn {
-    color: var(--color-white);
+    text-shadow: 0px 0px 8px rgba(var(--color-black-rgb), 1);
+}
+
+.hero .title-en {
+    color: var(--color-accent);
+    font-size: 48px;
+    text-shadow: 0px 0px 8px rgba(var(--color-black-rgb), 0.5);
 }
 
 
@@ -794,8 +797,9 @@ select:disabled {
     border: 1px solid #eee;
     padding: 30px;
     text-align: center;
-    height: 100%;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 50px;
 }
 .dean-img-wrapper {
     width: 180px;
