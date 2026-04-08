@@ -844,15 +844,15 @@ select:disabled {
 
 /* Dept Cards */
 .dept-grid-card {
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--color-white);
+    border: 1px solid var(--color-light-one);
     border-radius: 12px;
     padding: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
     transition: 0.3s;
-    text-decoration: none !important;
+    text-decoration: none;
     color: inherit;
 }
 .dept-grid-card:hover {
@@ -1342,22 +1342,47 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 /* --- Thesis Section Design --- */
 .thesis-card {
-    background: white; border: 1px solid #e9ecef; border-radius: 12px;
-    padding: 20px; transition: 0.3s; height: 100%; position: relative;
+    background: var(--color-white); 
+    border: 1px solid var(--color-light-one); 
+    border-radius: 10px;
+    padding: 20px; 
+    transition: 0.3s; 
+    height: 100%; 
+    position: relative;
 }
-.thesis-card:hover { border-color: var(--color-accent); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+.thesis-card:hover { 
+    border-color: var(--color-accent); 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+}
+
 .thesis-card h6 a:not(:hover) {
     color: var(--color-two);
 }
+
 .status-badge {
     font-size: 10px;
     padding: 2px 20px;
     border-radius: 20px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--fw-medium);
     margin-bottom: 10px;
     display: inline-block;
 }
-.status-ongoing { background: #fff3cd; color: #856404; }
-.status-final { background: #d1ecf1; color: #0c5460; }
-.thesis-icon { color: var(--color-accent); margin-bottom: 15px; display: block; }
+
+.status-ongoing { 
+    background: rgba(var(--color-accent-rgb), 0.2); 
+    color: var(--color-accent); 
+}
+
+.status-final { 
+    background: rgba(var(--color-green-rgb), 0.2); 
+    color: var(--color-green); 
+}
+
+.thesis-icon { 
+    color: var(--color-accent); 
+    margin-bottom: 15px; 
+    display: block; 
+}

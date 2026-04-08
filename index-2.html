@@ -199,56 +199,75 @@
                     <!-- Notice Column -->
                     <div class="col-lg-4">
                         <h3 class="section-title">Notice Board</h3>
-                        <div class="notice-item">
-                            <div class="notice-date">
-                                <div class="notice-date-inner">
-                                    <span class="day">28</span>
-                                    <span class="month">Feb</span>
-                                </div>
-                            </div>
-                            <div class="notice-content">
-                                <div class="notice-category academic">Academic</div>
-                                <a href="#">Notice regarding online registration for Residency Program March Session.</a>
-                                <div class="new-notice">New</div>
+                        <div class="portfolio-filters-content">
+                            <div class="filters-button-group">
+                                <button class="button btn is-checked" data-filter="*">All </button>
+                                <button class="button btn" data-filter=".academic">Academic</button>
+                                <button class="button btn" data-filter=".admin">Administration</button>
+                                <button class="button btn" data-filter=".research">Research</button>
                             </div>
                         </div>
-    
-                        <div class="notice-item">
-                            <div class="notice-date">
-                                <div class="notice-date-inner">
-                                    <span class="day">25</span>
-                                    <span class="month">Feb</span>
+                        <div class="grid grid-3 gutter-30 clearfix"> 
+                            <div class="grid-sizer"></div>                          
+                            <div class="grid-item academic">
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">28</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                                        <div class="new-notice">New</div>
+                                    </div>
+                                </div>
+                            </div> 
+                                                        
+                            <div class="grid-item admin"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">25</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category admin">Administration</div>
+                                        <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="grid-item research"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">20</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category research">Research</div>
+                                        <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="notice-content">
-                                <div class="notice-category admin">Administration</div>
-                                <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
-                            </div>
-                        </div>
-    
-                        <div class="notice-item">
-                            <div class="notice-date">
-                                <div class="notice-date-inner">
-                                    <span class="day">20</span>
-                                    <span class="month">Feb</span>
+
+                            <div class="grid-item academic"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">15</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Result of FCPS Part-I Mock Examination held on February 10.</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="notice-content">
-                                <div class="notice-category research">Research</div>
-                                <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
-                            </div>
-                        </div>
-    
-                        <div class="notice-item">
-                            <div class="notice-date">
-                                <div class="notice-date-inner">
-                                    <span class="day">15</span>
-                                    <span class="month">Feb</span>
-                                </div>
-                            </div>
-                            <div class="notice-content">
-                                <div class="notice-category academic">Academic</div>
-                                <a href="#">Result of FCPS Part-I Mock Examination held on February 10.</a>
                             </div>
                         </div>
     
@@ -339,7 +358,7 @@
                             <div class="col-lg-4">
                                 <div class="dean-profile-card">
                                     <div class="dean-img-wrapper">
-                                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop" alt="Dean Profile">
+                                        <img src="images/4.jpg" alt="Dean Profile">
                                     </div>
                                     <div class="dean-info text-center">
                                         <h4>Prof. Dr. Ahmed Ali</h4>
@@ -625,6 +644,13 @@
     <!-- Bootstrap JS Bundle -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Projects -->
+    <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="plugins/isotope/jquery.hoverdir.js"></script>
+    <script src="plugins/isotope/modernizr-custom.js"></script>
+    <script src="plugins/isotope/isotope-init.js"></script>
 
     <script>
         // Simple Tab Switcher with Animation
