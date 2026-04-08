@@ -48,7 +48,7 @@ Description:
 		//****************************
 		// Isotope Load more button
 		//****************************
-		var initShow = 10; 
+		var initShow = 6; 
 		var counter = initShow;
 		loadMore(initShow);
 		function loadMore(toShow) {
@@ -88,34 +88,7 @@ Description:
 
 			loadMore(initShow);
 		});
-    
-
-		$(function() {
-			$('.effect-fly .grid-item ').each( function() { $(this).hoverdir(); } );
-		});
-
-		$(".effect-tilt .grid-item").tilt({
-			maxTilt: 15,
-			perspective: 1400,
-			easing: "cubic-bezier(.03,.98,.52,.99)",
-			speed: 1200,
-			// glare: true,
-			// maxGlare: 0.1,
-			scale: 1.01,
-			reset: true
-		});
-
-		// Tilt effect for Slider
-		$(".wptb-slider.style16 .wptb-slider--inner").tilt({
-			maxTilt: 15,
-			perspective: 1400,
-			easing: "cubic-bezier(.03, .98, .52, .99)",
-			speed: 300,
-			glare: false,
-			maxGlare: 0.5,
-			scale: 1.01,
-			reset: true
-		});
+		
 
  	});	
 })(jQuery);

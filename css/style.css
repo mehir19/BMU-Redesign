@@ -738,7 +738,7 @@ select:disabled {
     margin-bottom: 40px;
     /* overflow-x: auto; */
     white-space: nowrap;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .faculty-tabs-container::-webkit-scrollbar { 
     height: 2px; 
@@ -754,7 +754,6 @@ select:disabled {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 0 10px;
 }
 
 .btn-faculty-tab {
@@ -768,6 +767,7 @@ select:disabled {
     line-height: 20px;
     transition: var(--transition-base);
     cursor: pointer;
+    flex: 1;
 }
 
 .btn-faculty-tab.active {
@@ -803,7 +803,7 @@ select:disabled {
 
 /* Dean Profile Card */
 .dean-profile-card {
-    background: rgba(var(--color-black-rgb), 0.08); 
+    background: rgba(var(--color-black-rgb), 0.06); 
     border-radius: 15px;
     border: 1px solid #eee;
     padding: 30px;
@@ -902,7 +902,7 @@ select:disabled {
     color: var(--color-one);
     background: #e5f3f9;
     font-size: 16px;
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-semibold);
     position: absolute;
     bottom: -4px;
     padding: 8px 20px 0px 20px;
@@ -947,13 +947,6 @@ select:disabled {
   background: #f1f3f5;
 }
 
-.notice-box {
-    background: #bfe5ff;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #78c7ff;
-}
-
 .portfolio-filters-content{
     border-bottom: 1px solid rgba(var(--color-dark-one-rgb), 0.1);
     padding-bottom: 15px;
@@ -969,12 +962,11 @@ select:disabled {
 
 .filters-button-group .btn {
     color: rgba(var(--color-dark-one-rgb), 0.5);
-    background-color: var(--color-light-one);
-    border-color: rgba(var(--color-dark-one-rgb), 0.5);
+    background-color: transparent;
     border: 0px;
     padding: 0px 0px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: var(--fw-semibold);
     flex: initial;
 }
@@ -987,7 +979,7 @@ select:disabled {
     color: var(--color-green);
 }
 
-.btn.admin.is-checked {
+.btn.administration.is-checked {
     color: var(--color-red);
 }
 
@@ -995,11 +987,21 @@ select:disabled {
     color: var(--color-one);
 }
 
+.grid-item.hidden {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
 .notice-item {
+    background: var(--color-white);
+    border: 1px solid var(--color-light-one);
     display: flex;
-    background: #fff;
-    border: 1px solid #eee;
-    margin-bottom: 15px;
+    gap: 0px 15px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -1008,28 +1010,30 @@ select:disabled {
     background: var(--color-one);
     color: var(--color-white);
     padding: 15px;
-    min-width: 90px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .notice-date .day { 
-    font-size: 24px; 
+    font-size: 28px; 
     font-weight: var(--fw-bold); 
     display: block; 
     line-height: 1; 
 }
 
 .notice-date .month { 
-    font-size: 14px; 
+    font-size: 15px; 
     text-transform: uppercase; 
 }
 
 .notice-content { 
     position: relative;
-    padding: 15px;
     font-weight: var(--fw-semibold);
 }
 
@@ -1038,8 +1042,10 @@ select:disabled {
     text-decoration: none;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
+    line-height: 22px;
+    margin-top: 4px;
 }
 
 .notice-content a:hover { 
@@ -1047,15 +1053,15 @@ select:disabled {
 }
 
 .notice-category.academic {
-    color: var(--color-one);
+    color: var(--color-green);
 }
 
-.notice-category.admin {
-    color: var(--color-accent);
+.notice-category.administration {
+    color: var(--color-red);
 }
 
 .notice-category.research {
-    color: var(--color-green);
+    color: var(--color-one);
 }
 
 .new-notice {
@@ -1063,12 +1069,13 @@ select:disabled {
     background-color: var(--color-red);
     font-size: 12px;
     line-height: 14px;
-    padding: 3px 12px;
+    padding: 5px 12px;
     display: inline-block;
     border-radius: 3px;
-    top: 5px;
-    right: 5px;
+    top: 0px;
+    right: 0px;
     font-weight: 400;
+    position: absolute;
 }
 
 /* .filters-button-group .btn {
@@ -1091,7 +1098,7 @@ select:disabled {
     color: var(--color-green);
 }
 
-.btn.admin.is-checked {
+.btn.administration.is-checked {
     color: var(--color-red);
 }
 
@@ -1123,7 +1130,7 @@ select:disabled {
     color: var(--color-green);
     background-color: rgba(var(--color-green-rgb), 0.1);
 }
-.admin .notice-date {
+.administration .notice-date {
     color: var(--color-red);
     background-color: rgba(var(--color-red-rgb), 0.1);
 }
@@ -1167,7 +1174,7 @@ select:disabled {
     color: var(--color-one);
 }
 
-.notice-category.admin {
+.notice-category.administration {
     color: var(--color-accent);
 }
 
@@ -1544,4 +1551,3 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     margin-bottom: 15px; 
     display: block; 
 }
-

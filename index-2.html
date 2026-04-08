@@ -180,6 +180,35 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news/2.jpg" alt="img">
+                                        <div class="news-date">February 10, 2025</div>
+                                    </div>
+                                    <div class="news-body">
+                                        <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
+                                        <div class="news-desc">The Vice Chancellor opened the state-of-the-art facility for post-graduate researchers...</div>
+                                        <div class="news-btn"><a href="#" class="btn accent">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="news-card">
+                                    <div class="news-image">
+                                        <img src="images/news/1.jpg" alt="img">
+                                        <div class="news-date">February 15, 2025</div>
+                                    </div>
+                                    <div class="news-body">
+                                        <h5 class="news-title"><a href="#">Achievements of Bangladesh Medical University 2024-25</a></h5>
+                                        <div class="news-desc">A summary of recent milestones in medical research and public health initiatives...</div>
+                                        <div class="news-btn"><a href="#" class="btn accent">Read More</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-md-6">
                                 <div class="news-card">
                                     <div class="news-image">
@@ -203,11 +232,12 @@
                             <div class="filters-button-group">
                                 <button class="button btn all is-checked" data-filter="*">All </button> /
                                 <button class="button btn academic" data-filter=".academic">Academic</button> / 
-                                <button class="button btn research" data-filter=".research">Research</button> / 
-                                <button class="button btn admin" data-filter=".admin">Administration</button>
+                                <button class="button btn administration" data-filter=".administration">Administration</button> / 
+                                <button class="button btn research" data-filter=".research">Research</button>
                             </div>
                         </div>
-                        <div class="grid grid-3 gutter-30 clearfix"> 
+                        
+                        <div class="grid clearfix"> 
                             <div class="grid-sizer"></div>                          
                             <div class="grid-item academic">
                                 <div class="notice-item">
@@ -218,13 +248,14 @@
                                         </div>
                                     </div>
                                     <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
                                         <a href="#">Notice regarding online registration for Residency Program March Session.</a>
                                         <div class="new-notice">New</div>
                                     </div>
                                 </div>
                             </div> 
                                                         
-                            <div class="grid-item admin"> 
+                            <div class="grid-item administration"> 
                                 <div class="notice-item">
                                     <div class="notice-date">
                                         <div class="notice-date-inner">
@@ -233,7 +264,9 @@
                                         </div>
                                     </div>
                                     <div class="notice-content">
+                                        <div class="notice-category administration">Administration</div>
                                         <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                        <div class="new-notice">New</div>
                                     </div>
                                 </div>
                             </div> 
@@ -247,7 +280,9 @@
                                         </div>
                                     </div>
                                     <div class="notice-content">
+                                        <div class="notice-category research">Research</div>
                                         <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                                        <div class="new-notice">New</div>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +296,53 @@
                                         </div>
                                     </div>
                                     <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
                                         <a href="#">Result of FCPS Part-I Mock Examination held on February 10.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item academic">
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">10</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                                    </div>
+                                </div>
+                            </div> 
+                                                        
+                            <div class="grid-item research"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">25</span>
+                                            <span class="month">Jan</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category research">Reasearch</div>
+                                        <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="grid-item administration"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">20</span>
+                                            <span class="month">Jan</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category administration">Administration</div>
+                                        <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
                                     </div>
                                 </div>
                             </div>
@@ -334,8 +415,8 @@
                 <div class="faculty-tabs-container">
                     <div class="nav-faculty" id="facultyTabs" role="tablist">
                         <button class="btn-faculty-tab active" data-target="medicine">Medicine</button>
-                        <button class="btn-faculty-tab" data-target="basic-science">Basic Science and Para Clinical Science</button>
                         <button class="btn-faculty-tab" data-target="dentistry">Dentistry</button>
+                        <button class="btn-faculty-tab" data-target="basic-science">Basic Science and Para Clinical Science</button>
                         <button class="btn-faculty-tab" data-target="medical-technology">Medical Technology</button>
                         <button class="btn-faculty-tab" data-target="nursing">Nursing</button>
                         <button class="btn-faculty-tab" data-target="paediatrics">Paediatrics</button>
@@ -644,8 +725,6 @@
     <!-- Projects -->
     <script src="plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="plugins/isotope/jquery.hoverdir.js"></script>
-    <script src="plugins/isotope/modernizr-custom.js"></script>
     <script src="plugins/isotope/isotope-init.js"></script>
 
     <script>
