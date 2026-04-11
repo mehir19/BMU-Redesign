@@ -10,6 +10,16 @@
     
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div><i class="fas fa-phone-alt me-1"></i> +880 2 123456 | <i class="fas fa-envelope ms-2 me-1"></i> research@bmu.edu.bd</div>
+            <div class="d-none d-md-block">
+                <a href="#" class="text-white text-decoration-none me-3">Student Portal</a>
+                <a href="#" class="text-white text-decoration-none">Faculty Login</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Header Section -->
     <section class="hero" style="background-image: url('images/Block-A.png');">
@@ -165,7 +175,10 @@
                 <div class="row g-5">
                     <!-- News Column -->
                     <div class="col-lg-8">
-                        <h3 class="section-title">News and Events</h3>
+                        <div class="d-flex justify-content-between align-items-end mt-5 mb-4">
+                            <h3 class="section-title m-0 p-0">Latest News</h3>
+                            <a href="#" class="text-decoration-none small fw-bold">All News <i class="fas fa-book ms-1"></i></a>
+                        </div>
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="news-card">
@@ -194,31 +207,36 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="d-flex justify-content-between align-items-end mt-5 mb-4">
+                            <h3 class="section-title m-0 p-0">Upcoming Events</h3>
+                            <a href="#" class="text-decoration-none small fw-bold">Full Calendar <i class="fas fa-calendar-alt ms-1"></i></a>
+                        </div>
+                        <div class="row g-4">
                             <div class="col-md-6">
-                                <div class="news-card">
-                                    <div class="news-image">
-                                        <img src="images/news/1.jpg" alt="img">
-                                        <div class="news-date">February 15, 2025</div>
-                                    </div>
-                                    <div class="news-body">
-                                        <h5 class="news-title"><a href="#">Achievements of Bangladesh Medical University 2024-25</a></h5>
-                                        <div class="news-desc">A summary of recent milestones in medical research and public health initiatives...</div>
-                                        <div class="news-btn"><a href="#" class="btn accent">Read More</a></div>
+                                <div class="event-card bg-white">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag">Seminar</span>
+                                        <h6 class="mt-2 fw-bold"><a href="#">Advances in Robot-Assisted Surgery</a></h6>
+                                        <div class="small text-muted mt-3">
+                                            <p class="mb-1"><i class="fas fa-clock me-2 text-secondary"></i> 10:00 AM - 01:00 PM</p>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> Auditorium A, Block D</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-md-6">
-                                <div class="news-card">
-                                    <div class="news-image">
-                                        <img src="images/news/2.jpg" alt="img">
-                                        <div class="news-date">February 10, 2025</div>
-                                    </div>
-                                    <div class="news-body">
-                                        <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
-                                        <div class="news-desc">The Vice Chancellor opened the state-of-the-art facility for post-graduate researchers...</div>
-                                        <div class="news-btn"><a href="#" class="btn accent">Read More</a></div>
+                                <div class="event-card bg-white">
+                                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag">Workshop</span>
+                                        <h6 class="mt-2 fw-bold"><a href="#">Basic Life Support (BLS) Training</a></h6>
+                                        <div class="small text-muted mt-3">
+                                            <p class="mb-1"><i class="fas fa-clock me-2 text-secondary"></i> 09:00 AM - 05:00 PM</p>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> Simulation Center</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -355,6 +373,86 @@
                 </div>
             </div>
         </section>
+
+        <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left: News & Notices -->
+                <div class="col-lg-5">
+                    <div class="d-flex justify-content-between align-items-end mb-4">
+                        <h3 class="mb-0 text-primary fw-bold">Latest News</h3>
+                        <a href="#" class="text-decoration-none small fw-bold">View All <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                    <div class="bg-white rounded-4 shadow-sm overflow-hidden">
+                        <div class="news-item">
+                            <div class="news-date">12 <span>APR</span></div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Admission results for PhD Programs 2025 released.</h6>
+                                <p class="small text-muted mb-0">The list of successful candidates for the session...</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">08 <span>APR</span></div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Revised examination schedule for MD Residency.</h6>
+                                <p class="small text-muted mb-0">Due to local holidays, the final exams are rescheduled...</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <div class="news-date">05 <span>APR</span></div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">BMU Journal Vol. 12 No. 2 Call for Papers.</h6>
+                                <p class="small text-muted mb-0">Inviting high-impact clinical research articles...</p>
+                            </div>
+                        </div>
+                        <div class="news-item border-0">
+                            <div class="news-date">01 <span>APR</span></div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Online registration for Fellowship Convocation opens.</h6>
+                                <p class="small text-muted mb-0">All 2024 graduates are requested to register...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Upcoming Events -->
+                <div class="col-lg-7">
+                    <div class="d-flex justify-content-between align-items-end mb-4">
+                        <h3 class="mb-0 text-primary fw-bold">Upcoming Events</h3>
+                        <a href="#" class="text-decoration-none small fw-bold">Full Calendar <i class="fas fa-calendar-alt ms-1"></i></a>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="event-card bg-white">
+                                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
+                                <div class="event-body">
+                                    <span class="event-tag">Seminar</span>
+                                    <h6 class="mt-2 fw-bold">Advances in Robot-Assisted Surgery</h6>
+                                    <div class="small text-muted mt-3">
+                                        <p class="mb-1"><i class="fas fa-clock me-2 text-secondary"></i> 10:00 AM - 01:00 PM</p>
+                                        <p class="mb-0"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> Auditorium A, Block D</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="event-card bg-white">
+                                <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400" class="event-img" alt="Event">
+                                <div class="event-body">
+                                    <span class="event-tag">Workshop</span>
+                                    <h6 class="mt-2 fw-bold">Basic Life Support (BLS) Training</h6>
+                                    <div class="small text-muted mt-3">
+                                        <p class="mb-1"><i class="fas fa-clock me-2 text-secondary"></i> 09:00 AM - 05:00 PM</p>
+                                        <p class="mb-0"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> Simulation Center</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <!-- Funfacts -->
         <section class="stats-grid" style="background-image: url('images/2.jpg');">    
