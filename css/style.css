@@ -1486,16 +1486,38 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     background-color: rgba(var(--color-accent-rgb), 0.05);
 }
 .service-card {
+    position: relative;
     border-radius: 10px;
     padding: 50px 40px;
     height: 100%;
     transition: var(--transition-base);
-    border-bottom: 5px solid var(--color-one);
+    overflow: hidden;
 }
 
-.service-card:hover { 
+.service-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background-color: red;
+    z-index: 0;
+    transition: var(--transition-base);
+}
+
+/* .service-card:hover { 
     background: var(--color-white); 
     box-shadow: 0 10px 30px rgba(var(--color-black-rgb), 0.1); 
+} */
+
+.service-card:hover::before {
+    height: 100%;
+}
+
+.service-card .service-card--inner {
+    position: relative;
+    z-index: 1;
 }
 
 .service-card .icon { 
@@ -1508,6 +1530,7 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     border-radius: 100%;
     font-size: 28px;
     margin-bottom: 25px; 
+    transition: var(--transition-base);
 }
 
 .service-card .title {
@@ -1516,29 +1539,53 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 .service-one {
     background-color: rgba(var(--color-one-rgb), 0.1);
-    border-bottom-color: var(--color-one);
 }
 
 .service-two {
     background-color: rgba(var(--color-green-rgb), 0.1);
-    border-bottom-color: var(--color-green);
 }
 
 .service-three {
     background-color: rgba(var(--color-red-rgb), 0.1);
-    border-bottom-color: var(--color-red);
+}
+
+.service-one::before {
+    background-color: var(--color-one);
+}
+
+.service-two::before {
+    background-color: var(--color-green);
+}
+
+.service-three::before {
+    background-color: var(--color-red);
 }
 
 .service-one .icon {
     background-color: var(--color-one);
 }
 
+.service-one:hover .icon {
+    background-color: var(--color-white);
+    color: var(--color-one);
+}
+
 .service-two .icon {
     background-color: var(--color-green);
 }
 
+.service-two:hover .icon {
+    background-color: var(--color-white);
+    color: var(--color-green);
+}
+
 .service-three .icon {
     background-color: var(--color-red);
+}
+
+.service-three:hover .icon {
+    background-color: var(--color-white);
+    color: var(--color-red);
 }
 
 .service-card .btn {
@@ -1554,14 +1601,29 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     border-color: var(--color-one);
 }
 
+.service-one:hover .btn {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
 .service-two .btn {
     color: var(--color-green);
     border-color: var(--color-green);
 }
 
+.service-one:hover .btn {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
 .service-three .btn {
     color: var(--color-red);
     border-color: var(--color-red);
+}
+
+.service-one:hover .btn {
+    color: var(--color-white);
+    border-color: var(--color-white);
 }
 
 /* --- Thesis Section Design --- */
