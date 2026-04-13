@@ -1501,7 +1501,7 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     right: 0;
     bottom: 0;
     height: 5px;
-    background-color: red;
+    background-color: rgba(var(--color-one-rgb), 0.1);
     z-index: 0;
     transition: var(--transition-base);
 }
@@ -1535,6 +1535,11 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 .service-card .title {
     margin-bottom: 15px;
+    transition: var(--transition-base);
+}
+
+.service-card p {
+    transition: var(--transition-base);
 }
 
 .service-one {
@@ -1588,6 +1593,11 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     color: var(--color-red);
 }
 
+.service-card:hover .title,
+.service-card:hover p {
+    color: var(--color-white);
+}
+
 .service-card .btn {
     margin-top: 15px;
 }
@@ -1606,14 +1616,22 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     border-color: var(--color-white);
 }
 
+.service-one .btn:hover {
+    color: var(--color-one);
+}
+
 .service-two .btn {
     color: var(--color-green);
     border-color: var(--color-green);
 }
 
-.service-one:hover .btn {
+.service-two:hover .btn {
     color: var(--color-white);
     border-color: var(--color-white);
+}
+
+.service-two .btn:hover {
+    color: var(--color-green);
 }
 
 .service-three .btn {
@@ -1621,9 +1639,13 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     border-color: var(--color-red);
 }
 
-.service-one:hover .btn {
+.service-three:hover .btn {
     color: var(--color-white);
     border-color: var(--color-white);
+}
+
+.service-three .btn:hover {
+    color: var(--color-red);
 }
 
 /* --- Thesis Section Design --- */
