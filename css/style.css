@@ -982,17 +982,27 @@ select:disabled {
 
 /* EEVENTS */
 .event-card {
+    background-color: rgba(var(--color-one-rgb), 0.1);
     border: none;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
+    transition: var(--transition-base);
     height: 100%;
 }
 .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
+
+.event-card h6 {
+    color: var(--color-dark-one);
+}
+
+.event-card h6 a:not(:hover) {
+    color: inherit;
+}
+
 .event-img {
     height: 180px;
     object-fit: cover;
@@ -1002,13 +1012,13 @@ select:disabled {
     padding: 20px;
 }
 .event-tag {
-    background: var(--bmu-secondary);
-    color: white;
+    background: var(--color-green);
+    color: var(--color-white);
     font-size: 0.65rem;
     padding: 3px 10px;
     border-radius: 20px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: var(--fw-semibold);
 }
 
 /* NOTICE */
