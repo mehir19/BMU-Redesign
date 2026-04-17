@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     color: var(--color-dark-one);
     font-family: var(--font-family-two);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-bold);
     margin-top: 0px;
     margin-bottom: 0px;
     transition: var(--transition-base);
@@ -152,12 +152,6 @@ section {
     padding: 90px 0px;
 }
 
-.section-header .section-sub-title {
-    font-size: 18px;
-    font-weight: var(--fw-medium);
-    margin-bottom: 10px;
-}
-
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -165,17 +159,23 @@ section {
 }
 
 .section-header .header-icon {
-    width: 50px;
-    height: 50px;
-    background: var(--color-light-one);
+    width: 70px;
+    height: 70px;
+    background: var(--color-white);
     color: var(--color-one);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 15px;
-    font-size: 1.5rem;
+    font-size: 30px;
     border: 1px solid rgba(var(--color-one-rgb), 0.2);
+}
+
+.section-header .section-subtitle {
+    font-size: 18px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 10px;
 }
 
 .section-header .section-title {
@@ -544,13 +544,21 @@ select:disabled {
     background-color: rgba(var(--color-two-rgb), 0.8);
 }
 
-.stat-card {
+.funfacts-wrapper {
     position: relative;
-    text-align: center;
     background: rgba(var(--color-white-rgb), 0.9);
     border-top: 5px solid var(--color-accent);
     padding: 20px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+
+.stat-card {
+    position: relative;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .stat-card .icon {
@@ -570,7 +578,7 @@ select:disabled {
     color: var(--color-one);
     font-size: 40px; 
     font-weight: var(--fw-bold); 
-    margin: 15px 0px 5px 0px; 
+    margin: 0px 0px 5px 0px; 
 }
 .stat-card p { 
     font-size: 18px; 
@@ -913,14 +921,17 @@ select:disabled {
         
 /* NEWS */
 .news-card {
-    background-color: rgba(var(--color-one-rgb), 0.05);
+    background-color: var(--color-white);
     border: 1px solid rgba(var(--color-one-rgb), 0.2);
     padding: 15px 15px 30px;
     text-align: center;
     overflow: hidden;
     border-radius: 10px;
+    transition: var(--transition-base);
 }
-.news-card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.news-card:hover {    
+    border: 1px solid rgba(var(--color-one-rgb), 0.5);
+}
 
 .news-image { 
     position: relative;
@@ -937,13 +948,13 @@ select:disabled {
 }
 
 .news-date {
-    color: var(--color-one);
-    background: #e5f3f9;
+    color: var(--color-white);
+    background-color: var(--color-one);
     font-size: 16px;
     font-weight: var(--fw-semibold);
     position: absolute;
-    bottom: -4px;
-    padding: 8px 20px 0px 20px;
+    bottom: 0px;
+    padding: 8px 20px 8px 20px;
     border-radius: 0px 5px 0px 0px;
 }
 
@@ -972,21 +983,21 @@ select:disabled {
     color: var(--color-dark-one);
 }
 
-.news-btn a {
-    font-size: 15px;
+.news-btn .news-link {
+    font-size: 16px;
+    font-weight: var(--fw-semibold);
 }
 
-.news-btn a:hover {
+.news-btn .news-link:hover {
     letter-spacing: 1px;
 }
 
 /* EEVENTS */
 .event-card {
-    background-color: rgba(var(--color-one-rgb), 0.1);
+    background-color: rgba(var(--color-one-rgb), 0.05);
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: var(--transition-base);
     height: 100%;
 }
@@ -995,30 +1006,46 @@ select:disabled {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-.event-card h6 {
+.event-card h5 {
     color: var(--color-dark-one);
 }
 
-.event-card h6 a:not(:hover) {
+.event-card h5 a:not(:hover) {
     color: inherit;
 }
 
 .event-img {
-    height: 180px;
+    height: 230px;
     object-fit: cover;
     width: 100%;
 }
 .event-body {
-    padding: 20px;
+    padding: 30px;
 }
+
 .event-tag {
-    background: var(--color-green);
-    color: var(--color-white);
-    font-size: 0.65rem;
-    padding: 3px 10px;
+    font-size: 12px;
+    padding: 5px 20px;
     border-radius: 20px;
     text-transform: uppercase;
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.event-tag.seminar { 
+    background: rgba(var(--color-accent-rgb), 0.2); 
+    color: var(--color-accent); 
+}
+
+.event-tag.workshop { 
+    background: rgba(var(--color-green-rgb), 0.2); 
+    color: var(--color-green); 
+}
+
+.event-card i {
+    color: var(--color-one);
 }
 
 /* NOTICE */
@@ -1292,18 +1319,35 @@ select:disabled {
 }
 
 /* --- Course Tabs --- */
+.course-wrapper {
+    border: 1px solid rgba(var(--color-black-rgb), 0.1);
+    border-radius: 15px;
+}
+
+.course-nav {
+    padding-right: 28px;
+}
+
 .course-nav .nav-link {
     color: var(--color-dark-one);
     border-radius: 0;
     text-align: left;
     border-left: 4px solid transparent;
     padding: 12px 20px;
-    font-weight: var(--fw-medium);
+    font-family: var(--font-family-two);
+    font-weight: var(--fw-semibold);
+    transition: var(--transition-base);
 }
 .course-nav .nav-link.active {
-    background: rgba(var(--color-one-rgb), 0.12);
-    border-left-color: var(--color-accent);
     color: var(--color-one);
+    background: rgba(var(--color-one-rgb), 0.08);
+    border-left-color: var(--color-accent);
+    font-weight: var(--fw-bold);
+}
+
+.course-wrapper--right {
+    padding-left: 40px;
+    border-left: 1px solid rgba(var(--color-one-rgb), 0.08);
 }
 
 .tab-content .tab-pane h4 {
@@ -1449,14 +1493,6 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     font-weight: var(--fw-medium);
 }
 
-.about-section .experience-counter::after {
-	content: url('../images/services/shape-5.png');
-    position: absolute;
-    right: 0%;
-    bottom: -9px;
-	z-index: -1;
-	transition: all 0.5s ease-in-out;
-}
 
 .about-section:hover .experience-counter::after {
     right: 96%;
@@ -1680,21 +1716,27 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 .status-badge {
-    font-size: 10px;
-    padding: 2px 20px;
+    font-size: 12px;
+    padding: 5px 20px;
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: var(--fw-medium);
     margin-bottom: 10px;
     display: inline-block;
+    line-height: 20px;
 }
 
 .status-ongoing { 
+    background: rgba(var(--color-red-rgb), 0.2); 
+    color: var(--color-red); 
+}
+
+.status-final { 
     background: rgba(var(--color-accent-rgb), 0.2); 
     color: var(--color-accent); 
 }
 
-.status-final { 
+.status-approved { 
     background: rgba(var(--color-green-rgb), 0.2); 
     color: var(--color-green); 
 }
@@ -1703,4 +1745,151 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     color: var(--color-accent); 
     margin-bottom: 15px; 
     display: block; 
+}
+
+/* FAQ/Accordion */
+.wptb-accordion {
+    position: relative;
+    z-index: 1;
+}
+.wptb-accordion1 .wptb--item{
+    border: 1px solid var(--color-light);
+}
+
+.wptb-accordion1 .wptb--item + .wptb--item {
+    border-top: 0px;
+}
+
+.wptb-accordion1 .wptb-item-title {
+    position: relative;
+    padding: 12px 30px;
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+.wptb-accordion1 .wptb-item-title > span {
+    padding-right: 50px;
+}
+.wptb-accordion1 .wptb-item-title i {
+    -webkit-transition: 250ms all linear 0ms;
+    -khtml-transition: 250ms all linear 0ms;
+    -moz-transition: 250ms all linear 0ms;
+    -ms-transition: 250ms all linear 0ms;
+    -o-transition: 250ms all linear 0ms;
+    transition: 250ms all linear 0ms;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.wptb-accordion1 .wptb--item.active .wptb-item-title {
+    background: var(--color-white);
+    box-shadow: 0px 0px 30px 0px rgba(149, 154, 181, 0.20);
+}
+
+.wptb-accordion1 .wptb--item.active .wptb-item-title i {
+    transform: translateY(-50%) rotateZ(180deg);
+}
+
+.wptb-accordion1 .wptb--item .wptb-item--content {
+    padding: 30px 35px;
+    display: none;
+}
+
+.wptb-accordion1 .wptb--item.active .wptb-item--content {
+    display: block;
+}
+
+
+/* Appointform */
+.wptb-appointment-form-one {
+    position: relative;
+}
+.wptb-appointment-form-one .wptb-form--wrapper {
+    padding: 55px 65px;
+    background-color: var(--color-one);
+    border-radius: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wptb-appointment-form-one .wptb-form .wptb-item--title {
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.wptb-appointment-form-one .wptb-form input[type="text"],
+.wptb-appointment-form-one .wptb-form .form-control {
+    background-color: transparent;
+    color: var(--color-white);
+    border-width: 0px;
+    border-bottom: 1px solid var(--color-white);
+    border-radius: 0px;
+    padding: 15px 0px;
+}
+.wptb-appointment-form-one select option {
+    background-color: var(--color-one);
+    padding: 5px 15px;
+}
+
+.wptb-appointment-form-one .wptb-form ::-webkit-input-placeholder {
+    color: var(--color-white);
+}
+.wptb-appointment-form-one .wptb-form ::-moz-placeholder {
+    color: var(--color-white);
+}
+.wptb-appointment-form-one .wptb-form :-ms-input-placeholder {
+    color: var(--color-white);
+}
+.wptb-appointment-form-one .wptb-form :-moz-placeholder {
+    color: var(--color-white);
+}
+.wptb-appointment-form-one .wptb-form ::placeholder {
+    color: var(--color-white);
+}
+
+.wptb-appointment-form-one .wptb-form .btn {
+    background-color: var(--color-white);
+    color: var(--color-one);
+}
+.wptb-appointment-form-one .wptb-form .btn:hover {
+    background-color: var(--color-two);
+    color: var(--color-white);
+}
+
+.wptb-appointment-form-one .wptb-form--bottom {
+    margin-top: 40px;
+}
+
+.wptb-appointment-form-one .wptb-form--bottom .wptb-heading {
+    margin-bottom: 0px;
+}
+
+.wptb-appointment-form-one .wptb-form--bottom .wptb-item--subtitle {
+    font-family: var(--font-family-heading);
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: none;
+}
+
+.wptb-appointment-form-one .wptb-form--bottom .wptb-item--title {
+    font-family: var(--font-family-base);
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 15px;
+    margin-top: 20px !important;
+    margin-bottom: 10px;
+}
+
+.wptb-appointment-form-one .wptb-form--bottom .wptb-item--description {
+    font-family: var(--font-family-heading);
+    margin-bottom: 0px;
 }
