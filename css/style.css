@@ -182,7 +182,7 @@ section {
 .section-header .section-title {
     color: var(--color-two);
     text-transform: uppercase;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .section-header .divider {
@@ -1117,6 +1117,10 @@ select:disabled {
     color: var(--color-one);
 }
 
+.grid-item {
+    width: 100%;
+}
+
 .grid-item.hidden {
     visibility: hidden;
     width: 0px;
@@ -1164,6 +1168,7 @@ select:disabled {
 
 .notice-content { 
     position: relative;
+    width: 100%;
     font-weight: var(--fw-semibold);
 }
 
@@ -1174,7 +1179,8 @@ select:disabled {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 24px;
     margin-top: 4px;
 }
 
@@ -1719,9 +1725,14 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 /* --- Thesis Section Design --- */
+.ongoing-thesis {
+    position: relative;
+    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+}
+
 .thesis-card {
     background: var(--color-white); 
-    border: 1px solid var(--color-light-one); 
+    border: 1px solid rgba(var(--color-black-rgb), 0.1); 
     border-radius: 10px;
     padding: 20px; 
     transition: 0.3s; 
@@ -1787,12 +1798,13 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 .kbt-accordion1 .kbt-item-title {
     position: relative;
     padding: 12px 0px;
-    min-height: 55px;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: var(--transition-base);
+    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.05);
 }
 .kbt-accordion1 .kbt-item-title > span {
     padding-right: 50px;
@@ -1806,14 +1818,11 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     transition: 250ms all linear 0ms;
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 0px;
     transform: translateY(-50%);
 }
 
-.kbt-accordion1 .kbt--item.active .kbt-item-title {
-    background: var(--color-white);
-    box-shadow: 0px 0px 30px 0px rgba(149, 154, 181, 0.20);
-}
+
 
 .kbt-accordion1 .kbt--item.active .kbt-item-title i {
     transform: translateY(-50%) rotateZ(180deg);
