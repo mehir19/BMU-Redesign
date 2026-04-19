@@ -2,6 +2,7 @@
 @import url("../fonts/bootstrap-icons-1.1/font/bootstrap-icons.css");
 @import url("../fonts/fontawesome-6.5/css/all.css");
 @import url('bootstrap.min.css');
+@import url('../plugins/nice-select/nice-select.css');
 :root {
 
     /* Font Family */
@@ -24,8 +25,8 @@
     --color-two:                      #00405a;
     --color-two-rgb:                    0, 64, 90;
     
-    --color-accent:                   #ffb473;
-    --color-accent-rgb:                 255, 180, 115;
+    --color-accent:                   #ffa04e;
+    --color-accent-rgb:                 255, 160, 78;
 
     --color-red:                   #a80000;
     --color-red-rgb:               168, 0, 0;
@@ -190,6 +191,10 @@ section {
     background: var(--color-accent);
     margin: 0 auto;
     border-radius: 2px;
+}
+
+.section-header .divider.left {
+    margin: 0 0;
 }
 
 .section-header .section-description {
@@ -534,7 +539,20 @@ select:disabled {
 
 
 /* --- Stats Container --- */
-.stats-grid::before {
+.funfacts {
+    position: relative;
+    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+}
+
+.funfacts .section-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 460px;
+    background-size: cover;
+}
+.funfacts .section-layer::before {
     content: '';
     position: absolute;
     left: 0;
@@ -550,9 +568,10 @@ select:disabled {
     border-top: 5px solid var(--color-accent);
     padding: 20px 20px;
     border-radius: 15px;
+    margin-bottom: 80px;
 }
 
-.stat-card {
+.funfacts-card {
     position: relative;
     padding: 20px 20px;
     display: flex;
@@ -561,7 +580,7 @@ select:disabled {
     gap: 20px;
 }
 
-.stat-card .icon {
+.funfacts-card .icon {
     font-size: 24px;
     background-color: var(--color-accent);
     width: 60px;
@@ -574,13 +593,13 @@ select:disabled {
     padding: 9px;
 }
 
-.stat-card .stat-value { 
+.funfacts-card .stat-value { 
     color: var(--color-one);
     font-size: 40px; 
     font-weight: var(--fw-bold); 
     margin: 0px 0px 5px 0px; 
 }
-.stat-card p { 
+.funfacts-card p { 
     font-size: 18px; 
     font-weight: var(--fw-medium); 
     letter-spacing: 0px;
@@ -1032,6 +1051,11 @@ select:disabled {
     margin-bottom: 10px;
     display: inline-block;
     line-height: 20px;
+}
+
+.event-tag.conference { 
+    background: rgba(var(--color-red-rgb), 0.2); 
+    color: var(--color-red); 
 }
 
 .event-tag.seminar { 
@@ -1748,32 +1772,32 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 /* FAQ/Accordion */
-.wptb-accordion {
+.kbt-accordion {
     position: relative;
     z-index: 1;
 }
-.wptb-accordion1 .wptb--item{
+.kbt-accordion1 .kbt--item{
     border: 1px solid var(--color-light);
 }
 
-.wptb-accordion1 .wptb--item + .wptb--item {
+.kbt-accordion1 .kbt--item + .kbt--item {
     border-top: 0px;
 }
 
-.wptb-accordion1 .wptb-item-title {
+.kbt-accordion1 .kbt-item-title {
     position: relative;
-    padding: 12px 30px;
-    min-height: 66px;
+    padding: 12px 0px;
+    min-height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: var(--transition-base);
 }
-.wptb-accordion1 .wptb-item-title > span {
+.kbt-accordion1 .kbt-item-title > span {
     padding-right: 50px;
 }
-.wptb-accordion1 .wptb-item-title i {
+.kbt-accordion1 .kbt-item-title i {
     -webkit-transition: 250ms all linear 0ms;
     -khtml-transition: 250ms all linear 0ms;
     -moz-transition: 250ms all linear 0ms;
@@ -1786,110 +1810,79 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     transform: translateY(-50%);
 }
 
-.wptb-accordion1 .wptb--item.active .wptb-item-title {
+.kbt-accordion1 .kbt--item.active .kbt-item-title {
     background: var(--color-white);
     box-shadow: 0px 0px 30px 0px rgba(149, 154, 181, 0.20);
 }
 
-.wptb-accordion1 .wptb--item.active .wptb-item-title i {
+.kbt-accordion1 .kbt--item.active .kbt-item-title i {
     transform: translateY(-50%) rotateZ(180deg);
 }
 
-.wptb-accordion1 .wptb--item .wptb-item--content {
-    padding: 30px 35px;
+.kbt-accordion1 .kbt--item .kbt-item--content {
+    padding: 15px 20px;
     display: none;
 }
 
-.wptb-accordion1 .wptb--item.active .wptb-item--content {
+.kbt-accordion1 .kbt--item.active .kbt-item--content {
     display: block;
 }
 
 
 /* Appointform */
-.wptb-appointment-form-one {
+.kbt-appointment-form-one {
     position: relative;
 }
-.wptb-appointment-form-one .wptb-form--wrapper {
-    padding: 55px 65px;
-    background-color: var(--color-one);
-    border-radius: 17px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.wptb-appointment-form-one .wptb-form .wptb-item--title {
-    font-size: 40px;
-    line-height: 50px;
-    color: var(--color-white);
-    margin-bottom: 50px;
+
+.kbt-appointment-form-one .kbt-form--wrapper {
+    padding: 40px 50px;
+    background-color: var(--color-accent);
+    border-radius: 15px;
 }
 
-.wptb-appointment-form-one .wptb-form input[type="text"],
-.wptb-appointment-form-one .wptb-form .form-control {
+.kbt-appointment-form-one .kbt-form input[type="text"],
+.kbt-appointment-form-one .kbt-form .form-control {
     background-color: transparent;
     color: var(--color-white);
     border-width: 0px;
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid rgba(var(--color-white-rgb), 0.1);
     border-radius: 0px;
-    padding: 15px 0px;
+    padding: 10px 0px;
+    box-shadow: none;
 }
-.wptb-appointment-form-one select option {
-    background-color: var(--color-one);
+
+.kbt-appointment-form-one select option {
+    color: var(--color-dark-one);
+    background-color: var(--color-white);
     padding: 5px 15px;
 }
 
-.wptb-appointment-form-one .wptb-form ::-webkit-input-placeholder {
+.kbt-appointment-form-one .kbt-form ::-webkit-input-placeholder {
     color: var(--color-white);
 }
-.wptb-appointment-form-one .wptb-form ::-moz-placeholder {
-    color: var(--color-white);
-}
-.wptb-appointment-form-one .wptb-form :-ms-input-placeholder {
-    color: var(--color-white);
-}
-.wptb-appointment-form-one .wptb-form :-moz-placeholder {
-    color: var(--color-white);
-}
-.wptb-appointment-form-one .wptb-form ::placeholder {
+.kbt-appointment-form-one .kbt-form ::-moz-placeholder {
     color: var(--color-white);
 }
 
-.wptb-appointment-form-one .wptb-form .btn {
-    background-color: var(--color-white);
-    color: var(--color-one);
-}
-.wptb-appointment-form-one .wptb-form .btn:hover {
-    background-color: var(--color-two);
+.kbt-appointment-form-one .kbt-form :-ms-input-placeholder {
     color: var(--color-white);
 }
 
-.wptb-appointment-form-one .wptb-form--bottom {
+.kbt-appointment-form-one .kbt-form :-moz-placeholder {
+    color: var(--color-white);
+}
+
+.kbt-appointment-form-one .kbt-form ::placeholder {
+    color: var(--color-white);
+}
+
+.kbt-appointment-form-one .kbt-form .btn:hover {
+    background-color: var(--color-one);
+    color: var(--color-white);
+}
+
+.kbt-appointment-form-one .kbt-form--bottom {
     margin-top: 40px;
 }
 
-.wptb-appointment-form-one .wptb-form--bottom .wptb-heading {
-    margin-bottom: 0px;
-}
 
-.wptb-appointment-form-one .wptb-form--bottom .wptb-item--subtitle {
-    font-family: var(--font-family-heading);
-    font-size: 26px;
-    line-height: 36px;
-    text-transform: none;
-}
-
-.wptb-appointment-form-one .wptb-form--bottom .wptb-item--title {
-    font-family: var(--font-family-base);
-    font-size: 40px;
-    line-height: 50px;
-    color: var(--color-white);
-    border-bottom: 1px solid var(--color-white);
-    padding-bottom: 15px;
-    margin-top: 20px !important;
-    margin-bottom: 10px;
-}
-
-.wptb-appointment-form-one .wptb-form--bottom .wptb-item--description {
-    font-family: var(--font-family-heading);
-    margin-bottom: 0px;
-}

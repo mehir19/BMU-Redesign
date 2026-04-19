@@ -189,6 +189,20 @@
                             <a href="#" class="text-decoration-none small fw-bold">Full Calendar <i class="fas fa-calendar-alt ms-1"></i></a>
                         </div>
                         <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag conference">Conference</span>
+                                        <h5 class="mt-2 fw-bold"><a href="#">Advances in Robot-Assisted Surgery</a></h5>
+                                        <div class="small mt-3">
+                                            <p class="mb-1 fw-medium"><i class="fas fa-clock me-2"></i> 10:00 AM - 01:00 PM</p>
+                                            <p class="mb-0 fw-medium"><i class="fas fa-map-marker-alt me-2"></i> Auditorium A, Block D</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="col-md-6">
                                 <div class="event-card">
                                     <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
@@ -202,6 +216,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="col-md-6">
                                 <div class="event-card">
                                     <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400" class="event-img" alt="Event">
@@ -215,41 +230,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-end mt-5 mb-4">
-                            <h3 class="section-title m-0 p-0">Latest News</h3>
-                            <a href="#" class="text-decoration-none small fw-bold">View All News <i class="fas fa-book ms-1"></i></a>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="news-card">
-                                    <div class="news-image">
-                                        <img src="images/news/1.jpg" alt="img">
-                                        <div class="news-date">Feb 15, 2026</div>
-                                    </div>
-                                    <div class="news-body">
-                                        <h5 class="news-title"><a href="#">Achievements of Bangladesh Medical University 2024-25</a></h5>
-                                        <div class="news-desc">A summary of recent milestones in medical research and public health initiatives...</div>
-                                        <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="news-card">
-                                    <div class="news-image">
-                                        <img src="images/news/2.jpg" alt="img">
-                                        <div class="news-date">Jan 10, 2026</div>
-                                    </div>
-                                    <div class="news-body">
-                                        <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
-                                        <div class="news-desc">The Vice Chancellor opened the state-of-the-art facility for post-graduate researchers...</div>
-                                        <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
+                        </div>                       
                     </div>
     
                     <!-- Notice Column -->
@@ -384,16 +365,18 @@
         </section>
 
         <!-- Funfacts -->
-        <section class="stats-grid" style="background-image: url('images/2.jpg');">    
+        <section class="funfacts">    
+            <div class="section-layer" style="background-image: url('images/2.jpg');"></div>
+
             <div class="container">
                 <div class="funfacts-wrapper">
                     <div class="row g-0">
                         <div class="col-lg-3">                
-                            <div class="stat-card">
+                            <div class="funfacts-card">
                                 <div class="icon">
                                     <i class="fas fa-microscope"></i>
                                 </div>
-                                <div class="stat-card--inner">
+                                <div class="funfacts-card--inner">
                                     <h4 class="stat-value">58</h4>
                                     <p class="stat-text">Departments</p>
                                 </div>
@@ -401,11 +384,11 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="stat-card">
+                            <div class="funfacts-card">
                                 <div class="icon">
                                     <i class="fas fa-book-medical"></i>
                                 </div>
-                                <div class="stat-card--inner">
+                                <div class="funfacts-card--inner">
                                     <h4 class="stat-value">9</h4>
                                     <p class="stat-text">Courses</p>
                                 </div>
@@ -413,11 +396,11 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="stat-card">
+                            <div class="funfacts-card">
                                 <div class="icon">
                                     <i class="fas fa-user-graduate"></i>
                                 </div>
-                                <div class="stat-card--inner">
+                                <div class="funfacts-card--inner">
                                     <h4 class="stat-value">5000+</h4>
                                     <p class="stat-text">Students</p>
                                 </div>
@@ -425,11 +408,11 @@
                         </div>
 
                         <div class="col-lg-3">
-                            <div class="stat-card">
+                            <div class="funfacts-card">
                                 <div class="icon">
                                     <i class="fas fa-briefcase"></i>
                                 </div>
-                                <div class="stat-card--inner">
+                                <div class="funfacts-card--inner">
                                     <h4 class="stat-value">7500+</h4>
                                     <p class="stat-text">Employees</p>
                                 </div>
@@ -437,49 +420,49 @@
                         </div>
                     </div>
                 </div>
-            </div>            
-            
+            </div>
+
             <div class="container">
                 <!-- FAQ's -->
-                <div class="wptb-faq--inner">
+                <div class="kbt-faq--inner">
                     
                     <div class="row">
                         <div class="col-md-6">
                             <div class="section-header text-start">
-                                <h6 class="section-subtitle">Frequently Asked Questions</h6>
-                                <h3 class="section-title">Questions & Answers</h3>
-                                <div class="divider"></div>
+                                <h6 class="section-subtitle text-white">Frequently Asked Questions</h6>
+                                <h3 class="section-title text-white">Questions & Answers</h3>
+                                <div class="divider left"></div>
                             </div>
-                            <div class="wptb-accordion wptb-accordion1 wow fadeInUp">
-                                <div class="wptb--item active">
-                                    <h6 class="wptb-item-title"><span>Q1. Which is the prerequisites for admission?</span> <i class="bi bi-chevron-down"></i></h6>
-                                    <div class="wptb-item--content">
+                            <div class="kbt-accordion kbt-accordion1 wow fadeInUp">
+                                <div class="kbt--item active">
+                                    <h6 class="kbt-item-title"><span>Q1. Which is the prerequisites for admission?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
                                         Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
                                     </div>
                                 </div>
         
-                                <div class="wptb--item">
-                                    <h6 class="wptb-item-title"><span>Q2. What are the contact address of BMU?</span> <i class="bi bi-chevron-down"></i></h6>
-                                    <div class="wptb-item--content">
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q2. What are the contact address of BMU?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
                                         Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
                                     </div>
                                 </div>
         
-                                <div class="wptb--item">
-                                    <h6 class="wptb-item-title"><span>Q3. What IELTS Score required for International Students?</span> <i class="bi bi-chevron-down"></i></h6>
-                                    <div class="wptb-item--content">
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q3. What IELTS Score required for International Students?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
                                         Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
                                     </div>
                                 </div>
         
-                                <div class="wptb--item">
-                                    <h6 class="wptb-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="bi bi-chevron-down"></i></h6>
-                                    <div class="wptb-item--content">
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
                                         Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
                                     </div>
                                 </div>
     
-                                <div class="wptb-item--button">
+                                <div class="kbt-item--button">
                                     <a class="btn--readmore" href="faq.html">
                                         <span class="btn-readmore--text"> View More Faq’s <i class="bi bi-chevron-double-right"></i> </span>
                                     </a>
@@ -488,21 +471,18 @@
                         </div>
     
                         <div class="col-md-5 offset-md-1">
-                            <div class="wptb-appointment-form-one">
-                                <div class="wptb-form--wrapper">
-                                    <form class="wptb-form" action="contact.php" method="post">
-                                        <div class="wptb-form--inner">
-                                            <div class="wptb-heading">
-                                                <div class="wptb-item--inner text-center">
-                                                    <h2 class="wptb-item--title"> <span>Book An Appointment</span></h2>
-                                                </div>
-                                            </div>
+                            <div class="kbt-appointment-form-one">
+                                <div class="kbt-form--wrapper">
+                                    <form class="kbt-form" action="contact.php" method="post">
+                                        <div class="kbt-form--inner">
+                                            <h3 class="section-title text-center mb-4 text-white">Get Admission</h3>
     
                                             <div class="row">
                                                 <div class="col-md-6 col-lg-6 mb-4">
                                                     <div class="form-group">
                                                         <select name="country" class="form-control">
                                                             <option value="">Select Country</option>
+                                                            <option value="Bangladesh">Bangladesh</option>
                                                             <option value="Australia">Australia</option>
                                                             <option value="Canada">Canada</option>
                                                             <option value="Japan">Japan</option>
@@ -516,13 +496,13 @@
                                                 <div class="col-md-6 col-lg-6 mb-4">
                                                     <div class="form-group">
                                                         <select name="country" class="form-control">
-                                                            <option value="">Select Service</option>
-                                                            <option value="PTE Exam Preperation">PTE Exam Preperation</option>
-                                                            <option value="TOEFL Exam Preperation">TOEFL Exam Preperation</option>
-                                                            <option value="GRE Exam">GRE Exam</option>
-                                                            <option value="IELTS">IELTS</option>
-                                                            <option value="Student Visa">Student Visa Processing</option>
-                                                            <option value="Family Visa Processing">Family Visa Processing</option>
+                                                            <option value="">Select Course</option>
+                                                            <option value="MD">MD</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MPH">MPH</option>
+                                                            <option value="IELTS">Diploma</option>
+                                                            <option value="PHD Visa">PHD</option>
+                                                            <option value="MSc. in Nursing">MSc. in Nursing</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -538,34 +518,34 @@
                                                         <input type="number" name="phone" class="form-control" placeholder="Phone No">
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="col-md-6 col-lg-6 mb-4">
                                                     <div class="form-group">
-                                                        <input type="text" name="date" class="flatpickr form-control" placeholder="Select Date" required>
+                                                        <input type="text" name="last_degree" class="form-control" placeholder="Last Degree*" required>
                                                     </div>
                                                 </div>
-    
+
                                                 <div class="col-md-6 col-lg-6 mb-4">
                                                     <div class="form-group">
-                                                        <input type="text" name="time" class="flatpickr-time form-control" placeholder="Select Time">
+                                                        <input type="text" name="pass_year" class="form-control" placeholder="Last Degree Passing Year*" required>
                                                     </div>
                                                 </div>
     
                                                 <div class="col-md-12 col-lg-12">
-                                                    <div class="wptb-item--button text-center">
-                                                        <input class="btn" type="submit" value="Make Appointment" name="submit">
+                                                    <div class="kbt-item--button text-center">
+                                                        <input class="btn two" type="submit" value="Submit Form" name="submit">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
     
-                                    <div class="wptb-form--bottom">
-                                        <div class="wptb-heading">
-                                            <div class="wptb-item--inner">
-                                                <h6 class="wptb-item--subtitle">Or just Give us a call</h6>
-                                                <h1 class="wptb-item--title"> <span>+ 098 765 432111 </span></h1>
-                                                <p class="wptb-item--description"> <span>The Support Centre is abailable 24/7</span></p>
+                                    <div class="kbt-form--bottom">
+                                        <div class="kbt-heading">
+                                            <div class="kbt-item--inner text-center">
+                                                <h5 class="kbt-item--subtitle text-white fw-medium mb-2">Or just Give us a call</h5>
+                                                <h3 class="kbt-item--title mb-2"> +880-2-55165746 </h3>
+                                                <p class="kbt-item--description"> The Support Centre is abailable 24/7</p>
                                             </div>
                                         </div>
                                     </div>
@@ -836,6 +816,66 @@
                 </div>
             </div>
         </section>
+
+        <!-- News-Events -->
+        <section class="news-events">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-newspaper"></i></div>
+                    <h3 class="section-title">Latest News</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">Track active postgraduate research across all departments</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="images/news/1.jpg" alt="img">
+                                <div class="news-date">Feb 15, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <h5 class="news-title"><a href="#">Achievements of Bangladesh Medical University 2024-25</a></h5>
+                                <div class="news-desc">A summary of recent milestones in medical research and public health initiatives...</div>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="images/news/2.jpg" alt="img">
+                                <div class="news-date">Jan 10, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
+                                <div class="news-desc">The Vice Chancellor opened the state-of-the-art facility for post-graduate researchers...</div>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="images/news/2.jpg" alt="img">
+                                <div class="news-date">Jan 10, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
+                                <div class="news-desc">The Vice Chancellor opened the state-of-the-art facility for post-graduate researchers...</div>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="text-center mt-5">
+                    <a href="#" class="text-decoration-none small fw-bold">View All News <i class="fas fa-book ms-1"></i></a>
+                </div>
+            </div>
+        </section>
     
         <!-- Alumni -->
         <section class="alumni text-center py-5">
@@ -916,6 +956,7 @@
     <script src="plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
     <script src="plugins/isotope/isotope-init.js"></script>
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
     <script src="js/theme.js"></script>
 </body>

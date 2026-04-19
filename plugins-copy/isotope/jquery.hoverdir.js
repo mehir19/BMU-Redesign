@@ -53,7 +53,7 @@
 			this.$el.on( 'mouseenter.hoverdir, mouseleave.hoverdir', function( event ) {
 				
 				var $el = $( this ),
-					$hoverElem = $el.find( '.wptb-item--holder' ),
+					$hoverElem = $el.find( '.kbt-item--holder' ),
 					direction = self._getDir( $el, { x : event.pageX, y : event.pageY } ),
 					styleCSS = self._getStyle( direction );
 				

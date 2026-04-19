@@ -19,7 +19,7 @@
         // pin the container and link the animation to the scrollbar (scrub: true). We could easily embed this in the gsap.timeline() to shorten things a bit, but this is to show that you can create the ScrollTrigger separately if you prefer. 
         ScrollTrigger.create({
             animation: tl,
-            trigger: "#wptb-triggerslider",
+            trigger: "#kbt-triggerslider",
             start: "top top",
             end: "+=4000", 
             scrub: true,

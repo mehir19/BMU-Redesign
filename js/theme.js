@@ -127,12 +127,12 @@ Description: BrightHub - HTML Template
         new WOW().init();
 
         // accordion
-        $(".wptb-accordion").on("click",".wptb-item-title", function () {
+        $(".kbt-accordion").on("click",".kbt-item-title", function () {
             $(this).next().slideDown();
-            $(".wptb-item--content").not($(this).next()).slideUp();
+            $(".kbt-item--content").not($(this).next()).slideUp();
         });
 
-        $(".wptb-accordion").on("click",".wptb--item", function () {
+        $(".kbt-accordion").on("click",".kbt--item", function () {
             $(this).addClass("active").siblings().removeClass("active");
         });
 

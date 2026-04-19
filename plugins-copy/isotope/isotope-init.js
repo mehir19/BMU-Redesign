@@ -106,7 +106,7 @@ Description:
 		});
 
 		// Tilt effect for Slider
-		$(".wptb-slider.style16 .wptb-slider--inner").tilt({
+		$(".kbt-slider.style16 .kbt-slider--inner").tilt({
 			maxTilt: 15,
 			perspective: 1400,
 			easing: "cubic-bezier(.03, .98, .52, .99)",
