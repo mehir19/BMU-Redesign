@@ -174,8 +174,9 @@ section {
 }
 
 .section-header .section-subtitle {
+    color: var(--color-accent);
     font-size: 18px;
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-normal);
     margin-bottom: 10px;
 }
 
@@ -554,14 +555,15 @@ select:disabled {
 .funfacts {
     position: relative;
     border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+    padding-top: 0px;
 }
 
 .funfacts .section-layer {
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    height: 460px;
+    top: 100px;
+    height: 325px;
     background-size: cover;
 }
 .funfacts .section-layer::before {
@@ -576,37 +578,42 @@ select:disabled {
 
 .funfacts-wrapper {
     position: relative;
-    background: rgba(var(--color-white-rgb), 0.9);
+    background: var(--color-white);
     border-top: 5px solid var(--color-accent);
-    padding: 20px 20px;
+    padding: 30px 20px;
     border-radius: 15px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .funfacts-card {
     position: relative;
-    padding: 20px 20px;
+    padding: 30px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    border-right: 1px solid rgba(var(--color-one-rgb), 0.15);
+}
+
+.funfacts-card.no-right-border {
+    border-right-width: 0px;
 }
 
 .funfacts-card .icon {
-    font-size: 24px;
-    background-color: var(--color-accent);
-    width: 60px;
-    height: 60px;
+    color: var(--color-one);
+    background-color: transparent;
+    border: 1px solid rgba(var(--color-one-rgb), 0.15);
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
-    color: #fff;
-    padding: 9px;
+    border-radius: 7px;
+    padding: 5px;
 }
-
 .funfacts-card .stat-value { 
-    color: var(--color-one);
+    color: var(--color-dark-one);
     font-size: 40px; 
     font-weight: var(--fw-bold); 
     margin: 0px 0px 5px 0px; 
@@ -981,11 +988,10 @@ select:disabled {
 .news-date {
     color: var(--color-white);
     background-color: var(--color-one);
-    font-size: 16px;
-    font-weight: var(--fw-semibold);
+    font-size: 14px;
     position: absolute;
     bottom: 0px;
-    padding: 8px 20px 8px 20px;
+    padding: 6px 15px 6px 15px;
     border-radius: 0px 5px 0px 0px;
 }
 
@@ -995,7 +1001,8 @@ select:disabled {
 }
 
 .news-title {
-    margin-bottom: 12px;
+    font-weight: var(--fw-semibold);
+    margin-bottom: 30px;
 }
 
 .news-desc {
@@ -1014,9 +1021,41 @@ select:disabled {
     color: var(--color-dark-one);
 }
 
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.news-meta .news-meta-item {
+    position: relative;
+}
+
+.news-meta .news-meta-item + .news-meta-item::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: var(--color-one);
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 0;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.news-meta .news-meta-item a:not(:hover) {
+    color: var(--color-dark-one);
+}
+
 .news-btn .news-link {
     font-size: 16px;
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
 }
 
 .news-btn .news-link:hover {
@@ -1853,7 +1892,7 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 .kbt-appointment-form-one .kbt-form--wrapper {
-    padding: 40px 50px;
+    padding: 55px 55px;
     background-color: var(--color-accent);
     border-radius: 15px;
 }
@@ -1892,6 +1931,12 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 .kbt-appointment-form-one .kbt-form ::placeholder {
     color: var(--color-white);
+}
+
+.kbt-appointment-form-one .kbt-form .btn {
+    padding: 13px 60px;
+    width: auto;
+    border-width: 0px;
 }
 
 .kbt-appointment-form-one .kbt-form .btn:hover {
