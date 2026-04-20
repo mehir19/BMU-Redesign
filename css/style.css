@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url("../fonts/bootstrap-icons-1.1/font/bootstrap-icons.css");
 @import url("../fonts/fontawesome-6.5/css/all.css");
 @import url('bootstrap.min.css');
@@ -1904,3 +1904,88 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 
+/* Admission Form */
+.admission-form .form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.admission-form .form-header {
+    background: var(--color-two);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.admission-form .form-header h2 { font-weight: 700; margin-bottom: 10px; }
+.admission-form .form-header p { opacity: 0.9; font-weight: 300; }
+
+.admission-form .form-body { padding: 40px; }
+
+.admission-form .section-title {
+    color: var(--color-two);
+    border-bottom: 2px solid var(--bmu-light);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admission-form .form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--bmu-dark);
+}
+
+.admission-form .form-control, .form-select {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.admission-form .form-control:focus {
+    border-color: var(--bmu-secondary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 129, 138, 0.1);
+}
+
+.admission-form .btn-submit {
+    background: var(--color-two);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.admission-form .btn-submit:hover {
+    background: var(--bmu-dark);
+    transform: translateY(-2px);
+}
+
+.admission-form .upload-box {
+    border: 2px dashed #ccd5ae;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--bmu-light);
+    cursor: pointer;
+}
+
+.admission-form .info-card {
+    background: #fff3cd;
+    border-left: 5px solid #ffca2c;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
