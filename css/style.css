@@ -512,6 +512,18 @@ select:disabled {
     border-color: var(--color-accent);
 }
 
+.btn.one.outline {
+    color: var(--color-one);
+    background-color: transparent;
+    border: 1px solid var(--color-one);
+}
+
+.btn.one.outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-one);
+    border-color: var(--color-one);
+}
+
 .btn.two {
     color: var(--color-white);
     background-color: var(--color-two);
@@ -1332,9 +1344,6 @@ select:disabled {
 } */
 
 /* ACADEMICS */
-.academics {
-  background: linear-gradient(to right, var(--color-one), var(--color-two));
-}
 
 /* COURSE */
 .course-box {
