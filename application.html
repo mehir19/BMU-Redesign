@@ -6,7 +6,7 @@
     <title>Bangladesh Medical University</title>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
 <body>
@@ -21,41 +21,141 @@
         </div>
     </div>
 
-    <header>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-bmu sticky-top">
-            <div class="container">                
-                <div class="logo">
-                    <a href="#"><i class="fas fa-hand-holding-medical fa-3x"></i></a>
-                </div>
-                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <i class="fas fa-bars text-white"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Administration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Notice</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="search">
-                    <a href="#" type="search">
-                        <i class="fas fa-search text-white"></i>
-                    </a>
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="d-none d-xl-flex justify-content-between align-items-center flex-wrap">
+                    <!-- Left Box -->
+                    <div class="left-box d-flex align-items-center">
+                        <ul class="info-list">
+                            <li><a href="mailto:research@bmu.edu.bd"><i class="fas fa-envelope ms-2 me-1"></i> research@bmu.edu.bd</a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt me-1"></i> +880 2 123456</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Right Box -->
+                    <div class="right-box d-none d-md-flex align-items-center">
+                        <a href="#" class="text-white text-decoration-none me-3">Student Portal</a>
+                        <a href="#" class="text-white text-decoration-none">Faculty Login</a>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+
+        <!-- Lower Bar -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- Left Part -->
+                    <div class="header_left_part d-flex align-items-center">
+                        <div class="logo">
+                            <a href="index.html" class="light_logo"><img src="assets/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Part -->
+                    <div class="header_right_part d-flex align-items-center">
+                        <div class="mainnav d-none d-xl-block">
+                            <ul class="main-menu">
+                                <li class="menu-item menu-item-has-children"><a href="#">Home</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html">Home One</a></li>
+                                        <li class="menu-item"><a href="index-2.html">Home Two</a></li>
+                                        <li class="menu-item"><a href="index-3.html">Home Three</a></li>
+                                        <li class="menu-item"><a href="index-4.html">Home Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="about.html">About Us</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Country</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="country-list-1.html">Country List One</a></li>
+                                                <li class="menu-item"><a href="country-list-2.html">Country List Two</a></li>
+                                                <li class="menu-item"><a href="country-details.html">Country Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Case Studies</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="case.html">Case List</a></li>
+                                                <li class="menu-item"><a href="case-details.html">Case Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Our Team</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="team-1.html">Team Grid One</a></li>
+                                                <li class="menu-item"><a href="team-2.html">Team Grid Two</a></li>
+                                                <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="price-table.html">Pricing</a></li>
+                                        <li class="menu-item"><a href="careers.html">Careers</a></li>
+                                        <li class="menu-item"><a href="appointments.html">Make Appointment</a></li>
+                                        <li class="menu-item"><a href="timeline.html">Timeline</a></li>
+                                        <li class="menu-item"><a href="work-process.html">Work Process</a></li>
+                                        <li class="menu-item"><a href="partners.html">Partners</a></li>
+                                        <li class="menu-item"><a href="faq.html">FAQ's</a></li>
+                                        <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li class="menu-item"><a href="404.html">404 Error</a></li>
+                                        <li class="menu-item"><a href="login.html">Login</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Visa</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="visa-list.html">Visa List</a></li>
+                                        <li class="menu-item"><a href="tourist-visa.html">Tourist Visa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Services</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="services-1.html">Service One</a></li>
+                                        <li class="menu-item"><a href="services-2.html">Service Two</a></li>
+                                        <li class="menu-item"><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>                              
+                                <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
+                                        <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
+                                        <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Contact</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="contact-1.html">Contact One</a></li>
+                                        <li class="menu-item"><a href="contact-2.html">Contact Two</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header_search">
+                            <form class="search_form" action="search.php">
+                                <input type="text" name="search" class="keyword form-control" placeholder="Search..." />
+                                <button type="submit" class="form-control-submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+
+                        <button class="aside_open">
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <button type="button" class="mr_menu_toggle d-xl-none">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <!-- End Main Header -->
 
     <!-- Main Content -->
-     <div class="main-wrapper">
+    <div class="main-wrapper">
         <!-- Page Title -->
-        <div class="page-header" style="background-image: url('images/bg/2.jpg');">
+        <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
             <div class="container">
                 <div class="page-header--inner text-center">
                     <h1 class="page-title">Admission Form</h1>
@@ -300,11 +400,15 @@
     </footer>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
         
     <!-- WOW Scroll Effect -->
     <script src="plugins/wow/wow.min.js"></script>
+
+    <!-- Odometer Counter -->
+    <script src="plugins/odometer/appear.js"></script>
+    <script src="plugins/odometer/odometer.js"></script>
 
     <!-- Projects -->
     <script src="plugins/isotope/isotope.pkgd.min.js"></script>
@@ -312,7 +416,7 @@
     <script src="plugins/isotope/isotope-init.js"></script>
     <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
-    <script src="js/theme.js"></script>
+    <script src="assets/js/theme.js"></script>
 
     <script>
         $(document).ready(function() {
