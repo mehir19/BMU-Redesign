@@ -126,6 +126,19 @@ Description: BrightHub - HTML Template
         // WOW Init
         new WOW().init();
 
+        // Odometer
+        $('.odometer').appear();
+        $('.odometer').appear(function(){
+            var odo = $(".odometer");
+            odo.each(function() {
+                var countNumber = $(this).attr("data-count");
+                $(this).html(countNumber);
+            });
+            window.odometerOptions = {
+                format: 'd',
+            };
+        });
+
         // accordion
         $(".kbt-accordion").on("click",".kbt-item-title", function () {
             $(this).next().slideDown();
