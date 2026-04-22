@@ -14,24 +14,19 @@
   transition: var(--transition-base);
 }
 
-.header .header_left_part {
-  position: static;
-  flex: 1;
-}
-
 .header .logo {
   position: absolute;
-  left: 12px;
+  left: 0;
   top: 0;
-  max-width: 270px;
-  min-width: 150px;
+  max-width: 130px;
+  min-width: 100px;
   transition: var(--transition-base);
 }
 
 .header .logo a {
   position: relative;
   display: inline-block;
-  padding: 10px 25px 25px 30px;
+  padding: 15px 15px;
   background-color: var(--color-white);
   -webkit-box-shadow: 0 1px 72px 0 rgba(0,0,0,8%);
     -khtml-box-shadow: 0 1px 72px 0 rgba(0,0,0,8%);
@@ -42,12 +37,12 @@
 }
 
 .header .logo a:before {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 5.54px;
-  content: "";
+  height: 5px;
   background-color: var(--color-one);
 }
 
@@ -68,55 +63,31 @@
 .header .header-top{
 	position:relative;
   max-height: 58px;
+  padding: 8px 0px;
+  font-size: 15px;
 	background-color:var(--color-two);
 	transition: all 0.3s ease-in-out;
-}
-
-.header .social-box ul{
-	position:relative;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-.header .social-box ul li{
-	position:relative;
-	display:inline-block;
-	margin-right: 26px;
-}
-
-.header .social-box ul li a{
-	position:relative;
-	color:var(--color-white);
-	font-size:var(--fs-16);
-}
-
-.header .social-box ul li:last-child{
-	margin-right:0px;
-}
-
-.header .social-box ul li a:hover{
-	color:var(--color-one);
-  transform: translateY(-3px);
 }
 
 .header .info-list{
 	position:relative;
 	margin-bottom: 0px;
   padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .header .info-list li{
 	position:relative;
 	display:inline-block;
-	line-height:1em;
-	margin-right: 45px;
+	line-height: 1em;
 }
 
 .header .info-list li a{
 	position:relative;
 	font-size:var(--fs-14);
 	color:var(--color-white);
-	padding-left:30px;
 }
 
 .header .info-list li a .icon{
@@ -819,10 +790,10 @@ body.left_menu .mr_menu {
 }
 
 .header.sticky .logo {
-  max-width: 220px;
+  max-width: 110px;
 }
 .header.sticky .mainnav ul.main-menu > li > a {
-  padding: 20px 0px;
+  padding: 25px 0px;
 }
 
 .header.top-up {
