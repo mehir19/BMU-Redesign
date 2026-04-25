@@ -115,37 +115,32 @@
 
 /* Top Bar End */
 .header .mainnav ul.main-menu {
-  padding: var(--fs-0);
-  margin: var(--fs-0);
+  padding: 0px;
+  margin: 0px;
 }
 
 .header .mainnav ul.main-menu li {
   position: relative;
   border: 0;
   list-style: none;
-  line-height: 1;
   display: inline-block;
-  font-size: var(--fs-14);
-  font-weight: 500;
-  line-height: var(--fs-24);
 }
 
 .header .mainnav ul.main-menu > li + li {
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
 .header .mainnav ul.main-menu li a {
-  border: 0;
+  color: var(--color-two);
   list-style: none;
   display: inline-block;
   position: relative;
-  font-family: var(--font-family-heading);
-  font-size: var(--fs-16);
+  font-size: 14px;
   font-weight: 400;
-  line-height: var(--fs-26);
+  line-height: 24px;
   text-decoration: none;
   text-align: center;
-  color: var(--color-two);
+  border: 0;
   padding: 30px 0px;
   transition: var(--transition-base);
 }
