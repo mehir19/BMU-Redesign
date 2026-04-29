@@ -743,7 +743,7 @@ iframe {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    border-right: 1px solid rgba(var(--color-one-rgb), 0.15);
+    border-right: 1px solid rgba(var(--color-one-rgb), 0.07);
 }
 
 .funfacts-card.no-right-border {
