@@ -924,6 +924,81 @@ iframe {
     display: inline-block;
 }
 
+/* --- Faculty Member Card Design --- */
+.faculty-member-card {
+    background: var(--color-white);
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: 0.3s;
+}
+.faculty-member-card:hover {
+    transform: translateY(-10px);
+}
+
+.faculty-member-card .faculty-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+.faculty-member-card .faculty-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faculty-member-card .specialty-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: var(--color-white);
+}
+
+.faculty-member-card .faculty-content {
+    padding: 25px;
+}
+.faculty-member-card .faculty-name {
+    color: var(--color-one);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+.faculty-member-card .designation {
+    font-weight: 600;
+    color: var(--color-dark-one);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* --- Specialties Styling --- */
+.faculty-member-card .specialty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.faculty-member-card .specialty-tag {
+    background: var(--color-light-one);
+    color: var(--color-one);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.faculty-member-card .contact-info {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: var(--color-dark-one);
+}
+
+
 /* Child Department Card */
 .dept-grid-card {
     background: #fdfdfd;
@@ -1987,7 +2062,7 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     z-index: 1;
 }
 .kbt-accordion1 .kbt--item{
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-light-one);
 }
 
 .kbt-accordion1 .kbt--item + .kbt--item {

@@ -169,170 +169,105 @@
 
     <!-- Main Content -->
     <div class="main-wrapper">
-        <!-- Page Title -->
-        <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
+        <section class="py-5">
             <div class="container">
-                <div class="page-header--inner text-center">
-                    <h1 class="page-title">VC Office</h1>
-                    <div class="breadcrumb-wrapper">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li class="active">VC Office</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Academic Structure Section -->
-        <section class="academics">
-            <div class="container">
-                <div class="section-header">
-                    <div class="header-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3 class="section-title">Faculty Memeber</h3>
-                    <div class="divider"></div>
-                    <p class="section-description">Explore our faculty Member and his specialties</p>
+                
+                <div class="faculty-header">
+                    <div class="header-icon"><i class="fas fa-user-md"></i></div>
+                    <h2 class="fw-bold" style="color: var(--color-primary);">Distinguished Faculty Members</h2>
+                    <div style="width: 60px; height: 3px; background: var(--color-accent); margin: 10px auto;"></div>
                 </div>
 
-                <!-- Tab Content Area -->
-                <div id="facultyContent">
+                <div class="filter-btn-group">
+                    <button class="btn-filter active" data-filter="all">All Specialties</button>
+                    <button class="btn-filter" data-filter="medicine">Medicine</button>
+                    <button class="btn-filter" data-filter="surgery">Surgery</button>
+                    <button class="btn-filter" data-filter="basic-science">Basic Science</button>
+                </div>
+
+                <div class="row g-4" id="facultyGrid">
                     
-                    <!-- MEDICINE FACULTY PANEL -->
-                    <div class="tab-pane-custom active" id="medicine">
-                        <div class="row g-4">
-                            <!-- Left side: Dean Office -->
-                            <div class="col-lg-4">
-                                <div class="dean-profile-card">
-                                    <div class="dean-img-wrapper">
-                                        <img src="assets/images/4.jpg" alt="Dean Profile">
-                                    </div>
-                                    <div class="dean-info text-center">
-                                        <h4>Prof. Dr. Ahmed Ali</h4>
-                                        <p>Department of Medicine</p>
-                                        <hr>
-                                        <div class="dean-contact">
-                                            <div class="mb-2"><i class="fas fa-envelope me-2"></i> dean.medicine@bmu.edu.bd</div>
-                                            <div class="mb-2"><i class="fas fa-phone me-2"></i> +880 2 1234567</div>
-                                            <div><i class="fas fa-building me-2"></i> Block - B, Room 402</div>
-                                        </div>
-                                        <div class="mt-4">
-                                            <a href="#" class="btn one w-100">View Details</a>
-                                        </div>
+                    <div class="col-lg-3 col-md-6 faculty-item" data-dept="medicine">
+                        <div class="faculty-member-card">
+                            <div class="faculty-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=600" alt="Dr. Ahmed">
+                                <div class="specialty-overlay">
+                                    <div class="specialty-list">
+                                        <span class="specialty-tag">Cardiology</span>
+                                        <span class="specialty-tag">Hypertension</span>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Right side: Departments -->
-                            <div class="col-lg-8">
-                                <h5 class="mb-4 fw-bold"><i class="fas fa-th-large me-2 text-danger"></i>Medicine Departments</h5>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-heartbeat"></i></div>
-                                            <div class="dept-info"><h6>Cardiology</h6><small>Prof. Dr. Rahman</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-stethoscope"></i></div>
-                                            <div class="dept-info"><h6>Internal Medicine</h6><small>Prof. Dr. Karim</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-capsules"></i></div>
-                                            <div class="dept-info"><h6>Hepatology</h6><small>Prof. Dr. Sultana</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-brain"></i></div>
-                                            <div class="dept-info"><h6>Neurology</h6><small>Prof. Dr. Haque</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-lungs"></i></div>
-                                            <div class="dept-info"><h6>Gastroenterology</h6><small>Prof. Dr. Islam</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Nephrology</h6><small>Prof. Dr. Begum</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Clinical Oncology</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Dermatology & Venereology</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Endocrinology & Metabolism</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Psychiatry</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Hematology</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Palliative Medicine</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Physical Medicine & Rehabilitation</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Respiratory Medicine</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Rheumatology</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <a href="#" class="dept-grid-card">
-                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
-                                            <div class="dept-info"><h6>Transfusion Medicine</h6><small>Prof. Dr. Mister</small></div>
-                                        </a>
-                                    </div>
+                            <div class="faculty-content">
+                                <h4 class="faculty-name">Prof. Dr. Ahmed Khan</h4>
+                                <p class="designation">Professor & Head, Medicine</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope me-2"></i> ahmed.khan@bmu.ac.bd
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Placeholder for other tabs (Content logic would be repeated) -->
-                    <div class="tab-pane-custom text-center py-5" id="surgery">
-                        <div class="p-5 bg-white rounded-3 border">
-                            <i class="fas fa-tools fa-3x mb-3 text-muted"></i>
-                            <h4>Surgery Faculty Panel</h4>
-                            <p>Loading Faculty details for Surgery...</p>
+                    <div class="col-lg-3 col-md-6 faculty-item" data-dept="surgery">
+                        <div class="faculty-member-card">
+                            <div class="faculty-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ef197ec2?q=80&w=600" alt="Dr. Sarah">
+                                <div class="specialty-overlay">
+                                    <div class="specialty-list">
+                                        <span class="specialty-tag">Neurosurgery</span>
+                                        <span class="specialty-tag">Micro-surgery</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faculty-content">
+                                <h4 class="faculty-name">Prof. Dr. Sarah Zahan</h4>
+                                <p class="designation">Dean, Faculty of Surgery</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope me-2"></i> sarah.z@bmu.ac.bd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 faculty-item" data-dept="basic-science">
+                        <div class="faculty-member-card">
+                            <div class="faculty-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=600" alt="Dr. Rahim">
+                                <div class="specialty-overlay">
+                                    <div class="specialty-list">
+                                        <span class="specialty-tag">Microbiology</span>
+                                        <span class="specialty-tag">Virology</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faculty-content">
+                                <h4 class="faculty-name">Dr. Abdur Rahim</h4>
+                                <p class="designation">Associate Professor, Microbiology</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope me-2"></i> rahim.micro@bmu.ac.bd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 faculty-item" data-dept="medicine">
+                        <div class="faculty-member-card">
+                            <div class="faculty-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600" alt="Dr. Laila">
+                                <div class="specialty-overlay">
+                                    <div class="specialty-list">
+                                        <span class="specialty-tag">Endocrinology</span>
+                                        <span class="specialty-tag">Diabetes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faculty-content">
+                                <h4 class="faculty-name">Prof. Dr. Laila Yasmin</h4>
+                                <p class="designation">Professor, Endocrinology</p>
+                                <div class="contact-info">
+                                    <i class="fas fa-envelope me-2"></i> laila.y@bmu.ac.bd
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -341,8 +276,7 @@
         </section>
     </div>
 
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer>
         <div class="container">
             <div class="row g-4">
@@ -407,5 +341,24 @@
     <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
     <script src="assets/js/theme.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn-filter').on('click', function(){
+                const filter = $(this).attr('data-filter');
+                
+                // Active button state
+                $('.btn-filter').removeClass('active');
+                $(this).addClass('active');
+
+                if(filter === 'all'){
+                    $('.faculty-item').fadeIn(400);
+                } else {
+                    $('.faculty-item').hide();
+                    $('.faculty-item[data-dept="' + filter + '"]').fadeIn(400);
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
