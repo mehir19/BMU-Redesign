@@ -169,208 +169,149 @@
 
     <!-- Main Content -->
     <div class="main-wrapper">
-        <!-- Page Title -->
-        <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
-            <div class="container">
-                <div class="page-header--inner text-center">
-                    <h1 class="page-title">VC Office</h1>
-                    <div class="breadcrumb-wrapper">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li class="active">VC Office</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
         <!-- Academic Structure Section -->
-        <section class="faculty-members">
+        <section class="faculty-member-profile">
             <div class="container">
                 <div class="section-header">
-                    <div class="header-icon"><i class="fas fa-stethoscope"></i></div>
-                    <h3 class="section-title">Faculty Memebers</h3>
+                    <div class="header-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="section-title">Faculty Member Profile</h3>
                     <div class="divider"></div>
-                    <p class="section-description">Explore our Departmental Faculty Members</p>
+                    <p class="section-description">Exploring our 8 Faculties and specialized Departments</p>
                 </div>
 
-                <div class="row g-4">
-                    
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/1.jpg" alt="Dr. Warren Tate">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Cardiology</span>
-                                        <span class="specialty-tag">Hypertension</span>
+                <!-- Tab Content Area -->
+                <div class="faculty-member-profile-inner">
+                    <div class="row g-4">
+                        <!-- Left side: Dean Office -->
+                        <div class="col-lg-4">
+                            <div class="dean-profile-card">
+                                <div class="dean-img-wrapper">
+                                    <img src="assets/images/4.jpg" alt="Member Profile">
+                                </div>
+                                <div class="dean-info text-center">
+                                    <h4>Professor Dr. Warren Tate</h4>
+                                    <p>Chairman, Department of Cardiology</p>
+                                    <div class="d-flex justify-content-center gap-2 mt-3">
+                                        <span class="badge bg-info text-dark">MBBS</span>
+                                        <span class="badge bg-info text-dark">FCPS</span>
+                                        <span class="badge bg-info text-dark">MD (Cardiology)</span>
+                                    </div>
+                                    <hr>
+                                    <div class="dean-contact">
+                                        <div class="mb-2"><i class="fas fa-envelope me-2"></i> chair.medicine@bmu.edu.bd</div>
+                                        <div class="mb-2"><i class="fas fa-phone me-2"></i> +880 2 1234567</div>
+                                        <div><i class="fas fa-building me-2"></i> Block - B, Room 402</div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="#" class="btn one w-100">Make An Appointment</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Warren Tate</a></h5>
-                                <p class="designation">Professor & Chairman</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> warren.tate@bmu.ac.bd
+                        </div>
+                        <!-- Right side: Departments -->
+                        <div class="col-lg-8"> 
+                            <!-- Biography -->                        
+                            <div class="biography mb-4">
+                                <h4 class="profile-section-title"><i class="fas fa-info-circle"></i> Biography</h4>
+                                <p>Professor Dr. Warren Tate is a renowned Cardiologist with over 25 years of experience in clinical practice and academic research. He has been serving Bangladesh Medical University since its inception, focusing on Interventional Cardiology and Preventive Medicine.</p>
+                                <p>His work primarily revolves around improving cardiac care protocols in South Asia. He has mentored hundreds of postgraduate students and led several national-level health research projects funded by the Ministry of Health.</p>
+                                
+                                <h5 class="fw-bold mt-4 mb-3">Specialties & Skills</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill border text-primary px-3 py-2">Echocardiography</span>
+                                    <span class="badge rounded-pill border text-primary px-3 py-2">Clinical Cardiology</span>
+                                    <span class="badge rounded-pill border text-primary px-3 py-2">Medical Education</span>
+                                    <span class="badge rounded-pill border text-primary px-3 py-2">Academic Leadership</span>
+                                </div>
+                            </div>
+
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <!-- Navigation Pills -->   
+                                <div class="nav flex nav-pills-custom p-3 bg-white rounded-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="edu-tab" data-bs-toggle="pill" data-bs-target="#edu" type="button" role="tab"><i class="fas fa-graduation-cap me-2"></i>Education</button>
+                                    <button class="nav-link" id="exp-tab" data-bs-toggle="pill" data-bs-target="#exp" type="button" role="tab"><i class="fas fa-briefcase me-2"></i>Experience</button>
+                                    <button class="nav-link" id="pub-tab" data-bs-toggle="pill" data-bs-target="#pub" type="button" role="tab"><i class="fas fa-book-open me-2"></i>Publications</button>
+                                </div>
+
+                                <!-- Education -->
+                                <div class="tab-pane fade show active" id="edu" role="tabpanel">
+                                    <div class="content-box">
+                                        <h4 class="profile-section-title"><i class="fas fa-graduation-cap"></i> Educational Background</h4>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">Doctor of Medicine (Cardiology)</h6>
+                                            <p class="mb-1 text-primary">Bangabandhu Sheikh Mujib Medical University (BSMMU)</p>
+                                            <small class="text-muted">2005 - 2010</small>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">FCPS (Internal Medicine)</h6>
+                                            <p class="mb-1 text-primary">Bangladesh College of Physicians and Surgeons (BCPS)</p>
+                                            <small class="text-muted">2002</small>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">MBBS</h6>
+                                            <p class="mb-1 text-primary">Dhaka Medical College</p>
+                                            <small class="text-muted">1990 - 1996</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Experience -->
+                                <div class="tab-pane fade" id="exp" role="tabpanel">
+                                    <div class="content-box">
+                                        <h4 class="profile-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h4>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">Professor & Head of Department</h6>
+                                            <p class="mb-1 text-primary">Bangladesh Medical University (BMU)</p>
+                                            <small class="text-muted">2018 - Present</small>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">Associate Professor</h6>
+                                            <p class="mb-1 text-primary">Dhaka Medical College Hospital</p>
+                                            <small class="text-muted">2012 - 2018</small>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <h6 class="fw-bold">Registrar (Cardiology)</h6>
+                                            <p class="mb-1 text-primary">National Institute of Cardiovascular Diseases (NICVD)</p>
+                                            <small class="text-muted">2006 - 2012</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Publications -->
+                                <div class="tab-pane fade" id="pub" role="tabpanel">
+                                    <div class="content-box">
+                                        <h4 class="profile-section-title"><i class="fas fa-book-open"></i> Selected Publications</h4>
+                                        
+                                        <div class="pub-card shadow-sm">
+                                            <h6 class="fw-bold mb-1">Prevalence of Hypertension among Urban Population in Dhaka: A Longitudinal Study</h6>
+                                            <p class="small text-muted mb-2">Journal of Cardiology & Cardiovascular Medicine (2022)</p>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+
+                                        <div class="pub-card shadow-sm">
+                                            <h6 class="fw-bold mb-1">Efficacy of New-Age Stents in Diabetic Patients: Multi-Center Trial Results</h6>
+                                            <p class="small text-muted mb-2">BMU Academic Journal (2020)</p>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+
+                                        <div class="pub-card shadow-sm">
+                                            <h6 class="fw-bold mb-1">Modern Protocols for Post-Operative Cardiac Care in South Asia</h6>
+                                            <p class="small text-muted mb-2">International Medical Research Quarterly (2018)</p>
+                                            <a href="#" class="btn btn-sm btn-outline-primary">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/2.jpg" alt="Dr. Emory Trevino">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Pain Medicine</span>
-                                        <span class="specialty-tag">Hypertension</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Emory Trevino</a></h5>
-                                <p class="designation">Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> etrevino@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/3.jpg" alt="Dr. Brett Combs">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Microbiology</span>
-                                        <span class="specialty-tag">Respiratory</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Brett Combs</a></h5>
-                                <p class="designation">Associate Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> brett.combs@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/4.jpg" alt="Dr. Lillian Bowen">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Hypertension</span>
-                                        <span class="specialty-tag">Diabetes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Lillian Bowen</a></h5>
-                                <p class="designation">Associate Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> lillian@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/5.jpg" alt="Dr. Warren Tate">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Cardiology</span>
-                                        <span class="specialty-tag">Hypertension</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Warren Tate</a></h5>
-                                <p class="designation">Associate Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> warren.tate@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/6.jpg" alt="Dr. Emory Trevino">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Pain Medicine</span>
-                                        <span class="specialty-tag">Hypertension</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Emory Trevino</a></h5>
-                                <p class="designation">Assistant Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> etrevino@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/7.jpg" alt="Dr. Brett Combs">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Microbiology</span>
-                                        <span class="specialty-tag">Respiratory</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Brett Combs</a></h5>
-                                <p class="designation">Assistant Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> brett.combs@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 faculty-item">
-                        <div class="faculty-member-card">
-                            <div class="faculty-img-wrapper">
-                                <img src="assets/images/faculty-members/medicine/8.jpg" alt="Dr. Lillian Bowen">
-                                <div class="specialty-overlay">
-                                    <div class="specialty-list">
-                                        <span class="specialty-tag">Hypertension</span>
-                                        <span class="specialty-tag">Diabetes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faculty-content">
-                                <h5 class="faculty-name"><a href="member-details.html">Dr. Lillian Bowen</a></h5>
-                                <p class="designation">Assistant Professor</p>
-                                <div class="contact-info">
-                                    <i class="fas fa-envelope me-2"></i> lillian@bmu.ac.bd
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
     </div>
 
-<!-- Footer -->
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row g-4">
@@ -428,31 +369,8 @@
     <script src="plugins/odometer/appear.js"></script>
     <script src="plugins/odometer/odometer.js"></script>
 
-    <!-- Projects -->
-    <script src="plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="plugins/isotope/isotope-init.js"></script>
     <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
     <script src="assets/js/theme.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.btn-filter').on('click', function(){
-                const filter = $(this).attr('data-filter');
-                
-                // Active button state
-                $('.btn-filter').removeClass('active');
-                $(this).addClass('active');
-
-                if(filter === 'all'){
-                    $('.faculty-item').fadeIn(400);
-                } else {
-                    $('.faculty-item').hide();
-                    $('.faculty-item[data-dept="' + filter + '"]').fadeIn(400);
-                }
-            });
-        });
-    </script>
-
 </body>
 </html>

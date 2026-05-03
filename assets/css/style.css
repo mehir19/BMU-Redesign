@@ -37,9 +37,12 @@
     --color-green:                   #208700;
     --color-green-rgb:               32, 135, 0;
 
-    /* Dark Color */
+    /* Light Color */
     --color-light-one:                  #f5f5f5;  
     --color-light-one-rgb:               245, 245, 245;
+
+    --color-light-two:                  #eeeeee;  
+    --color-light-two-rgb:               238, 238, 238;
 
     /* Dark Color */
     --color-dark-one:                  #010101;  
@@ -960,18 +963,19 @@ iframe {
 }
 
 .faculty-member-card .faculty-content {
+    border-top: 0px;
     padding: 25px;
 }
 .faculty-member-card .faculty-name {
     color: var(--color-one);
-    font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 .faculty-member-card .designation {
-    font-weight: 600;
     color: var(--color-dark-one);
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: var(--fw-medium);
+    margin-bottom: 0px;
 }
 
 /* --- Specialties Styling --- */
@@ -982,20 +986,89 @@ iframe {
 }
 .faculty-member-card .specialty-tag {
     background: var(--color-light-one);
-    color: var(--color-one);
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: var(--color-two);
+    padding: 3px 15px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .faculty-member-card .contact-info {
-    margin-top: 15px;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-    font-size: 0.85rem;
     color: var(--color-dark-one);
+    border-top: 1px solid var(--color-light-one);
+    margin-top: 12px;
+    padding-top: 12px;
+    font-size: 14px;
+}
+
+/* Member Profile Details */
+/* --- Tabs Navigation --- */
+.faculty-member-profile .nav-pills-custom .nav-link {
+    color: var(--color-dark-one);
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.faculty-member-profile .nav-pills-custom .nav-link.active {
+    background-color: var(--color-light-one);
+    color: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.faculty-member-profile .nav-pills-custom .nav-link:hover:not(.active) {
+    background-color: #f8f9fa;
+}
+
+/* --- Content Sections --- */
+.faculty-member-profile .content-box {
+    background: var(--color-white);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(var(--color-black-rgb), 0.075);
+}
+
+/* --- Profile Header Section --- */
+.faculty-member-profile .profile-section-title {
+    color: var(--color-one);
+    border-bottom: 2px solid var(--color-light-one);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.faculty-member-profile .profile-section-title i {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.faculty-member-profile .timeline-item {
+    padding-left: 20px;
+    border-left: 2px solid var(--color-light-one);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.faculty-member-profile .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background: var(--color-one);
+    border-radius: 50%;
+}
+
+.faculty-member-profile .pub-card {
+    border-left: 4px solid var(--color-accent);
+    padding: 15px;
+    background: #fdfdfd;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
 }
 
 
