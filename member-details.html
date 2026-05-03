@@ -169,16 +169,24 @@
 
     <!-- Main Content -->
     <div class="main-wrapper">
+        <!-- Page Title -->
+        <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
+            <div class="container">
+                <div class="page-header--inner text-center">
+                    <h1 class="page-title">Faculty Memeber Profile</h1>
+                    <div class="breadcrumb-wrapper">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Faculty Members</a></li>
+                            <li class="active">Faculty Memeber Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Academic Structure Section -->
         <section class="faculty-member-profile">
             <div class="container">
-                <div class="section-header">
-                    <div class="header-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3 class="section-title">Faculty Member Profile</h3>
-                    <div class="divider"></div>
-                    <p class="section-description">Exploring our 8 Faculties and specialized Departments</p>
-                </div>
-
                 <!-- Tab Content Area -->
                 <div class="faculty-member-profile-inner">
                     <div class="row g-4">
@@ -192,9 +200,9 @@
                                     <h4>Professor Dr. Warren Tate</h4>
                                     <p>Chairman, Department of Cardiology</p>
                                     <div class="d-flex justify-content-center gap-2 mt-3">
-                                        <span class="badge bg-info text-dark">MBBS</span>
-                                        <span class="badge bg-info text-dark">FCPS</span>
-                                        <span class="badge bg-info text-dark">MD (Cardiology)</span>
+                                        <span class="badge">MBBS</span>
+                                        <span class="badge">FCPS</span>
+                                        <span class="badge">MD (Cardiology)</span>
                                     </div>
                                     <hr>
                                     <div class="dean-contact">
@@ -218,16 +226,18 @@
                                 
                                 <h5 class="fw-bold mt-4 mb-3">Specialties & Skills</h5>
                                 <div class="d-flex flex-wrap gap-2">
-                                    <span class="badge rounded-pill border text-primary px-3 py-2">Echocardiography</span>
-                                    <span class="badge rounded-pill border text-primary px-3 py-2">Clinical Cardiology</span>
-                                    <span class="badge rounded-pill border text-primary px-3 py-2">Medical Education</span>
-                                    <span class="badge rounded-pill border text-primary px-3 py-2">Academic Leadership</span>
+                                    <span class="badge rounded-pill border">Echocardiography</span>
+                                    <span class="badge rounded-pill border">Clinical Cardiology</span>
+                                    <span class="badge rounded-pill border">Medical Education</span>
+                                    <span class="badge rounded-pill border">Academic Leadership</span>
                                 </div>
                             </div>
 
+                            <hr>
+
                             <div class="tab-content" id="v-pills-tabContent">
                                 <!-- Navigation Pills -->   
-                                <div class="nav flex nav-pills-custom p-3 bg-white rounded-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <div class="nav flex nav-pills-custom p-3 bg-white rounded-4 gap-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <button class="nav-link active" id="edu-tab" data-bs-toggle="pill" data-bs-target="#edu" type="button" role="tab"><i class="fas fa-graduation-cap me-2"></i>Education</button>
                                     <button class="nav-link" id="exp-tab" data-bs-toggle="pill" data-bs-target="#exp" type="button" role="tab"><i class="fas fa-briefcase me-2"></i>Experience</button>
                                     <button class="nav-link" id="pub-tab" data-bs-toggle="pill" data-bs-target="#pub" type="button" role="tab"><i class="fas fa-book-open me-2"></i>Publications</button>
