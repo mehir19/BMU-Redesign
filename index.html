@@ -1,226 +1,1064 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bangladesh Medical University</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Medical University</title>
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
-
 <body>
-
-<!-- HERO SECTION -->
-<section class="hero text-white text-center d-flex align-items-center">
-  <div class="container">
-    <h1 class="fw-bold">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়</h1>
-    <h3>Bangladesh Medical University</h3>    
-
-    <div class="row mt-5 mb-4">
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">58</h3>
-          <small>Departments</small>
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="d-none d-xl-flex justify-content-between align-items-center flex-wrap">
+                    <!-- Left Box -->
+                    <div class="left-box">
+                        <ul class="info-list">
+                            <li><a href="mailto:research@bmu.edu.bd"><i class="fas fa-envelope ms-2 me-1"></i> research@bmu.edu.bd</a></li>
+                            <li><a href="#"><i class="fas fa-phone-alt me-1"></i> +880 2 123456</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Right Box -->
+                    <div class="right-box d-none d-md-flex align-items-center gap-4">
+                        <a href="#" class="text-white text-decoration-none">Student Portal</a>
+                        <a href="#" class="text-white text-decoration-none">Faculty Login</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">55</h3>
-          <small>Institutes</small>
+        <!-- Lower Bar -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between position-relative">
+                    <!-- Left Part -->
+                    <div class="header_left_part">
+                        <div class="logo">
+                            <a href="index.html" class="light_logo"><img src="assets/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Part -->
+                    <div class="header_right_part d-flex align-items-center">
+                        <div class="mainnav d-none d-xl-block">
+                            <ul class="main-menu">
+                                <li class="menu-item menu-item-has-children"><a href="#">Home</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="index.html">Home One</a></li>
+                                        <li class="menu-item"><a href="index-2.html">Home Two</a></li>
+                                        <li class="menu-item"><a href="index-3.html">Home Three</a></li>
+                                        <li class="menu-item"><a href="index-4.html">Home Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Administration</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="vc.html">Vice Chancellor's Office</a></li>
+                                        <li class="menu-item"><a href="registrar.html">Registrar Office</a></li>
+                                        <li class="menu-item"><a href="treasurer.html">Treasurer Office</a></li>
+                                        <li class="menu-item"><a href="syndicate.html">The Syndicate</a></li>
+                                        <li class="menu-item"><a href="council.html">Academic Council</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Academics</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-has-children"><a href="#">Faculties</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="medicine.html">Medicine</a></li>
+                                                <li class="menu-item"><a href="surgery.html">Surgery</a></li>
+                                                <li class="menu-item"><a href="dentistry.html">Dentistry</a></li>
+                                                <li class="menu-item"><a href="paediatrics.html">Paediatrics</a></li>
+                                                <li class="menu-item"><a href="basic-science.html">Basic Science</a></li>
+                                                <li class="menu-item"><a href="nursing.html">Nursing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Courses</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="md.html">MD</a></li>
+                                                <li class="menu-item"><a href="ms.html">MS</a></li>
+                                                <li class="menu-item"><a href="mphil.html">M.Phil</a></li>
+                                                <li class="menu-item"><a href="diploma.html">Diploma</a></li>
+                                                <li class="menu-item"><a href="phd.html">Phd</a></li>
+                                                <li class="menu-item"><a href="mph.html">MPH</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="faculty-members.html">Faculty Members</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="member-details.html">Faculty Member Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Admission</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="circular.html">Current Circulars</a></li>
+                                                <li class="menu-item"><a href="application.html">Apply Online</a></li>
+                                                <li class="menu-item"><a href="fee.html">Fee Structure</a></li>
+                                                <li class="menu-item"><a href="criteria.html">Eligibility Criteria</a></li>
+                                                <li class="menu-item"><a href="results.html">Results</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Institutes</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="bmu-institute.html">BMU List</a></li>
+                                        <li class="menu-item"><a href="affiliated-list.html">Affiliated List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">Notice</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Patients Service</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="opd-appointment.html">Outdoor Appointment</a></li>
+                                        <li class="menu-item"><a href="laboratory.html">Laboratory</a></li>
+                                        <li class="menu-item"><a href="radiology-imaging.html">Radiology & Imaging</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="about.html">About BMU</a></li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">News & Events</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="news-list.html">News List</a></li>
+                                                <li class="menu-item"><a href="news-details.html">News Details</a></li>
+                                                <li class="menu-item"><a href="event-list.html">Event List</a></li>
+                                                <li class="menu-item"><a href="event-details.html">Event Details</a></li>
+                                                <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
+                                                <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Case Studies</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="case.html">Case List</a></li>
+                                                <li class="menu-item"><a href="case-details.html">Case Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="faq.html">FAQ's</a></li>
+                                        <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li class="menu-item"><a href="404.html">404 Error</a></li>
+                                        <li class="menu-item"><a href="login.html">Login</a></li>
+                                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </li>                             
+                            </ul>
+                        </div>
+
+                        <div class="header_search">
+                            <form class="search_form" action="search.php">
+                                <input type="text" name="search" class="keyword form-control" placeholder="Search..." />
+                                <button type="submit" class="form-control-submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+
+                        <button class="aside_open">
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <button type="button" class="mr_menu_toggle d-xl-none">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
+    <!-- End Main Header -->
 
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">9</h3>
-          <small>Courses</small>
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('assets/images/Block-A.png');">
+            <!-- Sidebar Menu -->
+            <div class="side-menu d-none d-lg-flex">
+                <a href="#"><i class="fas fa-envelope me-2"></i> Webmail</a>
+                <a href="#"><i class="fas fa-file-invoice me-2"></i> e-Nothi</a>
+                <a href="#"><i class="fas fa-graduation-cap me-2"></i> Results</a>
+                <a href="#"><i class="fas fa-laptop me-2"></i> E-Learning</a>
+                <a href="#"><i class="fas fa-phone-alt me-2"></i> Phonebook</a>
+            </div>
+
+            <div class="hero-inner">
+                <div class="container">
+                    <h1 class="title-bn">বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয়</h1>
+                    <h2 class="title-en">Bangladesh Medical University</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <!-- Business Section -->
+                <div class="inner-container">
+                    <div class="row clearfix">
+                        <!-- Image Column -->
+                        <div class="image-column col-lg-5 col-md-5 col-sm-12">
+                            <div class="inner-column">
+                                <div class="image">
+                                    <img src="assets/images/1.jpg" alt="img" >
+                                    <div class="experience-counter">
+                                        <div class="experience-counter-inner">
+                                            20
+                                            <p>Years Of Excelence</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="content-column col-lg-7 col-md-7 col-sm-12">
+                            <div class="inner-column">
+                                <!-- Title Box -->
+                                <div class="section-header">
+                                    <div class="section-subtitle">About Bangladesh Medical University</div>
+                                    <h3 class="section-title">We deliver customer driven business success</h3>
+                                    <div class="section-description">Blending insight, strategy and imagination, we help clients explore and act on opportunity. We help them to adapt to the changing customer landscape and maintain positive momentum towards their goals.</div>
+                                </div>
+                                <!-- End Title Box -->
+                                
+                                <!-- Feature Block -->
+                                <div class="work-list d-md-flex align-items-center justify-content-between mt-5 mb-4">
+                                    BMU was established in 1998 as the first medical university of the country after the name of the father of the nation. Since its inception, BMU has been serving as the leading medical institution that contributing significantly in growth and improvement of postgraduate medical education in Bangladesh.
+                                </div>
+
+                                <div class="author-block d-lg-flex align-items-center justify-content-between">
+                                    <div class="author-profile d-flex align-items-center">
+                                        <div class="author-img">
+                                            <img src="assets/images/3.jpg" alt="img">
+                                        </div>
+                                        <div class="author-info">
+                                            <h4>Professor Dr. Allen David</h4>
+                                            <p>Vice-Chancellor</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="author-signature">
+                                        <img src="assets/images/signature.png" alt="img">
+                                    </div>
+                                </div>
+                                                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Hospital Services Quick Access -->
+        <section class="hospital-services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-briefcase-medical"></i></div>
+                    <h3 class="section-title">Hospital Services</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">High-tech clinical care for all citizens</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="service-card text-center service-one">
+                            <div class="service-card--inner">
+                                <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                                <h4 class="title">Outdoor Appointment</h4>
+                                <p>Book a consultation with our world-class specialists online.</p>
+                                <a href="#" class="btn">Get Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card text-center service-two">
+                            <div class="service-card--inner">
+                                <div class="icon"><i class="fas fa-microscope"></i></div>                            
+                                <h4 class="title">Diagnostic Center</h4>
+                                <p>Modern lab facilities including MRI, CT-Scan, and Genomic testing.</p>
+                                <a href="#" class="btn">Report Delivery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card text-center service-three">
+                            <div class="service-card--inner">
+                                <div class="icon"><i class="fas fa-ambulance"></i></div>                            
+                                <h4 class="title">Emergency (24/7)</h4>
+                                <p>Specialized trauma and cardiac emergency care units.</p>
+                                <a href="#" class="btn">Emergency Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section class="all-events">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- News Column -->
+                    <div class="col-lg-7">
+                        <div class="d-flex justify-content-between align-items-end mb-4">
+                            <h3 class="section-title m-0 p-0">Upcoming Events</h3>
+                            <a href="#" class="text-decoration-none small fw-bold">Full Calendar <i class="fas fa-calendar-alt ms-1"></i></a>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-12">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag conference">Conference</span>
+                                        <h5 class="mt-2 fw-bold"><a href="#">Advances in Robot-Assisted Surgery</a></h5>
+                                        <div class="small mt-3">
+                                            <p class="mb-1 fw-medium"><i class="fas fa-clock me-2"></i> 10:00 AM - 01:00 PM</p>
+                                            <p class="mb-0 fw-medium"><i class="fas fa-map-marker-alt me-2"></i> Auditorium A, Block D</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag seminar">Seminar</span>
+                                        <h5 class="mt-2 fw-bold"><a href="#">Advances in Robot-Assisted Surgery</a></h5>
+                                        <div class="small mt-3">
+                                            <p class="mb-1 fw-medium"><i class="fas fa-clock me-2"></i> 10:00 AM - 01:00 PM</p>
+                                            <p class="mb-0 fw-medium"><i class="fas fa-map-marker-alt me-2"></i> Auditorium A, Block D</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="event-card">
+                                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400" class="event-img" alt="Event">
+                                    <div class="event-body">
+                                        <span class="event-tag workshop">Workshop</span>
+                                        <h5 class="mt-2 fw-bold"><a href="#">Basic Life Support (BLS) Training</a></h5>
+                                        <div class="small mt-3">
+                                            <p class="mb-1 fw-medium"><i class="fas fa-clock me-2"></i> 09:00 AM - 05:00 PM</p>
+                                            <p class="mb-0 fw-medium"><i class="fas fa-map-marker-alt me-2"></i> Simulation Center</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+    
+                    <!-- Notice Column -->
+                    <div class="col-lg-5">
+                        <h3 class="section-title mb-4">Notice Board</h3>
+                        <div class="portfolio-filters-content">
+                            <div class="filters-button-group">
+                                <button class="button btn all is-checked" data-filter="*">All </button> /
+                                <button class="button btn academic" data-filter=".academic">Academic</button> / 
+                                <button class="button btn administration" data-filter=".administration">Administration</button> / 
+                                <button class="button btn research" data-filter=".research">Research</button>
+                            </div>
+                        </div>
+                        
+                        <div class="grid clearfix"> 
+                            <div class="grid-sizer"></div>                          
+                            <div class="grid-item academic">
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">28</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                                        <div class="new-notice">New</div>
+                                    </div>
+                                </div>
+                            </div> 
+                                                        
+                            <div class="grid-item administration"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">25</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category administration">Administration</div>
+                                        <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                        <div class="new-notice">New</div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="grid-item research"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">20</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category research">Research</div>
+                                        <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                                        <div class="new-notice">New</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item academic"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">15</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Result of FCPS Part-I Mock Examination held on February 10.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item academic">
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">10</span>
+                                            <span class="month">Feb</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category academic">Academic</div>
+                                        <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                                    </div>
+                                </div>
+                            </div> 
+                                                        
+                            <div class="grid-item research"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">25</span>
+                                            <span class="month">Jan</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category research">Reasearch</div>
+                                        <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="grid-item administration"> 
+                                <div class="notice-item">
+                                    <div class="notice-date">
+                                        <div class="notice-date-inner">
+                                            <span class="day">20</span>
+                                            <span class="month">Jan</span>
+                                        </div>
+                                    </div>
+                                    <div class="notice-content">
+                                        <div class="notice-category administration">Administration</div>
+                                        <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="notice-all">
+                            <a href="#" class="btn accent w-100 p-3 fw-medium">View All Notices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funfacts -->
+        <section class="funfacts">    
+            <div class="section-layer" style="background-image: url('assets/images/2.jpg');"></div>
+
+            <div class="container">
+                <div class="funfacts-wrapper">
+                    <div class="row g-0">
+                        <div class="col-lg-3">                
+                            <div class="funfacts-card">
+                                <div class="icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="funfacts-card--inner">
+                                    <h4 class="stat-value"><span class="odometer" data-count="58"></span></h4>
+                                    <p class="stat-text">Departments</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="funfacts-card">
+                                <div class="icon">
+                                    <i class="fas fa-book-medical"></i>
+                                </div>
+                                <div class="funfacts-card--inner">                                    
+                                    <h4 class="stat-value"><span class="odometer" data-count="9"></span></h4>
+                                    <p class="stat-text">Courses</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="funfacts-card">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="funfacts-card--inner">
+                                    <h4 class="stat-value"><span class="odometer" data-count="5000"></span><span class="suffix">+</span></h4>
+                                    <p class="stat-text">Students</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="funfacts-card no-right-border">
+                                <div class="icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="funfacts-card--inner">
+                                    <h4 class="stat-value"><span class="odometer" data-count="7500"></span><span class="suffix">+</span></h4>
+                                    <p class="stat-text">Employees</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ's -->
+                <div class="kbt-faq--inner">                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-header text-start">
+                                <h6 class="section-subtitle">Frequently Asked Questions</h6>
+                                <h3 class="section-title text-white">Questions & Answers</h3>
+                                <div class="divider left"></div>
+                            </div>
+                            <div class="kbt-accordion kbt-accordion1 wow fadeInUp">
+                                <div class="kbt--item active">
+                                    <h6 class="kbt-item-title"><span>Q1. Which is the prerequisites for admission?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
+                                        Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                                    </div>
+                                </div>
+        
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q2. What are the contact address of BMU?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
+                                        Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                                    </div>
+                                </div>
+        
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q3. What IELTS Score required for International Students?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
+                                        Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                                    </div>
+                                </div>
+        
+                                <div class="kbt--item">
+                                    <h6 class="kbt-item-title"><span>Q4. How much time needed for visa renewal?</span> <i class="bi bi-chevron-down"></i></h6>
+                                    <div class="kbt-item--content">
+                                        Our business consulting programs helps to break the performance of your business down into customers and product groups so you know exactly which customers or product groups are working.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-5 offset-md-1">
+                            <div class="kbt-appointment-form-one">
+                                <div class="kbt-form--wrapper">
+                                    <form class="kbt-form" action="contact.php" method="post">
+                                        <div class="kbt-form--inner">
+                                            <h3 class="section-title text-center mb-4 text-white">Get Admission</h3>
+    
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <select name="country" class="form-control">
+                                                            <option value="">Select Country</option>
+                                                            <option value="Bangladesh">Bangladesh</option>
+                                                            <option value="Australia">Australia</option>
+                                                            <option value="Canada">Canada</option>
+                                                            <option value="Japan">Japan</option>
+                                                            <option value="Korea">Korea</option>
+                                                            <option value="USA">United States</option>
+                                                            <option value="UK">United Kingdon</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <select name="country" class="form-control">
+                                                            <option value="">Select Course</option>
+                                                            <option value="MD">MD</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MPH">MPH</option>
+                                                            <option value="IELTS">Diploma</option>
+                                                            <option value="PHD Visa">PHD</option>
+                                                            <option value="MSc. in Nursing">MSc. in Nursing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="name" class="form-control" placeholder="Your Full Name*" required>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <input type="number" name="phone" class="form-control" placeholder="Phone No">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="last_degree" class="form-control" placeholder="Last Degree*" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-lg-6 mb-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="pass_year" class="form-control" placeholder="Last Degree Passing Year*" required>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-md-12 col-lg-12">
+                                                    <div class="kbt-item--button text-center">
+                                                        <input class="btn" type="submit" value="Submit Form" name="submit">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+    
+                                    <div class="kbt-form--bottom">
+                                        <div class="kbt-heading">
+                                            <div class="kbt-item--inner text-center">
+                                                <h5 class="kbt-item--subtitle text-white fw-medium mb-2">Or just Give us a call</h5>
+                                                <h3 class="kbt-item--title mb-2"> +880-2-55165746 </h3>
+                                                <p class="kbt-item--description"> The Support Centre is abailable 24/7</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+    
+        <!-- Academic Structure Section -->
+        <section class="academics">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="section-title">Academic Faculties</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">Exploring our 8 Faculties and specialized Departments</p>
+                </div>
+
+                <!-- Faculty Tabs Navigation -->
+                <div class="faculty-tabs-container">
+                    <div class="nav-faculty" id="facultyTabs" role="tablist">
+                        <button class="btn-faculty-tab active" data-target="medicine">Medicine</button>
+                        <button class="btn-faculty-tab" data-target="medical-technology">Medical Technology</button>
+                        <button class="btn-faculty-tab" data-target="dentistry">Dentistry</button>
+                        <button class="btn-faculty-tab" data-target="paediatrics">Paediatrics</button>
+                        <button class="btn-faculty-tab" data-target="nursing">Nursing</button>
+                        <button class="btn-faculty-tab" data-target="public-health">Preventive and Social Medicine</button>
+                        <button class="btn-faculty-tab" data-target="basic-science">Basic Science and Para Clinical Science</button>
+                        <button class="btn-faculty-tab" data-target="surgery">Surgery</button>
+                    </div>
+                </div>
+
+                <!-- Tab Content Area -->
+                <div id="facultyContent">
+                    
+                    <!-- MEDICINE FACULTY PANEL -->
+                    <div class="tab-pane-custom active" id="medicine">
+                        <div class="row g-4">
+                            <!-- Left side: Dean Office -->
+                            <div class="col-lg-4">
+                                <div class="dean-profile-card">
+                                    <div class="dean-img-wrapper">
+                                        <img src="assets/images/4.jpg" alt="Dean Profile">
+                                    </div>
+                                    <div class="dean-info text-center">
+                                        <h4>Prof. Dr. Ahmed Ali</h4>
+                                        <p>Dean, Faculty of Medicine</p>
+                                        <hr>
+                                        <div class="dean-contact">
+                                            <div class="mb-2"><i class="fas fa-envelope me-2"></i> dean.medicine@bmu.edu.bd</div>
+                                            <div class="mb-2"><i class="fas fa-phone me-2"></i> +880 2 1234567</div>
+                                            <div><i class="fas fa-building me-2"></i> Block - B, Room 402</div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <a href="#" class="btn one w-100">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right side: Departments -->
+                            <div class="col-lg-8">
+                                <h5 class="mb-4 fw-bold"><i class="fas fa-th-large me-2 text-danger"></i>Medicine Departments</h5>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-heartbeat"></i></div>
+                                            <div class="dept-info"><h6>Cardiology</h6><small>Prof. Dr. Rahman</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-stethoscope"></i></div>
+                                            <div class="dept-info"><h6>Internal Medicine</h6><small>Prof. Dr. Karim</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-capsules"></i></div>
+                                            <div class="dept-info"><h6>Hepatology</h6><small>Prof. Dr. Sultana</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-brain"></i></div>
+                                            <div class="dept-info"><h6>Neurology</h6><small>Prof. Dr. Haque</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-lungs"></i></div>
+                                            <div class="dept-info"><h6>Gastroenterology</h6><small>Prof. Dr. Islam</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Nephrology</h6><small>Prof. Dr. Begum</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Clinical Oncology</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Dermatology & Venereology</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Endocrinology & Metabolism</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Psychiatry</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Hematology</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Palliative Medicine</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Physical Medicine & Rehabilitation</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Respiratory Medicine</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Rheumatology</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="#" class="dept-grid-card">
+                                            <div class="dept-icon-box"><i class="fas fa-vial"></i></div>
+                                            <div class="dept-info"><h6>Transfusion Medicine</h6><small>Prof. Dr. Mister</small></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder for other tabs (Content logic would be repeated) -->
+                    <div class="tab-pane-custom text-center py-5" id="surgery">
+                        <div class="p-5 bg-white rounded-3 border">
+                            <i class="fas fa-tools fa-3x mb-3 text-muted"></i>
+                            <h4>Surgery Faculty Panel</h4>
+                            <p>Loading Faculty details for Surgery...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses -->
+        <section class="all-course">
+          <div class="section-layer" style="background-image: url('assets/images/bg/3.jpg');"></div>
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-book-medical"></i></div>
+                    <h3 class="section-title">All Courses</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">Exploring our 8 Faculties and specialized Departments</p>
+                </div>
+
+                <div class="row course-wrapper bg-white p-5">
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills course-nav" id="course-tab">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#md">MD Courses</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#ms">MS Courses</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#mphil">M.Phil</button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#diploma">Diploma</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9 course-wrapper--right">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="md">
+                                <h4 class="mb-3">MD (Doctor of Medicine)</h4>
+                                <p>Programs offered for medical graduates specializing in clinical medicine.</p>
+                                <ul class="row list-unstyled g-3 mt-3">
+                                    <li class="col-sm-6"><i class="fas fa-check-circle me-2"></i> Cardiology</li>
+                                    <li class="col-sm-6"><i class="fas fa-check-circle me-2"></i> Neurology</li>
+                                    <li class="col-sm-6"><i class="fas fa-check-circle me-2"></i> Endocrinology</li>
+                                    <li class="col-sm-6"><i class="fas fa-check-circle me-2"></i> Gastroenterology</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="ms">
+                                <h4 class="mb-3">MS (Master of Surgery)</h4>
+                                <p>Advanced surgical training programs for specialists.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Ongoing Thesis (NEW) -->
+        <section class="ongoing-thesis bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-microscope"></i></div>
+                    <h3 class="section-title">Ongoing Thesis & Dissertations</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">Track active postgraduate research across all departments</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Thesis Item 1 -->
+                    <div class="col-md-4">
+                        <div class="thesis-card">
+                            <span class="status-badge status-ongoing">Data Collection</span>
+                            <h6 class="mt-2 mb-3"><a href="#">Genetic markers in early-stage Liver Cirrhosis among Bangladeshi adults.</a></h6>
+                            <p class="small mb-1"><span class="fw-semibold">Researcher:</span> Dr. Tanvir Hossain</p>
+                            <p class="small mb-3"><span class="fw-semibold">Supervisor:</span> Prof. Dr. S. Mallick</p>
+                            <div class="pt-2 border-top"><small class="text-secondary">Dept. of Hepatology | MD Thesis</small></div>
+                        </div>
+                    </div>
+                    <!-- Thesis Item 2 -->
+                    <div class="col-md-4">
+                        <div class="thesis-card">
+                            <span class="status-badge status-final">Final Draft</span>
+                            <h6 class="mt-2 mb-3"><a href="#">Efficacy of Minimally Invasive Cardiac Surgery vs Traditional Sternotomy.</a></h6>
+                            <p class="small mb-1"><span class="fw-semibold">Researcher:</span> Dr. Sarah Zahan</p>
+                            <p class="small mb-3"><span class="fw-semibold">Supervisor:</span> Prof. Dr. R. Islam</p>
+                            <div class="pt-2 border-top"><small class="text-secondary">Dept. of Cardiac Surgery | MS Thesis</small></div>
+                        </div>
+                    </div>
+                    <!-- Thesis Item 3 -->
+                    <div class="col-md-4">
+                        <div class="thesis-card">
+                            <span class="status-badge status-approved">Protocol Approved</span>
+                            <h6 class="mt-2 mb-3"><a href="#">Post-COVID Neurological complications: A 2-year longitudinal study.</a></h6>
+                            <p class="small mb-1"><span class="fw-semibold">Researcher:</span> Dr. Mehidi Hasan</p>
+                            <p class="small mb-3"><span class="fw-semibold">Supervisor:</span> Prof. Dr. Z. Ahmed</p>
+                            <div class="pt-2 border-top"><small class="text-secondary">Dept. of Neurology | PhD Research</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-outline-primary px-4 rounded-pill">Search All Thesis Repository <i class="fas fa-search ms-2"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- News-Events -->
+        <section class="latest-news">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-icon"><i class="fas fa-newspaper"></i></div>
+                    <h3 class="section-title">Latest News</h3>
+                    <div class="divider"></div>
+                    <p class="section-description">Read our informative blogs from medical professionals</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="assets/images/news/1.jpg" alt="img">
+                                <div class="news-date">Feb 15, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <div class="news-meta">
+                                    <div class="news-meta-item news-meta-author"><a href="#"> By Dr. Maxim Arnold</a></div>
+                                    <div class="news-meta-item news-meta-category"><a href="#"> Cardiology</a></div>
+                                </div>
+                                <h5 class="news-title"><a href="#">Achievements of Bangladesh Medical University 2024-25</a></h5>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="assets/images/news/2.jpg" alt="img">
+                                <div class="news-date">Jan 10, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <div class="news-meta">
+                                    <div class="news-meta-item news-meta-author"><a href="#"> By Dr. Maxim Arnold</a></div>
+                                    <div class="news-meta-item news-meta-category"><a href="#"> Cardiology</a></div>
+                                </div>
+                                <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="news-card">
+                            <div class="news-image">
+                                <img src="assets/images/news/2.jpg" alt="img">
+                                <div class="news-date">Jan 10, 2026</div>
+                            </div>
+                            <div class="news-body">
+                                <div class="news-meta">
+                                    <div class="news-meta-item news-meta-author"><a href="#"> By Dr. Maxim Arnold</a></div>
+                                    <div class="news-meta-item news-meta-category"><a href="#"> Cardiology</a></div>
+                                </div>
+                                <h5 class="news-title"><a href="#">Inauguration of the new Advanced Genomics Research</a></h5>
+                                <div class="news-btn"><a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="text-center mt-5">
+                    <a href="#" class="btn one outline">View All News</a>
+                </div>
+            </div>
+        </section>
+     </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5>Bangladesh Medical University</h5>
+                    <p class="small">Dedicated to excellence in medical education and advanced clinical research to serve the nation's healthcare needs.</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Administration</h5>
+                    <ul>
+                        <li><a href="#">Message from VC</a></li>
+                        <li><a href="#">Registrar Office</a></li>
+                        <li><a href="#">Finance Section</a></li>
+                        <li><a href="#">IT Cell</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Ministry of Health</a></li>
+                        <li><a href="#">BMDC</a></li>
+                        <li><a href="#">DGHS</a></li>
+                        <li><a href="#">UGC</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="small">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Shahbag, Dhaka-1000, Bangladesh</li>
+                        <li><i class="fas fa-phone me-2"></i> +880-2-1234567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@bmu.edu.bd</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary">
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2026 Bangladesh Medical University. All Rights Reserved.</p>
+            </div>
         </div>
-      </div>
+    </footer>
 
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">7500+</h3>
-          <small>Employees</small>
-        </div>
-      </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+        
+    <!-- WOW Scroll Effect -->
+    <script src="plugins/wow/wow.min.js"></script>
 
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">5000+</h3>
-          <small>Students</small>
-        </div>
-      </div>
+    <!-- Odometer Counter -->
+    <script src="plugins/odometer/appear.js"></script>
+    <script src="plugins/odometer/odometer.js"></script>
 
-      <div class="col-md-2 col-6">
-        <div class="stat-box">
-          <h3 class="stat-number">142511</h3>
-          <small>Patients</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Projects -->
+    <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="plugins/isotope/isotope-init.js"></script>
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">BMU</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      ☰
-    </button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Hospital</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Admission</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- NEWS -->
-<section class="container py-5">
-  <h2 class="mb-4">NEWS AND EVENTS</h2>
-
-  <div class="row">
-    <div class="col-md-7">
-      <img src="https://images.pexels.com/photos/36315462/pexels-photo-36315462.jpeg?_gl=1*1nxmt5m*_ga*MTkwNzM0NTY1Mi4xNzY4OTY4OTA2*_ga_8JE65Q40S6*czE3NzQ4NDA2NzQkbzUkZzEkdDE3NzQ4NDA3NDUkajU4JGwwJGgw" class="img-fluid rounded">
-    </div>
-
-    <div class="col-md-5">
-      <div class="news-card">
-        <div class="category news">NEWS</div>
-        <h4 class="mt-3 mb-3">Achievements of BMU between August 2024 to February 2025</h4>
-        <a href="#" class="details-link">Click here to view details...</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://images.pexels.com/photos/8923156/pexels-photo-8923156.jpeg?_gl=1*ze6g5f*_ga*MTkwNzM0NTY1Mi4xNzY4OTY4OTA2*_ga_8JE65Q40S6*czE3NzQ4NDA2NzQkbzUkZzEkdDE3NzQ4NDEyMjckajU5JGwwJGgw">
-        <h6 class="card-body"><a href="#">Event Item</a></h6>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://images.pexels.com/photos/8423362/pexels-photo-8423362.jpeg?_gl=1*jzhwlp*_ga*MTkwNzM0NTY1Mi4xNzY4OTY4OTA2*_ga_8JE65Q40S6*czE3NzQ4NDA2NzQkbzUkZzEkdDE3NzQ4NDExNDQkajU5JGwwJGgw">
-        <h6 class="card-body"><a href="#">Event Item</a></h6>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg?_gl=1*1qrqi81*_ga*MTkwNzM0NTY1Mi4xNzY4OTY4OTA2*_ga_8JE65Q40S6*czE3NzQ4NDA2NzQkbzUkZzEkdDE3NzQ4NDExOTAkajEzJGwwJGgw">
-        <h6 class="card-body"><a href="#">Event Item</a></h6>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NOTICE -->
-<section class="notice-section py-5">
-  <div class="container">
-    <h2>NOTICE</h2>
-    <div class="row mt-4">
-      <div class="col-md-3">
-        <div class="notice-box">
-          <strong>29 Mar</strong>
-          <p>Important notice content here...</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="notice-box">
-          <strong>28 Mar</strong>
-          <p>Another notice...</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="notice-box">
-          <strong>24 Mar</strong>
-          <p>Holiday announcement...</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="notice-box">
-          <strong>16 Mar</strong>
-          <p>Recruitment notice...</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ACADEMICS -->
-<section class="academics text-center text-white py-5">
-  <div class="container">
-    <h2>ACADEMICS</h2>
-    <p>Empowering students with knowledge</p>
-
-    <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
-      <span class="badge bg-light text-dark">Faculty of Medicine</span>
-      <span class="badge bg-light text-dark">Faculty of Surgery</span>
-      <span class="badge bg-light text-dark">Faculty of Nursing</span>
-      <span class="badge bg-light text-dark">Dentistry</span>
-    </div>
-  </div>
-</section>
-
-<!-- COURSES -->
-<section class="container py-5">
-  <h2>Courses</h2>
-
-  <div class="row">
-    <div class="col-md-3">
-      <ul class="list-group">
-        <li class="list-group-item active">MBBS</li>
-        <li class="list-group-item">MD</li>
-        <li class="list-group-item">MS</li>
-      </ul>
-    </div>
-
-    <div class="col-md-9">
-      <div class="course-box">
-        <h4>List of Departments</h4>
-        <ul>
-          <li>Cardiology</li>
-          <li>Neurology</li>
-          <li>Radiology</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ALUMNI -->
-<section class="alumni text-center py-5">
-  <div class="container">
-    <h2>BMU Alumni Association</h2>
-
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="card p-3">Alumni Meet</div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">Reunion</div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3">Networking</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <p>© 2026 Bangladesh Medical University</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 </html>

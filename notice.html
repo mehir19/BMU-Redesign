@@ -173,148 +173,149 @@
         <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
             <div class="container">
                 <div class="page-header--inner text-center">
-                    <h1 class="page-title">Faculty Memeber Profile</h1>
+                    <h1 class="page-title">All Notice</h1>
                     <div class="breadcrumb-wrapper">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Faculty Members</a></li>
-                            <li class="active">Faculty Memeber Details</li>
+                            <li class="active">All Notice</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Academic Structure Section -->
-        <section class="faculty-member-profile">
+
+        <!-- Events -->
+        <section class="all-events">
             <div class="container">
-                <!-- Tab Content Area -->
-                <div class="faculty-member-profile-inner">
-                    <div class="row g-4">
-                        <!-- Left side: Dean Office -->
-                        <div class="col-lg-4">
-                            <div class="dean-profile-card">
-                                <div class="dean-img-wrapper">
-                                    <img src="assets/images/4.jpg" alt="Member Profile">
+                <div class="portfolio-filters-content">
+                    <div class="filters-button-group">
+                        <button class="button btn all is-checked" data-filter="*">All </button> /
+                        <button class="button btn academic" data-filter=".academic">Academic</button> / 
+                        <button class="button btn administration" data-filter=".administration">Administration</button> / 
+                        <button class="button btn research" data-filter=".research">Research</button>
+                    </div>
+                </div>
+                
+                <div class="grid col-two clearfix"> 
+                    <div class="grid-sizer"></div>                          
+                    <div class="grid-item academic">
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">28</span>
+                                    <span class="month">Feb</span>
                                 </div>
-                                <div class="dean-info text-center">
-                                    <h4>Professor Dr. Warren Tate</h4>
-                                    <p>Chairman, Department of Cardiology</p>
-                                    <div class="d-flex justify-content-center gap-2 mt-3">
-                                        <span class="badge">MBBS</span>
-                                        <span class="badge">FCPS</span>
-                                        <span class="badge">MD (Cardiology)</span>
-                                    </div>
-                                    <hr>
-                                    <div class="dean-contact">
-                                        <div class="mb-2"><i class="fas fa-envelope me-2"></i> chair.medicine@bmu.edu.bd</div>
-                                        <div class="mb-2"><i class="fas fa-phone me-2"></i> +880 2 1234567</div>
-                                        <div><i class="fas fa-building me-2"></i> Block - B, Room 402</div>
-                                    </div>
-                                    <div class="mt-4">
-                                        <a href="#" class="btn one w-100">Make An Appointment</a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category academic">Academic</div>
+                                <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                                <div class="new-notice">New</div>
                             </div>
                         </div>
-                        <!-- Right side: Departments -->
-                        <div class="col-lg-8"> 
-                            <!-- Biography -->                        
-                            <div class="biography mb-4">
-                                <h4 class="profile-section-title"><i class="fas fa-info-circle"></i> Biography</h4>
-                                <p>Professor Dr. Warren Tate is a renowned Cardiologist with over 25 years of experience in clinical practice and academic research. He has been serving Bangladesh Medical University since its inception, focusing on Interventional Cardiology and Preventive Medicine.</p>
-                                <p>His work primarily revolves around improving cardiac care protocols in South Asia. He has mentored hundreds of postgraduate students and led several national-level health research projects funded by the Ministry of Health.</p>
-                                
-                                <h5 class="fw-bold mt-4 mb-3">Specialties & Skills</h5>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <span class="badge rounded-pill border">Echocardiography</span>
-                                    <span class="badge rounded-pill border">Clinical Cardiology</span>
-                                    <span class="badge rounded-pill border">Medical Education</span>
-                                    <span class="badge rounded-pill border">Academic Leadership</span>
+                    </div> 
+                                                
+                    <div class="grid-item administration"> 
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">25</span>
+                                    <span class="month">Feb</span>
                                 </div>
                             </div>
+                            <div class="notice-content">
+                                <div class="notice-category administration">Administration</div>
+                                <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                                <div class="new-notice">New</div>
+                            </div>
+                        </div>
+                    </div> 
 
-                            <hr>
-
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <!-- Navigation Pills -->   
-                                <div class="nav flex nav-pills-custom p-3 bg-white rounded-4 gap-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="edu-tab" data-bs-toggle="pill" data-bs-target="#edu" type="button" role="tab"><i class="fas fa-graduation-cap me-2"></i>Education</button>
-                                    <button class="nav-link" id="exp-tab" data-bs-toggle="pill" data-bs-target="#exp" type="button" role="tab"><i class="fas fa-briefcase me-2"></i>Experience</button>
-                                    <button class="nav-link" id="pub-tab" data-bs-toggle="pill" data-bs-target="#pub" type="button" role="tab"><i class="fas fa-book-open me-2"></i>Publications</button>
+                    <div class="grid-item research"> 
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">20</span>
+                                    <span class="month">Feb</span>
                                 </div>
-
-                                <!-- Education -->
-                                <div class="tab-pane fade show active" id="edu" role="tabpanel">
-                                    <div class="content-box">
-                                        <h4 class="profile-section-title"><i class="fas fa-graduation-cap"></i> Educational Background</h4>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">Doctor of Medicine (Cardiology)</h6>
-                                            <p class="degree-institute">Bangabandhu Sheikh Mujib Medical University (BSMMU)</p>
-                                            <small class="degree-year">2005 - 2010</small>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">FCPS (Internal Medicine)</h6>
-                                            <p class="degree-institute">Bangladesh College of Physicians and Surgeons (BCPS)</p>
-                                            <small class="degree-year">2002</small>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">MBBS</h6>
-                                            <p class="degree-institute">Dhaka Medical College</p>
-                                            <small class="degree-year">1990 - 1996</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Experience -->
-                                <div class="tab-pane fade" id="exp" role="tabpanel">
-                                    <div class="content-box">
-                                        <h4 class="profile-section-title"><i class="fas fa-briefcase"></i> Professional Experience</h4>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">Professor & Head of Department</h6>
-                                            <p class="degree-institute">Bangladesh Medical University (BMU)</p>
-                                            <small class="degree-year">2018 - Present</small>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">Associate Professor</h6>
-                                            <p class="degree-institute">Dhaka Medical College Hospital</p>
-                                            <small class="degree-year">2012 - 2018</small>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <h6 class="degree-name">Registrar (Cardiology)</h6>
-                                            <p class="degree-institute">National Institute of Cardiovascular Diseases (NICVD)</p>
-                                            <small class="degree-year">2006 - 2012</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Publications -->
-                                <div class="tab-pane fade" id="pub" role="tabpanel">
-                                    <div class="content-box">
-                                        <h4 class="profile-section-title"><i class="fas fa-book-open"></i> Selected Publications</h4>
-                                        
-                                        <div class="pub-card">
-                                            <h6 class="publication-name">Prevalence of Hypertension among Urban Population in Dhaka: A Longitudinal Study</h6>
-                                            <p class="publication-journal">Journal of Cardiology & Cardiovascular Medicine (2022)</p>
-                                            <a href="#" class="btn one outline">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
-                                        </div>
-
-                                        <div class="pub-card">
-                                            <h6 class="publication-name">Efficacy of New-Age Stents in Diabetic Patients: Multi-Center Trial Results</h6>
-                                            <p class="publication-journal">BMU Academic Journal (2020)</p>
-                                            <a href="#" class="btn one outline">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
-                                        </div>
-
-                                        <div class="pub-card">
-                                            <h6 class="publication-name">Modern Protocols for Post-Operative Cardiac Care in South Asia</h6>
-                                            <p class="publication-journal">International Medical Research Quarterly (2018)</p>
-                                            <a href="#" class="btn one outline">Read Full Paper <i class="fas fa-external-link-alt ms-1"></i></a>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category research">Research</div>
+                                <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                                <div class="new-notice">New</div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="grid-item academic"> 
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">15</span>
+                                    <span class="month">Feb</span>
+                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category academic">Academic</div>
+                                <a href="#">Result of FCPS Part-I Mock Examination held on February 10.</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item academic">
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">10</span>
+                                    <span class="month">Feb</span>
+                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category academic">Academic</div>
+                                <a href="#">Notice regarding online registration for Residency Program March Session.</a>
+                            </div>
+                        </div>
+                    </div> 
+                                                
+                    <div class="grid-item research"> 
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">25</span>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category research">Reasearch</div>
+                                <a href="#">Schedule for MD/MS Phase-B Final Examination July-2025.</a>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="grid-item administration"> 
+                        <div class="notice-item">
+                            <div class="notice-date">
+                                <div class="notice-date-inner">
+                                    <span class="day">20</span>
+                                    <span class="month">Jan</span>
+                                </div>
+                            </div>
+                            <div class="notice-content">
+                                <div class="notice-category administration">Administration</div>
+                                <a href="#">NOC and Notifications for Faculty visits to international symposiums.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kbt-pagination-wrap text-center">
+                    <ul class="pagination">
+                        <li><a class="disabled page-number previous" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                        <li><span class="page-number current">1</span></li>
+                        <li><a class="page-number" href="#">2</a></li>
+                        <li><a class="page-number" href="#">3</a></li>
+                        <li>.....</li>
+                        <li><a class="page-number" href="#">9</a></li>
+                        <li><a class="page-number next" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -379,6 +380,10 @@
     <script src="plugins/odometer/appear.js"></script>
     <script src="plugins/odometer/odometer.js"></script>
 
+    <!-- Projects -->
+    <script src="plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="plugins/isotope/isotope-init.js"></script>
     <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
     <script src="assets/js/theme.js"></script>
