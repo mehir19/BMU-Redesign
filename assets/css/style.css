@@ -4,6 +4,7 @@
 @import url('bootstrap.min.css');
 @import url('../../plugins/nice-select/nice-select.css');
 @import url('../../plugins/odometer/odometer-theme-default.css');
+@import url('../../plugins/fullcalendar/fullcalendar.css');
 @import url("header.css");
 
 :root {
@@ -419,8 +420,8 @@ td {
 }
 
 th {
-    background-color: var(--color-black);
-    color: var(--color-var(--color-white));
+    background-color: var(--color-two);
+    color: var(--color-white);
     font-size: 12px;
     font-weight: var(--fw-semibold);
     text-transform: uppercase;
@@ -709,6 +710,18 @@ iframe {
     border-color: var(--color-accent);
 }
 
+.btn.two.outline {
+    color: var(--color-two);
+    background-color: transparent;
+    border: 1px solid var(--color-two);
+}
+
+.btn.two.outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-two);
+    border-color: var(--color-two);
+}
+
 .btn.accent {
     color: var(--color-white);
     background-color: var(--color-accent);
@@ -719,6 +732,18 @@ iframe {
     color: var(--color-white);
     background-color: var(--color-one);
     border-color: var(--color-one);
+}
+
+.btn.accent.outline {
+    color: var(--color-accent);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+}
+
+.btn.accent.outline:hover {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 
@@ -2515,14 +2540,18 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 /* --- Chairman Section --- */
 .chairman-card {
-    background: var(--color-white);
+    background: var(--color-light-two);
+    padding: 20px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 0px 30px rgba(var(--color-black-rgb), 0.05);
 }
 
 .chairman-image {
+    position: relative;
     max-height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .chairman-image img {
@@ -2537,11 +2566,12 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 .chairman-card .blockquote {
     font-size: 17px;
+    font-weight: var(--fw-medium);
     line-height: 25px;
-    border-left: 10px solid rgba(var(--color-accent-rgb), 0.5);
-    background-color: rgba(var(--color-accent-rgb), 0.075);
+    border-left: 10px solid var(--color-accent);
+    background-color: var(--color-white);
     padding: 20px;
-    margin: 15px 0px;
+    margin: 25px 0px 15px;
 }
 
 .process-step {
@@ -2596,113 +2626,95 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
     color: rgba(var(--color-dark-one-rgb), 0.5);
 }
 
-/* Service Block Style Two */
-.service-block-style-two{
+/* Facilities */
+.facilities {
+    border-top: 1px solid var(--color-light-two);
+    border-bottom: 1px solid var(--color-light-two);
+}
+
+.facility-box-one{
 	position:relative;
-	padding: 8px;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    border: 1px solid var(--color-light-one);
+    border-radius: 8px;
+    overflow: hidden;
 	transition: var(--transition-base);
 }
 
-.service-block-style-two .inner-box{
+.facility-box-one::before {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	transition: var(--transition-base);
+    z-index: 0;
+    background: rgba(0, 64, 90, 1);
+    background: -webkit-linear-gradient(180deg, rgba(0, 64, 90, 0.3) 0%, rgba(0, 64, 90, 1) 80%);
+    background: -moz-linear-gradient(180deg, rgba(0, 64, 90, 0.3) 0%, rgba(0, 64, 90, 1) 80%);
+    background: linear-gradient(180deg, rgba(0, 64, 90, 0.3) 0%, rgba(0, 64, 90, 1) 80%);
+}
+
+.facility-box-one:hover::before {
+    opacity: 0.5;
+}
+
+.facility-box-one .inner-box{
 	position:relative;
 	z-index: 2;
 	padding: 50px 35px;
-	min-height: 375px;
-	border: 1px solid var(--color-light-one);
+    text-align: center;
 	overflow: hidden;
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: var(--transition-base);
 }
 
-.service-block-style-two .inner-box.bg-white{
-	border-color: transparent;
-	box-shadow: 0px 10px 60px rgba(137, 151, 186, 0.15);
-}
-
-.service-block-style-two .inner-box .hidden-image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0;
-	visibility: hidden;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: var(--transition-base);
-    z-index: -1;
-}
-.service-block-style-two:hover .inner-box .hidden-image {
-	opacity: 1;
-	visibility: visible;
-}
-
-.service-block-style-two:hover .inner-box:after {
-	opacity: 1;
-	visibility: visible;
-	top: 0px;
-}
-
-.service-block-style-two .icon{
+.facility-box-one .icon{
+    color: var(--color-white);
 	position: relative;
 	display: inline-block;
-    font-size: 30px;
+    font-size: 40px;
 	transition: var(--transition-base);
 	margin-bottom: 25px;
 }
 
-.service-block-style-two:hover .inner-box .icon{
+.facility-box-one:hover .inner-box .icon{
     transform: rotateY(360deg);
 }
 
-.service-block-style-two .icon .hidden_image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	visibility: hidden;
-}
-.service-block-style-two:hover .inner-box .icon .open_image {
-	opacity: 0;
-	visibility: hidden;
-}
-.service-block-style-two:hover .inner-box .icon .hidden_image {
-	opacity: 1;
-	visibility: visible;
-}
-
-.service-block-style-two h5 a{
+.facility-box-one h5 {
 	position:relative;
 	transition: var(--transition-base);
 }
 
-.service-block-style-two:hover h5 a {
+.facility-box-one h5 a:not(:hover) {
 	color: var(--color-white);
 }
 
-.service-block-style-two .text{
-	font-size: 17px;
+.facility-box-one .text{
+    color: var(--color-white);
 	margin-top: 15px;
+    margin-bottom: 25px;
 	transition: var(--transition-base);
 }
 
-.service-block-style-two:hover .text {
-	color: var(--color-white);
-}
-
-.service-block-style-two .read-more{
+.facility-box-one .read-more{
 	position: relative;
     display: block;
+    color: var(--color-accent);
 	font-weight: 500;
 	margin-top: 15px;
 	transition: var(--transition-base);
 }
 
 
-/* Features Block  */
+/* Features Block 
 .feature-block{
 	position:relative;
 }
@@ -2754,4 +2766,96 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 
 .feature-block p {
   margin-bottom: 0px;
+} */
+
+/**************** Contact Start************/
+.call-to-form-box {
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.call-to-form-box .btn {
+    padding: 8px 35px;
+}
+
+.contact-info {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.contact-info .contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px 20px;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 23px 20px;
+}
+
+.contact-info .contact-info-title {
+    color: rgba(var(--color-dark-one-rgb), 0.6);
+    font-weight: var(--fw-semibold);
+    margin-bottom: 5px;
+}
+
+.contact-info .contact-info-icon {
+    color: var(--color-white);
+    background-color: rgba( var(--color-two-rgb), 1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 24px;
+    border-radius: 6px;
+}
+
+.contact-info .contact-info-description {
+    color: var(--color-two);
+    font-weight: var(--fw-medium);
+}
+
+.contact-info .contact-info-description a:not(:hover) {
+    color: inherit;
+}
+
+
+/*Full Calendar*/
+.fc .fc-button {
+    text-transform: capitalize;
+}
+
+.fc .fc-col-header-cell-cushion {
+    padding: 10px 8px;
+    color: var(--color-white);
+}
+
+.fc .fc-event, .fc .fc-timegrid-event, .fc .fc-daygrid-event, .fc .fc-h-event {
+    border-width: 0px;
+    border-left-width: 3px;
+    border-radius: 0.5rem;
+    padding: 6px 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.fc .fc-daygrid-dot-event, .fc .fc-h-event .fc-event-main-frame {
+    flex-direction: column;
+    align-items: start;
+    min-width: 150px;
+}
+
+.fc .fc-button-primary:not(:disabled):active:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:focus {
+    box-shadow: none;
+}
+.fc .fc-button-primary:not(:disabled):active, .fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-btn-group > .fc-button:hover {
+    background-color: var(--color-accent);
+    transition: var(--transition-base);
 }
