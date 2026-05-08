@@ -103,6 +103,13 @@
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Institutes</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="bmu-institute.html">BMU List</a></li>
+                                        <li class="menu-item"><a href="affiliated-list.html">Affiliated List</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#">Notice</a></li>
                                 <li class="menu-item menu-item-has-children"><a href="#">Patients Service</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="opd-appointment.html">Outdoor Appointment</a></li>
@@ -110,22 +117,9 @@
                                         <li class="menu-item"><a href="radiology-imaging.html">Radiology & Imaging</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item menu-item-has-children"><a href="#">Institutes</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="bmu-institute.html">BMU List</a></li>
-                                        <li class="menu-item"><a href="affiliated-list.html">Affiliated List</a></li>
-                                    </ul>
-                                </li>
                                 <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="about.html">About BMU</a></li>
-                                        <li class="menu-item menu-item-has-children"><a href="#">Case Studies</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="case.html">Case List</a></li>
-                                                <li class="menu-item"><a href="case-details.html">Case Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="faq.html">FAQ's</a></li>
                                         <li class="menu-item menu-item-has-children"><a href="#">News & Events</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item"><a href="news-list.html">News List</a></li>
@@ -136,6 +130,13 @@
                                                 <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
+                                        <li class="menu-item menu-item-has-children"><a href="#">Case Studies</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="case.html">Case List</a></li>
+                                                <li class="menu-item"><a href="case-details.html">Case Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="faq.html">FAQ's</a></li>
                                         <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
                                         <li class="menu-item"><a href="404.html">404 Error</a></li>
                                         <li class="menu-item"><a href="login.html">Login</a></li>
@@ -168,198 +169,156 @@
         <div class="page-header" style="background-image: url('assets/images/bg/2.jpg');">
             <div class="container">
                 <div class="page-header--inner text-center">
-                    <h1 class="page-title">Admission Form</h1>
+                    <h1 class="page-title">Course Details</h1>
                     <div class="breadcrumb-wrapper">
                         <ul class="breadcrumb">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Forms</a></li>
-                            <li class="active">Admission Form</li>
+                            <li><a href="index.html">Course</a></li>
+                            <li class="active">Course Details</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- About Section -->
-        <section class="admission-form">
-            <div class="form-container">
-                <div class="form-header">
-                    <i class="fas fa-university fa-3x mb-3"></i>
-                    <h2>Admission Application Form</h2>
-                    <p>Postgraduate Residency / Fellowship Programs - Session 2025-26</p>
-                </div>
-
-                <div class="form-body">
-                    <div class="info-card">
-                        <i class="fas fa-info-circle me-2"></i> <strong>Note:</strong> Please ensure all information matches your official certificates. Fields marked with an asterisk (*) are mandatory.
+        <section class="course-details">
+            <div class="container">
+                <div class="course-details-inner">
+                    <!-- Course Hero Section -->
+                    <div class="course-hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <span class="course-badge">Postgraduate Program</span>
+                                <h1 class="course-title">MD in Cardiology</h1>
+                                <p class="lead opacity-75">A 5-year residency program designed to produce world-class cardiologists through rigorous clinical training and advanced research methodology.</p>
+                                <div class="d-flex gap-4 mt-4">
+                                    <div><i class="fas fa-clock me-2"></i> 5 Years</div>
+                                    <div><i class="fas fa-graduation-cap me-2"></i> Full Time</div>
+                                    <div><i class="fas fa-calendar-alt me-2"></i> Intake: July/January</div>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
-
-                    <form id="admissionForm">
-                        <!-- Program Selection -->
-                        <div class="section-title">
-                            <i class="fas fa-graduation-cap"></i> Program Details
-                        </div>
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-6">
-                                <label class="form-label">Course Type *</label>
-                                <select class="form-select" required>
-                                    <option value="">Select Course</option>
-                                    <option>MD (Doctor of Medicine)</option>
-                                    <option>MS (Master of Surgery)</option>
-                                    <option>M.Phil</option>
-                                    <option>Diploma</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Specialty/Department *</label>
-                                <select class="form-select" required>
-                                    <option value="">Select Specialty</option>
-                                    <option>Cardiology</option>
-                                    <option>Neurology</option>
-                                    <option>Orthopedic Surgery</option>
-                                    <option>Pediatrics</option>
-                                    <option>Gastroenterology</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Personal Information -->
-                        <div class="section-title">
-                            <i class="fas fa-user"></i> Applicant Information
-                        </div>
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-12">
-                                <label class="form-label">Full Name (English Block Letters) *</label>
-                                <input type="text" class="form-control" placeholder="e.g. ALEX MORGAN" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Father's Name *</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Mother's Name *</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label">Date of Birth *</label>
-                                <input type="date" class="form-control" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label">Gender *</label>
-                                <select class="form-select" required>
-                                    <option value="">Select</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label">Blood Group</label>
-                                <select class="form-select">
-                                    <option>A+</option>
-                                    <option>A-</option>
-                                    <option>B+</option>
-                                    <option>B-</option>
-                                    <option>O+</option>
-                                    <option>O-</option>
-                                    <option>AB+</option>
-                                    <option>AB-</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">BMDC Registration No. *</label>
-                                <input type="text" class="form-control" placeholder="Required for medical graduates" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">National ID (NID) *</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                        </div>
-
-                        <!-- Contact Information -->
-                        <div class="section-title">
-                            <i class="fas fa-envelope"></i> Contact Details
-                        </div>
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-6">
-                                <label class="form-label">Mobile Number *</label>
-                                <input type="tel" class="form-control" placeholder="xxxxxxxxx" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label">Email Address *</label>
-                                <input type="email" class="form-control" placeholder="example@email.com" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label">Present Address *</label>
-                                <textarea class="form-control" rows="2" required></textarea>
-                            </div>
-                        </div>
-
-                        <!-- Academic Background -->
-                        <div class="section-title">
-                            <i class="fas fa-book"></i> Academic Qualifications (MBBS/BDS)
-                        </div>
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-8">
-                                <label class="form-label">Medical College Name *</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="form-label">Year of Passing *</label>
-                                <input type="number" class="form-control" min="1980" max="2025" required>
-                            </div>
-                        </div>
-
-                        <!-- Document Upload -->
-                        <div class="section-title">
-                            <i class="fas fa-cloud-upload-alt"></i> Required Documents
-                        </div>
-                        <div class="row g-3 mb-5">
-                            <div class="col-md-6">
-                                <label class="form-label">Passport Size Photo (Max 200KB) *</label>
-                                <div class="upload-box">
-                                    <i class="fas fa-image mb-2 text-muted"></i><br>
-                                    <input type="file" class="form-control form-control-sm" accept="image/*" required>
+                
+                    <div class="course-details-content">
+                        <div class="row g-5">
+                            <!-- Main Content -->
+                            <div class="col-lg-8">                            
+                                <!-- Overview -->
+                                <div class="mb-5">
+                                    <h3 class="mb-4">Course Overview</h3>
+                                    <p>The Doctor of Medicine (MD) in Cardiology at BMU is structured to provide extensive hands-on experience in both non-invasive and interventional cardiology. Students undergo rotations in the CCU, Cath Lab, and Outpatient Departments, mentored by leading specialists in the field.</p>
+                                    <div class="row g-4 mt-2">
+                                        <div class="col-md-6">
+                                            <div class="info-card text-center">
+                                                <i class="fas fa-microscope"></i>
+                                                <h5>Research Driven</h5>
+                                                <p class="small mb-0">Mandatory thesis work with access to state-of-the-art genomics labs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="info-card text-center">
+                                                <i class="fas fa-hospital-user"></i>
+                                                <h5>Clinical Excellence</h5>
+                                                <p class="small mb-0">Direct involvement in over 500+ procedures during residency.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+            
+                                <!-- Curriculum -->
+                                <div class="mb-5">
+                                    <h3 class="mb-4">Curriculum Structure</h3>
+                                    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <button class="nav-link active" id="pills-year1-tab" data-bs-toggle="pill" data-bs-target="#year1">Phase A (Year 1-2)</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link" id="pills-year2-tab" data-bs-toggle="pill" data-bs-target="#year2">Phase B (Year 3-5)</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="year1">
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>Basic Medical Sciences (Anatomy, Physiology, Biochemistry)</span>
+                                                <span class="badge bg-light text-dark">Core</span>
+                                            </div>
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>General Medicine Rotation</span>
+                                                <span class="badge bg-light text-dark">Clinical</span>
+                                            </div>
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>Introduction to ECG & Non-invasive Diagnostics</span>
+                                                <span class="badge bg-light text-dark">Technical</span>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="year2">
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>Interventional Cardiology & Cath Lab Procedures</span>
+                                                <span class="badge bg-light text-dark">Advanced</span>
+                                            </div>
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>Electrophysiology and Pacemaker Management</span>
+                                                <span class="badge bg-light text-dark">Advanced</span>
+                                            </div>
+                                            <div class="curriculum-item d-flex justify-content-between align-items-center">
+                                                <span>Thesis Submission & Final Viva</span>
+                                                <span class="badge bg-light text-dark">Final</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Admission Requirements -->
+                                <div class="mb-5">
+                                    <h3 class="mb-4">Admission Requirements</h3>
+                                    <ul class="list-unstyled list-check">
+                                        <li>MBBS degree from a BMDC recognized institution.</li>
+                                        <li>Completion of one-year internship.</li>
+                                        <li>Minimum 2 years of professional experience after graduation.</li>
+                                        <li>Valid registration with BMDC.</li>
+                                        <li>Passing score in the BMU Postgraduate Entrance Examination.</li>
+                                    </ul>
+                                </div>
+            
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label">BMDC Certificate (PDF/JPG) *</label>
-                                <div class="upload-box">
-                                    <i class="fas fa-file-pdf mb-2 text-muted"></i><br>
-                                    <input type="file" class="form-control form-control-sm" accept=".pdf,.jpg,.jpeg" required>
+            
+                            <!-- Sidebar -->
+                            <div class="col-lg-4">
+                                <div class="sticky-sidebar">
+                                    <div class="apply-card shadow-lg">
+                                        <h4 class="mb-3">Course Fee</h4>
+                                        <div class="price-tag mb-4">৳ 2,50,000 <small class="text-white-50 fs-6">/ Total</small></div>
+                                        <hr class="border-secondary">
+                                        <p class="small opacity-75 mb-4">Includes registration, semester fees, and clinical lab access. Examination fees are separate.</p>
+                                        
+                                        <a href="opd_registration.html" class="btn accent w-100 fw-bold py-3 mb-3">APPLY NOW</a>
+                                        <button class="btn accent outline w-100 fw-bold py-3">DOWNLOAD PROSPECTUS</button>
+                                        
+                                        <div class="mt-4 pt-4 border-top border-secondary">
+                                            <h6 class="mb-3">Need Assistance?</h6>
+                                            <p class="small mb-0"><i class="fas fa-phone-alt me-2"></i> +880 1234 567890</p>
+                                            <p class="small mb-0"><i class="fas fa-envelope me-2"></i> admissions@bmu.ac.bd</p>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Other Courses -->
+                                    <div class="mt-4 p-4 bg-white rounded-4 shadow-sm">
+                                        <h5 class="fw-bold mb-3">Other Related Programs</h5>
+                                        <div class="d-flex flex-column gap-2">
+                                            <a href="#" class="text-decoration-none text-dark p-2 border-bottom">M.Phil in Cardiovascular Science</a>
+                                            <a href="#" class="text-decoration-none text-dark p-2 border-bottom">PhD in Cardiac Genomics</a>
+                                            <a href="#" class="text-decoration-none text-dark p-2">Diploma in Echocardiography</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="declaration" required>
-                            <label class="form-check-label small" for="declaration">
-                                I hereby declare that the information provided above is true and correct to the best of my knowledge. I understand that any false information may lead to the cancellation of my admission.
-                            </label>
-                        </div>
-
-                        <button type="submit" class="btn btn-submit">Submit Application</button>
-                    </form>
+                    </div>                   
                 </div>
             </div>
         </section>
-        <!-- End About Section -->
-
-        <!-- Success Modal -->
-        <div class="modal fade" id="successModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content text-center p-4">
-                    <div class="mb-3">
-                        <i class="fas fa-check-circle text-success fa-5x"></i>
-                    </div>
-                    <h3 class="fw-bold">Application Submitted!</h3>
-                    <p>Your application has been received successfully. Please check your email for the payment instructions and application ID.</p>
-                    <button type="button" class="btn btn-primary rounded-pill px-5" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-        
-     </div>
+    </div>
 
 
     <!-- Footer -->
@@ -425,28 +384,12 @@
     <script src="plugins/isotope/imagesloaded.pkgd.min.js"></script>
     <script src="plugins/isotope/isotope-init.js"></script>
     <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+        
+    <!-- Full Calendar -->
+    <script src="plugins/fullcalendar/fullcalendar.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar-init.js"></script>
+    <script src="plugins/fullcalendar/moment.js"></script>
 
     <script src="assets/js/theme.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('#admissionForm').on('submit', function(e) {
-                e.preventDefault();
-                
-                // Show a loading state on button
-                const $btn = $('.btn-submit');
-                const originalText = $btn.text();
-                $btn.html('<span class="spinner-border spinner-border-sm me-2"></span> Processing...').prop('disabled', true);
-                
-                // Simulate server delay
-                setTimeout(function() {
-                    $btn.text(originalText).prop('disabled', false);
-                    const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                    successModal.show();
-                    $('#admissionForm')[0].reset();
-                }, 1500);
-            });
-        });
-    </script>
 </body>
 </html>

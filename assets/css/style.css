@@ -49,6 +49,9 @@
     --color-dark-one:                  #010101;  
     --color-dark-one-rgb:               1, 1, 1;
 
+    --color-dark-two:                  #757575;  
+    --color-dark-two-rgb:               117, 117, 117;
+
     --color-white:                     #FFFFFF; 
     --color-white-rgb:                   255, 255, 255;
 
@@ -67,7 +70,7 @@ html {
 }
 
 body {
-    color: var(--color-black);
+    color: var(--color-dark-one);
     background-color: var(--color-white);
     position: relative;
     font-family: var(--font-family-base);
@@ -1277,11 +1280,15 @@ iframe {
     border-radius: 15px;
     border: 1px solid #eee;
     padding: 30px;
-    text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     position: sticky;
     top: 50px;
 }
+
+.dean-info {
+    text-align: center;
+}
+
 .dean-img-wrapper {
     width: 250px;
     height: 250px;
@@ -1832,6 +1839,8 @@ iframe {
 }
 
 .course-nav {
+    position: sticky;
+    top: 100px;
     padding-right: 28px;
 }
 
@@ -1852,16 +1861,17 @@ iframe {
     font-weight: var(--fw-bold);
 }
 
+.course-nav .nav-link small {
+    color: rgba(var(--color-black-rgb), 0.75);
+    font-weight: var(--fw-medium);
+}
+
 .course-wrapper--right {
     padding-left: 40px;
     border-left: 1px solid rgba(var(--color-one-rgb), 0.08);
 }
 
 .course-wrapper--right .tab-content .tab-pane h4 {
-    color: var(--color-one);
-}
-
-.course-wrapper--right .tab-content .tab-pane i {
     color: var(--color-one);
 }
 
@@ -2508,33 +2518,34 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 }
 
 
-
-
-
-
-
 /* --- Departmental Navigation --- */
-.dept-nav {
-    position: fixed;
-    top: 0;
+.dept-nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dept-nav li {
     width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
-    padding: 10px 0;
+}
+
+.dept-nav li + li {
+    margin-top: 1px;
 }
 
 .dept-nav .nav-link {
-    color: var(--color-dark-bg);
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    transition: 0.3s;
+    color: var(--color-two);
+    background: rgba(var(--color-two-rgb), 0.1);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 7px 15px;
+    transition: var(--transition-base);
 }
 
+.dept-nav .nav-link.active,
 .dept-nav .nav-link:hover {
-    color: var(--color-primary);
+    color: var(--color-accent);
+    background: rgba(var(--color-accent-rgb), 0.1);
 }
 
 
@@ -2858,4 +2869,260 @@ footer a:hover { color: var(--color-white); padding-left: 5px; }
 .fc .fc-btn-group > .fc-button:hover {
     background-color: var(--color-accent);
     transition: var(--transition-base);
+}
+
+
+/* Chamber */
+.chamber-box {
+    margin-top: 40px;
+}
+
+.chamber-box .widget-title {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.chamber-box .widget-title:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 33px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+ul.point-order {
+    padding-left: 0px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+ul.point-order li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 34px;
+}
+
+ul.point-order li:before {
+	content: '\f26a';
+    font-family: 'bootstrap-icons';
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    color: var(--color-one);
+}
+
+ul.point-order li span {
+    color: var(--color-two);
+    font-weight: var(--fw-semibold);
+}
+
+/* --- Course Details --- */
+.course-details .course-details-inner {
+    position: relative;
+    background-color: rgba(var(--color-light-one-rgb), 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.course-details .course-hero {
+    background: var(--color-light-two);
+    padding: 50px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-details .course-badge {
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(var(--color-accent-rgb), 0.3);
+}
+
+.course-details .course-details-content {
+    padding: 50px 50px;
+}
+
+/* --- Info Cards --- */
+.course-details .info-card {
+    background: var(--color-white);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    height: 100%;
+    border-top: 4px solid var(--color-one);
+    transition: transform 0.3s ease;
+}
+
+.course-details .info-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-details .info-card i {
+    color: var(--color-one);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- Curriculum Tabs --- */
+.course-details .nav-pills .nav-link.active {
+    background-color: var(--color-one);
+    color: var(--color-white);
+}
+
+.course-details .nav-pills .nav-link {
+    color: var(--color-one);
+    font-weight: 600;
+    border: 1px solid var(--color-one);
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+.course-details .nav-pills .nav-link:hover:not(.active) {
+    background-color: rgba(var(--color-one-rgb), 0.1);
+}
+
+.course-details .curriculum-item {
+    padding: 15px;
+    border-left: 3px solid var(--color-accent);
+    background: var(--color-white);
+    margin-bottom: 10px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+/* --- Sidebar --- */
+.course-details .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.course-details .apply-card {
+    background: var(--color-two);
+    color: var(--color-white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(var(--color-two-rgb), 0.2);
+}
+
+.course-details .apply-card h4,
+.course-details .apply-card h6 {
+    color: var(--color-white);
+}
+
+.course-details .price-tag {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-accent);
+}
+
+.course-details .list-check li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+.course-details .list-check li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+/* --- Program Grid --- */
+.course-wrapper--right .specialty-card {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    text-decoration: none;
+}
+
+.course-wrapper--right .specialty-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-one);
+    box-shadow: 0 12px 30px rgba(30, 138, 138, 0.1);
+}
+
+.course-wrapper--right .card-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--color-light-one);
+    color: var(--color-one);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.course-wrapper--right .specialty-card:hover .card-icon {
+    background: var(--color-one);
+    color: var(--color-white);
+}
+
+.course-wrapper--right .specialty-card .program-title {
+    color: var(--color-dark-one);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.course-wrapper--right .specialty-card p {
+    color: rgba(var(--color-black-rgb), 0.75);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.course-wrapper--right .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--color-light-one);
+    padding-top: 15px;
+}
+
+.course-wrapper--right .seats-info {
+    font-size: 0.75rem;
+    color: var(--color-one);
+    font-weight: 600;
+}
+
+.course-wrapper--right .arrow-link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color-light-one);
+    color: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.course-wrapper--right .specialty-card:hover .arrow-link {
+    background: var(--color-one);
+    color: var(--color-white);
+    transform: translateX(5px);
 }
