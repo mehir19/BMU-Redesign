@@ -1436,13 +1436,25 @@ iframe {
 }
 
 .news-meta {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
-    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
+    /* border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1); */
     padding-bottom: 10px;
     margin-bottom: 15px;
     font-size: 15px;
+}
+
+.news-meta::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(var(--color-white-rgb), 0) 0%, rgba(var(--color-black-rgb), 0.1) 25%, rgba(var(--color-black-rgb), 0.1) 75%, rgba(var(--color-white-rgb), 0) 100%);
+
 }
 
 .news-meta .news-meta-item {
@@ -3121,6 +3133,7 @@ ul.point-order li span {
 }
 
 .course-wrapper--right .card-footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3228,12 +3241,24 @@ ul.point-order li span {
 }
 
 .wptb-image-box1 .wptb-item--inner .wptb-item--title {
+    position: relative;
     font-size: 22px;
     line-height: 32px;
     font-weight: var(--fw-semibold);
-    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.05);
+    /* border-bottom: 1px solid rgba(var(--color-black-rgb), 0.05); */
     padding-bottom: 20px;
 	margin-bottom: 20px;
+}
+
+.wptb-image-box1 .wptb-item--inner .wptb-item--title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(var(--color-white-rgb), 0) 0%, rgba(var(--color-black-rgb), 0.1) 25%, rgba(var(--color-black-rgb), 0.1) 75%, rgba(var(--color-white-rgb), 0) 100%);
+
 }
 
 .wptb-image-box1 .wptb-item--inner .wptb-item--title a {
