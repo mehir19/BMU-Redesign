@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Events</title>
+    <style>
+        :root {
+            --teal: #008080;
+            --dark-teal: #0a4d4d;
+            --text-main: #1a1a1a;
+            --text-sub: #666;
+            --bg-gray: #f9f9f9;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; padding: 40px 20px; color: var(--text-main); }
+        .wrapper { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 16px; border: 1px solid #eee; }
+        h3 { text-align: center; color: var(--text-sub); margin-bottom: 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { text-align: center; font-size: 1.8rem; margin-top: 8px; margin-bottom: 40px; }
+
+        .event-card { 
+            display: grid; grid-template-columns: 280px 1fr; gap: 24px; 
+            padding: 24px; border: 1px solid #eee; border-radius: 12px; margin-bottom: 24px;
+        }
+        .img-box { width: 100%; height: 160px; border-radius: 8px; background: #ddd; position: relative; overflow: hidden; }
+        .upcoming-tag { 
+            position: absolute; top: 12px; left: 12px; background: #2dd4bf; 
+            color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;
+        }
+        .category { color: var(--teal); font-weight: 600; font-size: 0.85rem; margin-bottom: 8px; display: block; }
+        .title { font-size: 1.25rem; font-weight: 700; margin-bottom: 16px; line-height: 1.3; }
+        
+        .info-row { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; color: var(--text-sub); font-size: 0.9rem; }
+        .details-btn { 
+            justify-self: end; align-self: center; padding: 10px 20px; border: 1px solid var(--teal); 
+            border-radius: 6px; color: var(--teal); text-decoration: none; font-size: 0.85rem; font-weight: 500;
+        }
+        .btn-filled { background: var(--dark-teal); color: white; border: none; }
+
+        .footer-btns { display: flex; flex-direction: column; gap: 12px; margin-top: 30px; }
+        .btn-wide { padding: 16px; text-align: center; border-radius: 8px; font-weight: 600; cursor: pointer; }
+        .btn-outline-wide { border: 1px solid var(--teal); color: var(--teal); }
+        .btn-solid-wide { background: var(--dark-teal); color: white; border: none; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h3>All Events</h3>
+    <h1>University Events</h1>
+
+    <!-- Card 1 -->
+    <div class="event-card">
+        <div class="img-box">
+            <div class="upcoming-tag">Upcoming</div>
+        </div>
+        <div>
+            <span class="category">Meetup</span>
+            <div class="title">International Academic Session Titled 'Advances In Multiple Myeloma Treatment' Held At BMU</div>
+            <div class="info-row"><span>📅 01 June 2026</span> <span>🕒 09:00am - 12:00pm</span></div>
+            <div class="info-row"><span>📍 Seminar Hall, B Block, BMU</span></div>
+        </div>
+        <a href="#" class="details-btn">View Details ↗</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="event-card">
+        <div class="img-box"></div>
+        <div>
+            <span class="category">Workshop</span>
+            <div class="title">Basic Life Support (BLS) Training</div>
+            <div class="info-row"><span>📅 01 June 2026</span> <span>🕒 09:00am - 12:00pm</span></div>
+            <div class="info-row"><span>📍 Seminar Hall, B Block, BMU</span></div>
+        </div>
+        <a href="#" class="details-btn btn-filled">View Details ↗</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="event-card">
+        <div class="img-box"></div>
+        <div>
+            <span class="category">Conference</span>
+            <div class="title">Advances In Robot-Assisted Surgery</div>
+            <div class="info-row"><span>📅 01 June 2026</span> <span>🕒 09:00am - 12:00pm</span></div>
+            <div class="info-row"><span>📍 Seminar Hall, B Block, BMU</span></div>
+        </div>
+        <a href="#" class="details-btn">View Details ↗</a>
+    </div>
+
+    <div class="footer-btns">
+        <div class="btn-wide btn-outline-wide">View All Events</div>
+        <div class="btn-wide btn-solid-wide">View All Events</div>
+    </div>
+</div>
+
+</body>
+</html>
