@@ -1,0 +1,34 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+
+/* Global Header Components */
+header { background: #1a252f; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+header .logo { font-size: 22px; font-weight: bold; letter-spacing: 1px; }
+nav a { color: #cbd5e1; text-decoration: none; margin-left: 20px; font-size: 15px; transition: color 0.2s; }
+nav a:hover, nav a.active { color: #3498db; }
+
+/* Portal Grid Layout */
+.wrapper { display: flex; max-width: 1300px; margin: 30px auto; padding: 0 20px; gap: 30px; }
+.main-content { flex: 7; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.sidebar-panel { flex: 3; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); height: fit-content; }
+
+/* Dynamic Content Blocks */
+h2 { margin-bottom: 20px; color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; }
+.article-card { background: #fafbfc; border: 1px solid #e2e8f0; padding: 20px; margin-bottom: 20px; border-radius: 6px; }
+.article-card h3 { color: #2980b9; margin-bottom: 10px; }
+.meta-tag { display: inline-block; background: #e8f4fd; color: #2b6cb0; font-size: 12px; padding: 3px 8px; border-radius: 4px; margin-bottom: 10px; font-weight: 600; }
+
+/* Navigation Tab Components */
+.tab-container { display: flex; border-bottom: 2px solid #e2e8f0; margin-bottom: 15px; }
+.login-tab { flex: 1; padding: 10px; text-align: center; background: #f8fafc; border: none; cursor: pointer; font-weight: 600; color: #718096; transition: all 0.2s; }
+.login-tab.active { background: #fff; color: #3498db; border-bottom: 3px solid #3498db; margin-bottom: -2px; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Standard Inputs & Alerts */
+.login-form label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px; color: #4a5568; }
+.login-form input { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 4px; }
+.login-form button { width: 100%; background: #3498db; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+.login-form button:hover { background: #2980b9; }
+.error-msg { color: #e53e3e; background: #fff5f5; padding: 10px; border-left: 4px solid #e53e3e; margin-bottom: 15px; font-size: 14px; }
+.reg-box { margin-top: 20px; padding-top: 15px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 14px; }
